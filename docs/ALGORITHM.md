@@ -1,12 +1,12 @@
 # Algorithm Plan
 
-This project starts from a clean design. The first implementation step is a debug build that measures Blender node data before any alignment algorithm moves nodes.
+This project starts from a clean design. The `v0.3.x` debug builds measured Blender node data before any alignment algorithm moved nodes. Interactive snapping begins in `v0.4.0`, and `v0.4.1` refines collapsed-node and Reroute anchors.
 
 ## Principles
 
 - Do not reuse earlier add-on layout code or earlier node-size assumptions.
 - Treat Blender-reported geometry as data to verify, not as truth.
-- Keep the `v0.3.x` debug builds read-only. They must not move, create, delete, or relink nodes.
+- Keep the debug operator read-only. It must not move, create, delete, or relink nodes.
 - Use debug output to decide which geometry values are reliable.
 
 ## Data To Collect
@@ -72,10 +72,56 @@ This requires reliable node boxes and socket positions, so it must be implemente
 
 Direction-key alignment is no longer planned. Interactive movement will use guides similar to presentation and design applications.
 
-- Normal nodes can snap by left, horizontal center, right, top, vertical center, and bottom guides.
+- Normal nodes can snap by left, right, top, and bottom boundary guides.
 - Reroute nodes use their center as the primary anchor.
-- A connected Reroute should prefer the vertical position of its Node Socket so the link can become horizontal.
+- A vertically moving Reroute can snap its center to estimated socket heights on normal nodes so a link can approach a horizontal segment.
 - Reroute chains should prefer equal center `y` values for horizontal routing and equal center `x` values for vertical routing.
 - Socket positions require a separate derivation strategy because Blender does not expose their draw coordinates through the public Python API.
 
 Snapping must work without enabling Blender's grid quantization.
+
+### Geometry Anchors
+
+Normal nodes and Frames expose four matching anchors:
+
+- left and right
+- top and bottom
+
+Reroute nodes expose horizontal and vertical center anchors. Normal nodes also expose estimated socket-height candidates for vertical Reroute snapping. A multi-node selection uses the outer box of its movement roots and preserves its internal layout.
+
+Blender's public Python API does not expose final socket draw coordinates. Socket heights are therefore estimated from the rendered node box, socket order, visibility, and collapsed state. This estimate is isolated from boundary geometry so it can be refined without changing ordinary node snapping.
+
+### Equal Spacing
+
+Spacing is measured between node boundaries, not between node centers.
+
+For horizontal nodes `A`, `B`, and moving node `M`:
+
+```text
+gap(A, B) = B.left - A.right
+gap(B, M) = M.left - B.right
+```
+
+Sequence extension snaps when these gaps are equal. Insertion between two neighbors solves:
+
+```text
+M.left - A.right = B.left - M.right
+```
+
+The same calculation is applied vertically with top and bottom boundaries. A spacing candidate is valid only when all three boxes have a real overlap on the orthogonal axis. Its measurement guides are drawn through that common overlap region.
+
+### Interaction
+
+- Ordinary `G` movement starts Smart Snap while the add-on is enabled.
+- Node placement started from the `Shift + A` menu uses the same Smart Snap operator.
+- `Shift + D` uses Blender's native duplicate operator, then starts Smart Snap on the duplicated selection.
+- Dragging an expanded or collapsed node by its title or body uses the same Smart Snap operator. Narrow left and right edge strips are excluded so socket linking remains usable.
+- Collapsed nodes use live rendered dimensions plus a collapsed-state canvas offset. Expanded nodes do not use Node Wrangler highlight-outline offsets.
+- Snap activation distance is stored in screen pixels and converted through both the current View2D scale and the measured node-geometry scale.
+- Mouse coordinates, normalized node boxes, and guide drawing are converted through the same measured geometry scale.
+- Alignment and spacing are solved independently for the horizontal and vertical axes.
+- One alignment candidate collects every target that exposes the same snapped boundary, so a single guide represents the full aligned row or column.
+- `X` and `Y` constraints disable candidates on the other axis.
+- Alignment and spacing guides use solid centers with faded ends.
+- A selected Frame moves its descendants through Blender parenting; selected descendants are not translated twice.
+- Nodes inside an unselected Frame compare against siblings in the same parent context.

@@ -99,7 +99,7 @@ def geometry_scale_ratio(node):
     return dimensions[0] / width
 
 
-def normalized_node_box(node):
+def normalized_node_box(node, reference_scale=None):
     flags = node_kind_flags(node)
     if flags["is_reroute"]:
         return None
@@ -107,11 +107,14 @@ def normalized_node_box(node):
     if location is None:
         location = getattr(node, "location", None)
     dimensions = value_to_tuple(getattr(node, "dimensions", None))
-    width = raw_number(getattr(node, "width", None))
-    ratio = geometry_scale_ratio(node)
-    if dimensions is None or width is None or ratio is None or ratio <= 0.0:
+    ratio = reference_scale or geometry_scale_ratio(node)
+    if dimensions is None or ratio is None or ratio <= 0.0:
         return None
-    return raw_box(location, width, dimensions[1] / ratio)
+    return raw_box(
+        location,
+        dimensions[0] / ratio,
+        dimensions[1] / ratio,
+    )
 
 
 def normalized_reroute_box(node, reference_scale):
@@ -249,7 +252,21 @@ def selected_move_root(node, selected_nodes):
 
 
 def reference_geometry_scale(nodes):
-    ratios = [ratio for ratio in (geometry_scale_ratio(node) for node in nodes) if ratio is not None]
+    nodes = list(nodes)
+    visible_ratios = [
+        ratio
+        for node in nodes
+        if not getattr(node, "hide", False)
+        for ratio in (geometry_scale_ratio(node),)
+        if ratio is not None
+    ]
+    if visible_ratios:
+        return median(visible_ratios)
+    ratios = [
+        ratio
+        for ratio in (geometry_scale_ratio(node) for node in nodes)
+        if ratio is not None
+    ]
     return median(ratios) if ratios else None
 
 
@@ -325,12 +342,12 @@ def build_debug_report(tree, nodes, runtime_info=None):
     lines = [
         "Smart Align Nodes Debug",
         "=" * 24,
-        "report_version: 0.3.1",
+        "report_version: 0.4.1",
         f"node_tree: {getattr(tree, 'name', '<none>')}",
         f"selected_count: {len(nodes)}",
         f"tree_link_count: {len(getattr(tree, 'links', []))}",
         f"reference_geometry_scale: {reference_scale!r}",
-        "reference_geometry_scale_basis: median(dimensions.x / width), excluding Reroute",
+        "reference_geometry_scale_basis: median(dimensions.x / width), excluding hidden nodes and Reroute when possible",
     ]
     lines.extend(runtime_lines(runtime_info))
     lines.append("")
@@ -386,8 +403,8 @@ def build_debug_report(tree, nodes, runtime_info=None):
                 f"  raw_box_from_width_height: {format_box(box_from_width_height)}",
                 f"  raw_box_from_dimensions: {format_box(box_from_dimensions)}",
                 f"  normalized_box_candidate: {format_box(normalized_box)}",
-                "  normalized_box_basis: location_absolute + width + "
-                "dimensions.y / geometry_scale_ratio",
+                "  normalized_box_basis: location_absolute + dimensions / "
+                "geometry_scale_ratio",
                 f"  reroute_anchor_absolute: {format_pair(absolute) if flags['is_reroute'] else 'None'}",
                 f"  reroute_box_candidate: {format_box(reroute_box)}",
                 "  reroute_box_basis: centered dimensions / reference_geometry_scale",

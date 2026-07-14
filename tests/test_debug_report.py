@@ -173,7 +173,7 @@ class DebugReportTest(unittest.TestCase):
         )
 
         self.assertIn("Smart Align Nodes Debug", report)
-        self.assertIn("report_version: 0.3.1", report)
+        self.assertIn("report_version: 0.4.1", report)
         self.assertIn("tree_link_count: 1", report)
         self.assertIn("pixel_size: 2", report)
         self.assertIn("  hide: False", report)
