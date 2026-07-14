@@ -8,7 +8,7 @@ from .debug import (
     node_kind_flags,
     write_report_to_text_block,
 )
-from .geometry import node_box, snap_geometry
+from .geometry import local_location_for_absolute, node_box, snap_geometry
 from .preferences import get_preferences
 from .snapping import find_snaps, guide_segments
 
@@ -135,7 +135,7 @@ class _SmartMoveMixin:
         self._geometry_scale = geometry_scale
         self._confirm_on_release = drag_invocation
         self._cancel_nodes = list(selected_nodes) if self.remove_on_cancel else []
-        self._initial_locations = {
+        self._initial_absolute_locations = {
             id(node): (
                 float(node.location_absolute.x),
                 float(node.location_absolute.y),
@@ -232,6 +232,7 @@ class _SmartMoveMixin:
         snap_distance = preferences.snap_distance if preferences is not None else 12
         equal_spacing = preferences.equal_spacing if preferences is not None else True
         show_guides = preferences.show_guides if preferences is not None else True
+        vertical_gap = preferences.vertical_gap if preferences is not None else 30
         scale_x, scale_y = _view_scale(self._region)
 
         if event.alt:
@@ -244,8 +245,9 @@ class _SmartMoveMixin:
                 self._targets,
                 snap_distance / (scale_x * self._geometry_scale),
                 snap_distance / (scale_y * self._geometry_scale),
-                equal_spacing,
-                self._axis_constraint,
+                equal_spacing=equal_spacing,
+                axis_constraint=self._axis_constraint,
+                vertical_gap=vertical_gap,
             )
             correction_x = result.correction_x
             correction_y = result.correction_y
@@ -253,9 +255,14 @@ class _SmartMoveMixin:
         final_delta_x = delta_x + correction_x
         final_delta_y = delta_y + correction_y
         for node in self._roots:
-            initial_x, initial_y = self._initial_locations[id(node)]
-            node.location_absolute.x = initial_x + final_delta_x
-            node.location_absolute.y = initial_y + final_delta_y
+            initial_x, initial_y = self._initial_absolute_locations[id(node)]
+            local_x, local_y = local_location_for_absolute(
+                node,
+                initial_x + final_delta_x,
+                initial_y + final_delta_y,
+            )
+            node.location.x = local_x
+            node.location.y = local_y
 
         final_box = self._moving_box.translated(final_delta_x, final_delta_y)
         self._guide_segments = (
@@ -265,9 +272,14 @@ class _SmartMoveMixin:
 
     def _restore_locations(self):
         for node in self._roots:
-            initial_x, initial_y = self._initial_locations[id(node)]
-            node.location_absolute.x = initial_x
-            node.location_absolute.y = initial_y
+            initial_x, initial_y = self._initial_absolute_locations[id(node)]
+            local_x, local_y = local_location_for_absolute(
+                node,
+                initial_x,
+                initial_y,
+            )
+            node.location.x = local_x
+            node.location.y = local_y
 
     def _finish(self, context):
         self._cleanup()
@@ -429,6 +441,9 @@ classes = (
 addon_keymaps = []
 _NODE_ADD_PATCH_ATTRIBUTE = "_smart_align_nodes_original_invoke"
 _NODE_ADD_CLASSES_ATTRIBUTE = "_smart_align_nodes_registered_classes"
+_NODE_CONSOLE_CLASS = None
+_NODE_CONSOLE_ORIGINAL_TRANSFORM = None
+_REGISTERED = False
 
 
 def _node_add_invoke_with_snap(self, context, event):
@@ -488,7 +503,73 @@ def _restore_node_add_transform():
             delattr(NodeAddOperator, _NODE_ADD_CLASSES_ATTRIBUTE)
 
 
+def _node_console_smart_transform(self, context):
+    try:
+        result = bpy.ops.smart_align_nodes.move_with_snap(
+            "INVOKE_DEFAULT",
+            remove_on_cancel=True,
+        )
+        return "RUNNING_MODAL" in result or "FINISHED" in result
+    except (AttributeError, RuntimeError):
+        if _NODE_CONSOLE_ORIGINAL_TRANSFORM is None:
+            return False
+        return _NODE_CONSOLE_ORIGINAL_TRANSFORM(self, context)
+
+
+def _patch_node_console_transform():
+    global _NODE_CONSOLE_CLASS, _NODE_CONSOLE_ORIGINAL_TRANSFORM
+
+    node_console_class = next(
+        (
+            operator_class
+            for operator_class in bpy.types.Operator.__subclasses__()
+            if getattr(operator_class, "bl_idname", "") == "node.node_console"
+            and hasattr(operator_class, "_start_native_node_transform")
+        ),
+        None,
+    )
+    if node_console_class is None:
+        return False
+    if node_console_class is _NODE_CONSOLE_CLASS:
+        return True
+
+    original = getattr(node_console_class, "_start_native_node_transform", None)
+    if original is None:
+        return False
+    _NODE_CONSOLE_CLASS = node_console_class
+    _NODE_CONSOLE_ORIGINAL_TRANSFORM = original
+    node_console_class._start_native_node_transform = _node_console_smart_transform
+    return True
+
+
+def _watch_node_console():
+    if not _REGISTERED:
+        return None
+    _patch_node_console_transform()
+    return 1.0
+
+
+def _restore_node_console_transform():
+    global _NODE_CONSOLE_CLASS, _NODE_CONSOLE_ORIGINAL_TRANSFORM
+
+    if (
+        _NODE_CONSOLE_CLASS is not None
+        and _NODE_CONSOLE_ORIGINAL_TRANSFORM is not None
+    ):
+        try:
+            _NODE_CONSOLE_CLASS._start_native_node_transform = (
+                _NODE_CONSOLE_ORIGINAL_TRANSFORM
+            )
+        except (AttributeError, ReferenceError):
+            pass
+    _NODE_CONSOLE_CLASS = None
+    _NODE_CONSOLE_ORIGINAL_TRANSFORM = None
+
+
 def register():
+    global _REGISTERED
+
+    _REGISTERED = True
     for cls in classes:
         bpy.utils.register_class(cls)
 
@@ -519,9 +600,18 @@ def register():
         )
         addon_keymaps.append((keymap, duplicate_item))
     _patch_node_add_transform()
+    _patch_node_console_transform()
+    if not bpy.app.timers.is_registered(_watch_node_console):
+        bpy.app.timers.register(_watch_node_console, first_interval=1.0)
 
 
 def unregister():
+    global _REGISTERED
+
+    _REGISTERED = False
+    if bpy.app.timers.is_registered(_watch_node_console):
+        bpy.app.timers.unregister(_watch_node_console)
+    _restore_node_console_transform()
     _restore_node_add_transform()
     for keymap, keymap_item in addon_keymaps:
         keymap.keymap_items.remove(keymap_item)

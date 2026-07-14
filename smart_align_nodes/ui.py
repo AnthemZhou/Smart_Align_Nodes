@@ -16,6 +16,7 @@ class SMART_ALIGN_NODES_PT_sidebar(bpy.types.Panel):
         if preferences is not None:
             settings = layout.column(align=True)
             settings.prop(preferences, "snap_distance")
+            settings.prop(preferences, "vertical_gap")
             settings.prop(preferences, "equal_spacing")
             settings.prop(preferences, "show_guides")
 

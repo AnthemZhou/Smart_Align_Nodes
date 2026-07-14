@@ -1,5 +1,33 @@
 # Changelog
 
+## v0.4.2 (Unreleased)
+
+### 中文
+
+- 将维护者改为 `Anthem_周圣宇`。
+- 在插件偏好设置中增加 B站、小红书、飞书和 GitHub 按钮。
+- 校准 Reroute 到 socket 的首行中心高度。
+- 等待新建节点生成有效渲染尺寸后再进行吸附计算。
+- 增加 Node Console 创建后移动流程的兼容桥接。
+- 增加默认值为 30 的可配置纵向节点间距。
+- 改用局部 `location` 写入节点位移，修复 Frame 无法移动的问题。
+- 允许 Frame 内外节点互相作为边界和 socket 吸附目标。
+- 排除移动节点自己的祖先 Frame，避免子节点被父 Frame 边界干扰。
+- 根据父 Frame 的实时绝对坐标换算子节点局部位置，修复 Frame 自动缩放时的累积漂移。
+
+### English
+
+- Change the maintainer to `Anthem_周圣宇`.
+- Add Bilibili, Xiaohongshu, Feishu, and GitHub buttons to add-on preferences.
+- Calibrate the first-row center used for Reroute-to-socket snapping.
+- Wait for valid rendered dimensions before snapping a newly created node.
+- Add a compatibility bridge for Node Console post-creation movement.
+- Add a configurable default vertical node gap of 30.
+- Write movement through local `location` coordinates to fix Frame movement.
+- Allow nodes inside and outside Frames to act as boundary and socket snap targets for each other.
+- Exclude a moving node's own ancestor Frames from snap targets.
+- Convert child positions against the parent Frame's live absolute position to prevent cumulative drift while the Frame auto-resizes.
+
 ## v0.4.1
 
 ### 中文

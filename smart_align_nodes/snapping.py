@@ -209,6 +209,30 @@ def _vertical_spacing_candidates(moving, targets):
     return candidates
 
 
+def _vertical_gap_candidates(moving, targets, gap):
+    candidates = []
+    for target in targets:
+        if not _vertical_related(moving, target):
+            continue
+        if moving.center_y < target.center_y:
+            desired_top = target.bottom - gap
+            placement = "below"
+        else:
+            desired_top = target.top + gap + moving.height
+            placement = "above"
+        candidates.append(
+            SnapCandidate(
+                "y",
+                desired_top - moving.top,
+                "gap",
+                references=(target,),
+                placement=placement,
+                gap=gap,
+            )
+        )
+    return candidates
+
+
 def _best_candidate(candidates, threshold):
     eligible = [candidate for candidate in candidates if abs(candidate.correction) <= threshold]
     if not eligible:
@@ -245,6 +269,7 @@ def find_snaps(
     threshold_y,
     equal_spacing=True,
     axis_constraint=None,
+    vertical_gap=None,
 ):
     x_candidate = None
     y_candidate = None
@@ -258,6 +283,10 @@ def find_snaps(
         x_candidate = _with_collinear_references(x_candidate, targets)
     if axis_constraint != "x":
         y_candidates = _alignment_candidates(moving, targets, "y")
+        if vertical_gap is not None:
+            y_candidates.extend(
+                _vertical_gap_candidates(moving, targets, vertical_gap)
+            )
         if equal_spacing:
             y_candidates.extend(
                 _vertical_spacing_candidates(moving, targets)
@@ -343,6 +372,23 @@ def _spacing_guides(candidate, moving):
     return segments
 
 
+def _gap_guides(candidate, moving):
+    target = candidate.references[0]
+    overlap = _common_horizontal_overlap(target, moving)
+    if overlap is None:
+        return []
+    x = (overlap[0] + overlap[1]) / 2.0
+    if candidate.placement == "below":
+        start, end = target.bottom, moving.top
+    else:
+        start, end = moving.bottom, target.top
+    return [
+        GuideSegment((x, start), (x, end), "spacing"),
+        GuideSegment((x - 3.0, start), (x + 3.0, start), "spacing", False),
+        GuideSegment((x - 3.0, end), (x + 3.0, end), "spacing", False),
+    ]
+
+
 def guide_segments(result, moving):
     segments = []
     for candidate in (result.x_candidate, result.y_candidate):
@@ -350,6 +396,8 @@ def guide_segments(result, moving):
             continue
         if candidate.kind == "alignment":
             segments.extend(_alignment_guides(candidate, moving))
+        elif candidate.kind == "gap":
+            segments.extend(_gap_guides(candidate, moving))
         else:
             segments.extend(_spacing_guides(candidate, moving))
     return segments

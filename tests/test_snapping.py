@@ -1,10 +1,44 @@
 import unittest
 
-from smart_align_nodes.geometry import Box, node_box, selected_move_roots, union_boxes
+from smart_align_nodes.geometry import (
+    Box,
+    local_location_for_absolute,
+    node_box,
+    selected_move_roots,
+    snap_geometry,
+    union_boxes,
+)
 from smart_align_nodes.snapping import find_snaps, guide_segments
 
 
 class SnappingTest(unittest.TestCase):
+    def _geometry_node(self, name, x, y, parent=None, node_type="VALUE"):
+        vector = type("Vector", (), {})
+        location = vector()
+        location.x = x
+        location.y = y
+        dimensions = vector()
+        dimensions.x = 200.0
+        dimensions.y = 100.0
+        return type(
+            "Node",
+            (),
+            {
+                "name": name,
+                "bl_idname": "NodeFrame" if node_type == "FRAME" else "ShaderNodeValue",
+                "type": node_type,
+                "hide": False,
+                "width": 100.0,
+                "parent": parent,
+                "select": False,
+                "location": location,
+                "location_absolute": location,
+                "dimensions": dimensions,
+                "inputs": (),
+                "outputs": (),
+            },
+        )()
+
     def test_collapsed_node_box_uses_rendered_dimensions(self):
         vector = type("Vector", (), {})
         location = vector()
@@ -34,6 +68,70 @@ class SnappingTest(unittest.TestCase):
         self.assertEqual(result.top, -136.5)
         self.assertEqual(result.bottom, -164.5)
 
+    def test_node_box_waits_for_nonzero_rendered_dimensions(self):
+        vector = type("Vector", (), {})
+        location = vector()
+        location.x = 0.0
+        location.y = 0.0
+        dimensions = vector()
+        dimensions.x = 0.0
+        dimensions.y = 0.0
+        node = type(
+            "Node",
+            (),
+            {
+                "name": "New Node",
+                "bl_idname": "GeometryNodeSetPosition",
+                "type": "SET_POSITION",
+                "hide": False,
+                "width": 140.0,
+                "location_absolute": location,
+                "dimensions": dimensions,
+                "inputs": (),
+                "outputs": (),
+            },
+        )()
+
+        self.assertIsNone(node_box(node, 2.0))
+
+    def test_first_socket_anchor_uses_calibrated_center_offset(self):
+        vector = type("Vector", (), {})
+        location = vector()
+        location.x = 0.0
+        location.y = 100.0
+        dimensions = vector()
+        dimensions.x = 200.0
+        dimensions.y = 200.0
+        socket = type(
+            "Socket",
+            (),
+            {
+                "identifier": "Geometry",
+                "enabled": True,
+                "hide": False,
+                "is_unavailable": False,
+            },
+        )()
+        node = type(
+            "Node",
+            (),
+            {
+                "name": "Node",
+                "bl_idname": "GeometryNodeSetPosition",
+                "type": "SET_POSITION",
+                "hide": False,
+                "width": 100.0,
+                "location_absolute": location,
+                "dimensions": dimensions,
+                "inputs": (),
+                "outputs": (socket,),
+            },
+        )()
+
+        result = node_box(node, 2.0)
+
+        self.assertEqual(result.socket_ys[0], ("socket:outputs:Geometry:0", 63.0))
+
     def test_selected_frame_is_only_movement_root_for_its_child(self):
         frame = type(
             "Node",
@@ -52,6 +150,38 @@ class SnappingTest(unittest.TestCase):
         )()
 
         self.assertEqual(selected_move_roots([frame, child]), [frame])
+
+    def test_snap_geometry_allows_targets_across_frame_boundaries(self):
+        frame = self._geometry_node("Frame", 200, 100, node_type="FRAME")
+        inside = self._geometry_node("Inside", 220, 80, parent=frame)
+        outside = self._geometry_node("Outside", 0, 0)
+        outside.select = True
+        tree = type("Tree", (), {"nodes": (frame, inside, outside)})()
+
+        _roots, _moving, targets, _scale = snap_geometry(tree, [outside])
+
+        self.assertEqual({target.name for target in targets}, {"Frame", "Inside"})
+
+    def test_snap_geometry_excludes_moving_nodes_own_frame(self):
+        frame = self._geometry_node("Frame", 200, 100, node_type="FRAME")
+        inside = self._geometry_node("Inside", 220, 80, parent=frame)
+        outside = self._geometry_node("Outside", 0, 0)
+        inside.select = True
+        tree = type("Tree", (), {"nodes": (frame, inside, outside)})()
+
+        _roots, _moving, targets, _scale = snap_geometry(tree, [inside])
+
+        self.assertEqual({target.name for target in targets}, {"Outside"})
+
+    def test_absolute_position_converts_against_current_parent_position(self):
+        parent = self._geometry_node("Frame", 100, 50, node_type="FRAME")
+        child = self._geometry_node("Child", 130, 20, parent=parent)
+
+        self.assertEqual(local_location_for_absolute(child, 180, 10), (80, -40))
+
+        parent.location_absolute.x = 120
+        parent.location_absolute.y = 30
+        self.assertEqual(local_location_for_absolute(child, 180, 10), (60, -20))
 
     def test_union_boxes_wraps_selection(self):
         result = union_boxes(
@@ -117,6 +247,38 @@ class SnappingTest(unittest.TestCase):
         self.assertEqual(result.y_candidate.kind, "spacing")
         self.assertEqual(result.y_candidate.placement, "after")
         self.assertEqual(result.y_candidate.gap, 20)
+
+    def test_default_vertical_gap_snaps_two_overlapping_nodes(self):
+        target = Box(0, 100, 100, 20, "Target")
+        moving = Box(10, 90, -7, -57, "Moving")
+
+        result = find_snaps(
+            moving,
+            [target],
+            5,
+            5,
+            equal_spacing=False,
+            vertical_gap=30,
+        )
+
+        self.assertEqual(result.correction_y, -3)
+        self.assertEqual(result.y_candidate.kind, "gap")
+        self.assertEqual(result.y_candidate.placement, "below")
+
+    def test_default_vertical_gap_requires_horizontal_overlap(self):
+        target = Box(0, 100, 100, 20, "Target")
+        moving = Box(120, 200, -10, -60, "Moving")
+
+        result = find_snaps(
+            moving,
+            [target],
+            5,
+            5,
+            equal_spacing=False,
+            vertical_gap=30,
+        )
+
+        self.assertIsNone(result.y_candidate)
 
     def test_axis_constraint_disables_other_axis(self):
         moving = Box(97, 147, 103, 53, "Moving")

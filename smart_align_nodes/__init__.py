@@ -4,8 +4,8 @@ import sys
 
 bl_info = {
     "name": "Smart Align Nodes",
-    "author": "Anthem",
-    "version": (0, 4, 1),
+    "author": "Anthem_周圣宇",
+    "version": (0, 4, 2),
     "blender": (4, 0, 0),
     "location": "Node Editor > Sidebar > Smart Align",
     "description": "Move Blender nodes with alignment and equal-spacing snapping.",

@@ -81,7 +81,9 @@ def _socket_y_anchors(node, box):
             if getattr(node, "hide", False):
                 y = box.center_y
             else:
-                y = box.top - 32.0 - index * 22.0
+                # Blender does not expose final socket draw coordinates. The
+                # first-row center is calibrated from Blender 5.1 at UI scale 2.
+                y = box.top - 37.0 - index * 22.0
                 y = min(box.top - 8.0, max(box.bottom + 8.0, y))
             sockets.append((f"socket:{direction}:{identifier}:{index}", y))
     return tuple(sockets)
@@ -108,6 +110,8 @@ def node_box(node, reference_scale=None):
         getattr(node, "name", ""),
         flags["is_reroute"],
     )
+    if box is not None and (box.width <= 0.0 or box.height <= 0.0):
+        return None
     if box is None or flags["is_reroute"]:
         return box
     return Box(
@@ -163,6 +167,31 @@ def has_ancestor(node, ancestor_ids):
     return False
 
 
+def ancestor_ids(nodes):
+    result = set()
+    for node in nodes:
+        parent = getattr(node, "parent", None)
+        while parent is not None:
+            result.add(node_identity(parent))
+            parent = getattr(parent, "parent", None)
+    return result
+
+
+def local_location_for_absolute(node, absolute_x, absolute_y):
+    parent = getattr(node, "parent", None)
+    if parent is None:
+        return absolute_x, absolute_y
+    parent_absolute = getattr(parent, "location_absolute", None)
+    if parent_absolute is None:
+        parent_absolute = getattr(parent, "location", None)
+    if parent_absolute is None:
+        return absolute_x, absolute_y
+    return (
+        absolute_x - float(parent_absolute.x),
+        absolute_y - float(parent_absolute.y),
+    )
+
+
 def snap_geometry(tree, selected_nodes):
     all_nodes = list(getattr(tree, "nodes", []))
     scale = reference_geometry_scale(all_nodes)
@@ -177,15 +206,15 @@ def snap_geometry(tree, selected_nodes):
         for node in roots
         if node_kind_flags(node)["is_frame"]
     }
-    parent_ids = {node_identity(getattr(node, "parent", None)) for node in roots}
+    moving_ancestor_ids = ancestor_ids(roots)
 
     targets = []
     for node in all_nodes:
         if node_identity(node) in selected_ids:
             continue
-        if has_ancestor(node, moving_frame_ids):
+        if node_identity(node) in moving_ancestor_ids:
             continue
-        if node_identity(getattr(node, "parent", None)) not in parent_ids:
+        if has_ancestor(node, moving_frame_ids):
             continue
         box = node_box(node, scale)
         if box is not None:

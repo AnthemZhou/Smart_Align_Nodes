@@ -1,6 +1,6 @@
 # Algorithm Plan
 
-This project starts from a clean design. The `v0.3.x` debug builds measured Blender node data before any alignment algorithm moved nodes. Interactive snapping begins in `v0.4.0`, and `v0.4.1` refines collapsed-node and Reroute anchors.
+This project starts from a clean design. The `v0.3.x` debug builds measured Blender node data before any alignment algorithm moved nodes. Interactive snapping begins in `v0.4.0`; later releases refine collapsed-node, Reroute, Frame, and placement behavior.
 
 ## Principles
 
@@ -110,10 +110,13 @@ M.left - A.right = B.left - M.right
 
 The same calculation is applied vertically with top and bottom boundaries. A spacing candidate is valid only when all three boxes have a real overlap on the orthogonal axis. Its measurement guides are drawn through that common overlap region.
 
+Two vertically arranged nodes can also snap to a configurable fixed boundary gap. The default is 30 node-space units, and the candidate is valid only when the two boxes overlap horizontally.
+
 ### Interaction
 
 - Ordinary `G` movement starts Smart Snap while the add-on is enabled.
 - Node placement started from the `Shift + A` menu uses the same Smart Snap operator.
+- A newly created node remains pending until Blender reports nonzero rendered dimensions; zero-size geometry is never used as a snap box.
 - `Shift + D` uses Blender's native duplicate operator, then starts Smart Snap on the duplicated selection.
 - Dragging an expanded or collapsed node by its title or body uses the same Smart Snap operator. Narrow left and right edge strips are excluded so socket linking remains usable.
 - Collapsed nodes use live rendered dimensions plus a collapsed-state canvas offset. Expanded nodes do not use Node Wrangler highlight-outline offsets.
@@ -124,4 +127,7 @@ The same calculation is applied vertically with top and bottom boundaries. A spa
 - `X` and `Y` constraints disable candidates on the other axis.
 - Alignment and spacing guides use solid centers with faded ends.
 - A selected Frame moves its descendants through Blender parenting; selected descendants are not translated twice.
+- Movement deltas are calculated in absolute canvas coordinates but written through each movement root's local `location`, which is the reliable writable coordinate for Frames.
 - Nodes inside an unselected Frame compare against siblings in the same parent context.
+- Nodes may compare against targets across Frame boundaries. A moving node's own ancestor Frames are excluded, while nodes inside other Frames remain valid targets.
+- Child movement is solved in absolute canvas coordinates and converted back through the parent Frame's current absolute position on every update, preventing drift when Blender auto-resizes the Frame.

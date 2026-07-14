@@ -342,7 +342,7 @@ def build_debug_report(tree, nodes, runtime_info=None):
     lines = [
         "Smart Align Nodes Debug",
         "=" * 24,
-        "report_version: 0.4.1",
+        "report_version: 0.4.2",
         f"node_tree: {getattr(tree, 'name', '<none>')}",
         f"selected_count: {len(nodes)}",
         f"tree_link_count: {len(getattr(tree, 'links', []))}",
