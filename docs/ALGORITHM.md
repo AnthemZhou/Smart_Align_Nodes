@@ -6,7 +6,7 @@ This project starts from a clean design. The first implementation step is a debu
 
 - Do not reuse earlier add-on layout code or earlier node-size assumptions.
 - Treat Blender-reported geometry as data to verify, not as truth.
-- Keep `v0.3.0` read-only. It must not move, create, delete, or relink nodes.
+- Keep the `v0.3.x` debug builds read-only. They must not move, create, delete, or relink nodes.
 - Use debug output to decide which geometry values are reliable.
 
 ## Data To Collect
@@ -24,6 +24,11 @@ For each selected node:
 - `height`
 - `dimensions`
 - raw boxes derived from width/height and dimensions
+- Blender version and display scaling values
+- observed `dimensions.x / width` ratio
+- normalized box candidate with its calculation basis
+- Frame ancestry and selected movement root
+- Reroute center anchor and candidate collision box
 - input sockets
 - output sockets
 - socket links
@@ -63,12 +68,14 @@ For a link:
 
 This requires reliable node boxes and socket positions, so it must be implemented after debug data has been reviewed.
 
-## Directional Alignment
+## Interactive Snapping
 
-Future directional alignment will only consider selected nodes as blockers.
+Direction-key alignment is no longer planned. Interactive movement will use guides similar to presentation and design applications.
 
-- Left or right movement checks vertical range overlap.
-- Up or down movement checks horizontal range overlap.
-- If selected nodes already overlap before alignment, separate them first.
+- Normal nodes can snap by left, horizontal center, right, top, vertical center, and bottom guides.
+- Reroute nodes use their center as the primary anchor.
+- A connected Reroute should prefer the vertical position of its Node Socket so the link can become horizontal.
+- Reroute chains should prefer equal center `y` values for horizontal routing and equal center `x` values for vertical routing.
+- Socket positions require a separate derivation strategy because Blender does not expose their draw coordinates through the public Python API.
 
-Unselected nodes should not block directional alignment.
+Snapping must work without enabling Blender's grid quantization.

@@ -1,7 +1,7 @@
 bl_info = {
     "name": "Smart Align Nodes",
     "author": "Smart Align Nodes contributors",
-    "version": (0, 3, 0),
+    "version": (0, 3, 1),
     "blender": (4, 0, 0),
     "location": "Node Editor > Sidebar > Smart Align",
     "description": "Debug selected Blender node geometry, sockets, and links.",

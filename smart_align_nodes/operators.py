@@ -1,7 +1,7 @@
 import bpy
 
 from .context import selected_nodes_from_context
-from .debug import build_debug_report, write_report_to_text_block
+from .debug import build_debug_report, collect_runtime_info, write_report_to_text_block
 
 
 class SMART_ALIGN_NODES_OT_debug_selected(bpy.types.Operator):
@@ -21,7 +21,8 @@ class SMART_ALIGN_NODES_OT_debug_selected(bpy.types.Operator):
             self.report({"WARNING"}, "No node tree found.")
             return {"CANCELLED"}
 
-        report = build_debug_report(tree, nodes)
+        runtime_info = collect_runtime_info(context, bpy)
+        report = build_debug_report(tree, nodes, runtime_info)
         write_report_to_text_block(bpy, report)
         print(report)
 
