@@ -1,0 +1,5931 @@
+{
+  "date": "2026-10-05",
+  "blender": "5.2.2",
+  "unit_tests": 84,
+  "gui_matrix": [
+    {
+      "test": "frame_only",
+      "pass": true,
+      "metrics": {
+        "nodes": 6,
+        "selected": 2,
+        "links": 2,
+        "moved": 1,
+        "fixed_conflicts": 0,
+        "partial_scopes": 0,
+        "width": 450.0,
+        "height": 680.0,
+        "solve_ms": 0.2325420209672302,
+        "socket_geometry": "estimated; logical port order is authoritative",
+        "generated_reroutes": 0,
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 0,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 0,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 2
+      },
+      "redraw_passes": 1,
+      "warnings": []
+    },
+    {
+      "test": "children_only",
+      "pass": true,
+      "metrics": {
+        "nodes": 6,
+        "selected": 2,
+        "links": 2,
+        "moved": 3,
+        "fixed_conflicts": 0,
+        "partial_scopes": 1,
+        "width": 304.0,
+        "height": 149.0,
+        "solve_ms": 0.29137497767806053,
+        "socket_geometry": "estimated; logical port order is authoritative",
+        "generated_reroutes": 0,
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 0,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 0,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 1
+      },
+      "redraw_passes": 1,
+      "warnings": []
+    },
+    {
+      "test": "partial_frame",
+      "pass": true,
+      "metrics": {
+        "nodes": 6,
+        "selected": 4,
+        "links": 2,
+        "moved": 5,
+        "fixed_conflicts": 0,
+        "partial_scopes": 0,
+        "width": 680.0,
+        "height": 725.0,
+        "solve_ms": 0.24729102733545005,
+        "socket_geometry": "estimated; logical port order is authoritative",
+        "generated_reroutes": 0,
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 0,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 0,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 2
+      },
+      "redraw_passes": 1,
+      "warnings": []
+    },
+    {
+      "test": "nested",
+      "pass": true,
+      "metrics": {
+        "nodes": 7,
+        "selected": 5,
+        "links": 2,
+        "moved": 6,
+        "fixed_conflicts": 0,
+        "partial_scopes": 0,
+        "width": 740.0,
+        "height": 755.0,
+        "solve_ms": 0.29308299417607486,
+        "socket_geometry": "estimated; logical port order is authoritative",
+        "generated_reroutes": 0,
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 0,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 0,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 2
+      },
+      "redraw_passes": 1,
+      "warnings": []
+    },
+    {
+      "test": "manual",
+      "pass": true,
+      "metrics": {
+        "nodes": 6,
+        "selected": 4,
+        "links": 2,
+        "moved": 3,
+        "fixed_conflicts": 0,
+        "partial_scopes": 0,
+        "width": 1140.0,
+        "height": 900.0,
+        "solve_ms": 0.24587498046457767,
+        "socket_geometry": "estimated; logical port order is authoritative",
+        "generated_reroutes": 0,
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 0,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 0,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 2
+      },
+      "redraw_passes": 2,
+      "warnings": []
+    },
+    {
+      "test": "collapsed",
+      "pass": true,
+      "metrics": {
+        "nodes": 6,
+        "selected": 4,
+        "links": 2,
+        "moved": 5,
+        "fixed_conflicts": 0,
+        "partial_scopes": 0,
+        "width": 680.0,
+        "height": 749.5,
+        "solve_ms": 0.24016702082008123,
+        "socket_geometry": "estimated; logical port order is authoritative",
+        "generated_reroutes": 0,
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 0,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 0,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 2
+      },
+      "redraw_passes": 1,
+      "warnings": []
+    },
+    {
+      "test": "offscreen",
+      "pass": true,
+      "metrics": {
+        "nodes": 6,
+        "selected": 4,
+        "links": 2,
+        "moved": 5,
+        "fixed_conflicts": 0,
+        "partial_scopes": 0,
+        "width": 680.0,
+        "height": 725.0,
+        "solve_ms": 0.25654101045802236,
+        "socket_geometry": "estimated; logical port order is authoritative",
+        "generated_reroutes": 0,
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 0,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 0,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 2
+      },
+      "redraw_passes": 1,
+      "warnings": []
+    },
+    {
+      "test": "ui_scale",
+      "pass": true,
+      "metrics": {
+        "nodes": 6,
+        "selected": 4,
+        "links": 2,
+        "moved": 5,
+        "fixed_conflicts": 0,
+        "partial_scopes": 0,
+        "width": 678.8,
+        "height": 718.9999984741212,
+        "solve_ms": 0.361625017831102,
+        "socket_geometry": "estimated; logical port order is authoritative",
+        "generated_reroutes": 0,
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 0,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 0,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 2
+      },
+      "redraw_passes": 1,
+      "warnings": []
+    },
+    {
+      "test": "cancel",
+      "pass": true
+    },
+    {
+      "test": "failure_rollback",
+      "pass": true
+    },
+    {
+      "test": "shortcut",
+      "pass": true,
+      "metrics": {
+        "nodes": 6,
+        "selected": 4,
+        "links": 2,
+        "moved": 5,
+        "fixed_conflicts": 0,
+        "partial_scopes": 0,
+        "width": 678.8,
+        "height": 718.9999984741212,
+        "solve_ms": 0.23320899344980717,
+        "socket_geometry": "estimated; logical port order is authoritative",
+        "generated_reroutes": 0,
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 0,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 0,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 2
+      },
+      "redraw_passes": 1,
+      "warnings": []
+    },
+    {
+      "test": "multi_input",
+      "pass": true,
+      "metrics": {
+        "nodes": 3,
+        "selected": 3,
+        "links": 2,
+        "moved": 3,
+        "fixed_conflicts": 0,
+        "partial_scopes": 0,
+        "width": 380.0,
+        "height": 405.59999999999997,
+        "solve_ms": 0.1821249898057431,
+        "socket_geometry": "estimated; logical port order is authoritative",
+        "generated_reroutes": 0,
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 0,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 0,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 2
+      },
+      "redraw_passes": 1,
+      "warnings": []
+    }
+  ],
+  "frame_routing_gui": [
+    {
+      "test": "junction_alignment_and_routing",
+      "pass": true,
+      "report": {
+        "feature": "Smart Align Layout Preview",
+        "metadata": {
+          "geometry_scale": 2.0,
+          "raw_nodes": [
+            {
+              "name": "Store Named Attribute.003",
+              "local": [
+                1980.546875,
+                -260.5412292480469
+              ],
+              "absolute": [
+                2045.03125,
+                -244.04122924804688
+              ],
+              "dimensions_raw": [
+                280.0,
+                228.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.020",
+              "kind": "NODE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                2045.03125,
+                2185.03125,
+                -244.04122924804688,
+                -358.0412292480469
+              ]
+            },
+            {
+              "name": "Switch.020",
+              "local": [
+                2170.546875,
+                -154.22560119628906
+              ],
+              "absolute": [
+                2235.03125,
+                -137.72560119628906
+              ],
+              "dimensions_raw": [
+                280.0,
+                238.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.020",
+              "kind": "NODE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                2235.03125,
+                2375.03125,
+                -137.72560119628906,
+                -256.72560119628906
+              ]
+            },
+            {
+              "name": "Named Attribute.001",
+              "local": [
+                1546.69921875,
+                -416.5000305175781
+              ],
+              "absolute": [
+                1611.18359375,
+                -400.0000305175781
+              ],
+              "dimensions_raw": [
+                280.0,
+                154.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.020",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                1611.18359375,
+                1751.18359375,
+                -400.0000305175781,
+                -477.0000305175781
+              ]
+            },
+            {
+              "name": "Group Input.023",
+              "local": [
+                1346.697265625,
+                -336.5
+              ],
+              "absolute": [
+                1411.181640625,
+                -320.0
+              ],
+              "dimensions_raw": [
+                280.0,
+                104.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.020",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                1411.181640625,
+                1551.181640625,
+                -320.0,
+                -372.0
+              ]
+            },
+            {
+              "name": "Reroute.051",
+              "local": [
+                1826.787109375,
+                -214.623291015625
+              ],
+              "absolute": [
+                1891.271484375,
+                -198.123291015625
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": "Frame.020",
+              "kind": "REROUTE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                1886.271484375,
+                1896.271484375,
+                -193.123291015625,
+                -203.123291015625
+              ]
+            },
+            {
+              "name": "Frame.020",
+              "local": [
+                64.484375,
+                16.5
+              ],
+              "absolute": [
+                64.484375,
+                16.5
+              ],
+              "dimensions_raw": [
+                4681.03125,
+                2267.72216796875
+              ],
+              "width_raw": 2340.515625,
+              "parent": null,
+              "kind": "FRAME",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                64.484375,
+                2405.0,
+                16.5,
+                -1117.361083984375
+              ]
+            },
+            {
+              "name": "Vector Math.014",
+              "local": [
+                1764.236328125,
+                -420.1185302734375
+              ],
+              "absolute": [
+                1828.720703125,
+                -403.6185302734375
+              ],
+              "dimensions_raw": [
+                280.0,
+                198.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.020",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                1828.720703125,
+                1968.720703125,
+                -403.6185302734375,
+                -502.6185302734375
+              ]
+            },
+            {
+              "name": "Combine XYZ.008",
+              "local": [
+                1580.5859375,
+                -533.63916015625
+              ],
+              "absolute": [
+                1645.0703125,
+                -517.13916015625
+              ],
+              "dimensions_raw": [
+                280.0,
+                238.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.020",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                1645.0703125,
+                1785.0703125,
+                -517.13916015625,
+                -636.13916015625
+              ]
+            },
+            {
+              "name": "Switch.021",
+              "local": [
+                86.650390625,
+                -759.6340942382812
+              ],
+              "absolute": [
+                151.134765625,
+                -743.1340942382812
+              ],
+              "dimensions_raw": [
+                280.0,
+                238.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.020",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                151.134765625,
+                291.134765625,
+                -743.1340942382812,
+                -862.1340942382812
+              ]
+            },
+            {
+              "name": "Math.001",
+              "local": [
+                286.78515625,
+                -630.585693359375
+              ],
+              "absolute": [
+                351.26953125,
+                -614.085693359375
+              ],
+              "dimensions_raw": [
+                280.0,
+                198.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.020",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                351.26953125,
+                491.26953125,
+                -614.085693359375,
+                -713.085693359375
+              ]
+            },
+            {
+              "name": "Switch.007",
+              "local": [
+                1379.71875,
+                -541.9441528320312
+              ],
+              "absolute": [
+                1444.203125,
+                -525.4441528320312
+              ],
+              "dimensions_raw": [
+                280.0,
+                238.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.020",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                1444.203125,
+                1584.203125,
+                -525.4441528320312,
+                -644.4441528320312
+              ]
+            },
+            {
+              "name": "Math.021",
+              "local": [
+                546.802734375,
+                -825.82568359375
+              ],
+              "absolute": [
+                611.287109375,
+                -809.32568359375
+              ],
+              "dimensions_raw": [
+                280.0,
+                198.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.020",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                611.287109375,
+                751.287109375,
+                -809.32568359375,
+                -908.32568359375
+              ]
+            },
+            {
+              "name": "Group Input.025",
+              "local": [
+                1175.517578125,
+                -556.5000610351562
+              ],
+              "absolute": [
+                1240.001953125,
+                -540.0000610351562
+              ],
+              "dimensions_raw": [
+                280.0,
+                104.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.020",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                1240.001953125,
+                1380.001953125,
+                -540.0000610351562,
+                -592.0000610351562
+              ]
+            },
+            {
+              "name": "Math.037",
+              "local": [
+                29.9736328125,
+                -633.5
+              ],
+              "absolute": [
+                -2271.5263671875,
+                -1298.5
+              ],
+              "dimensions_raw": [
+                280.0,
+                198.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                -2271.5263671875,
+                -2131.5263671875,
+                -1298.5,
+                -1397.5
+              ]
+            },
+            {
+              "name": "Frame.021",
+              "local": [
+                -2301.5,
+                -665.0
+              ],
+              "absolute": [
+                -2301.5,
+                -665.0
+              ],
+              "dimensions_raw": [
+                2969.947265625,
+                1525.0
+              ],
+              "width_raw": 1484.9736328125,
+              "parent": null,
+              "kind": "FRAME",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                -2301.5,
+                -816.5263671875,
+                -665.0,
+                -1427.5
+              ]
+            },
+            {
+              "name": "Reroute.081",
+              "local": [
+                35.0,
+                -1098.861083984375
+              ],
+              "absolute": [
+                99.484375,
+                -1082.361083984375
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": "Frame.020",
+              "kind": "REROUTE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                94.484375,
+                104.484375,
+                -1077.361083984375,
+                -1087.361083984375
+              ]
+            },
+            {
+              "name": "Math.039",
+              "local": [
+                755.357421875,
+                -905.5288696289062
+              ],
+              "absolute": [
+                819.841796875,
+                -889.0288696289062
+              ],
+              "dimensions_raw": [
+                280.0,
+                198.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.020",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                819.841796875,
+                959.841796875,
+                -889.0288696289062,
+                -988.0288696289062
+              ]
+            },
+            {
+              "name": "Switch.027",
+              "local": [
+                976.78125,
+                -825.1536254882812
+              ],
+              "absolute": [
+                1041.265625,
+                -808.6536254882812
+              ],
+              "dimensions_raw": [
+                280.0,
+                238.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.020",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                1041.265625,
+                1181.265625,
+                -808.6536254882812,
+                -927.6536254882812
+              ]
+            },
+            {
+              "name": "Group Input.029",
+              "local": [
+                541.28515625,
+                -755.7239990234375
+              ],
+              "absolute": [
+                605.76953125,
+                -739.2239990234375
+              ],
+              "dimensions_raw": [
+                280.0,
+                104.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.020",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                605.76953125,
+                745.76953125,
+                -739.2239990234375,
+                -791.2239990234375
+              ]
+            },
+            {
+              "name": "Switch.028",
+              "local": [
+                543.806640625,
+                -960.3095703125
+              ],
+              "absolute": [
+                608.291015625,
+                -943.8095703125
+              ],
+              "dimensions_raw": [
+                280.0,
+                238.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.020",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                608.291015625,
+                748.291015625,
+                -943.8095703125,
+                -1062.8095703125
+              ]
+            },
+            {
+              "name": "Reroute.091",
+              "local": [
+                143.822265625,
+                -204.63571166992188
+              ],
+              "absolute": [
+                208.306640625,
+                -188.13571166992188
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": "Frame.020",
+              "kind": "REROUTE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                203.306640625,
+                213.306640625,
+                -183.13571166992188,
+                -193.13571166992188
+              ]
+            },
+            {
+              "name": "Evaluate on Domain.001",
+              "local": [
+                351.263671875,
+                -933.72021484375
+              ],
+              "absolute": [
+                415.748046875,
+                -917.22021484375
+              ],
+              "dimensions_raw": [
+                280.0,
+                198.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.020",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                415.748046875,
+                555.748046875,
+                -917.22021484375,
+                -1016.22021484375
+              ]
+            },
+            {
+              "name": "Switch.029",
+              "local": [
+                1884.416015625,
+                -30.028209686279297
+              ],
+              "absolute": [
+                1948.900390625,
+                -13.528209686279297
+              ],
+              "dimensions_raw": [
+                280.0,
+                238.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.020",
+              "kind": "NODE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                1948.900390625,
+                2088.900390625,
+                -13.528209686279297,
+                -132.5282096862793
+              ]
+            },
+            {
+              "name": "Group Input.030",
+              "local": [
+                1665.66796875,
+                -46.52386474609375
+              ],
+              "absolute": [
+                1730.15234375,
+                -30.02386474609375
+              ],
+              "dimensions_raw": [
+                280.0,
+                104.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.020",
+              "kind": "NODE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                1730.15234375,
+                1870.15234375,
+                -30.02386474609375,
+                -82.02386474609375
+              ]
+            },
+            {
+              "name": "Switch.036",
+              "local": [
+                -111.52734375,
+                -119.99999237060547
+              ],
+              "absolute": [
+                -111.52734375,
+                -119.99999237060547
+              ],
+              "dimensions_raw": [
+                280.0,
+                238.0
+              ],
+              "width_raw": 140.0,
+              "parent": null,
+              "kind": "NODE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                -111.52734375,
+                28.47265625,
+                -119.99999237060547,
+                -238.99999237060547
+              ]
+            },
+            {
+              "name": "Group Input.052",
+              "local": [
+                981.609375,
+                -654.517333984375
+              ],
+              "absolute": [
+                1046.09375,
+                -638.017333984375
+              ],
+              "dimensions_raw": [
+                280.0,
+                104.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.020",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                1046.09375,
+                1186.09375,
+                -638.017333984375,
+                -690.017333984375
+              ]
+            },
+            {
+              "name": "Switch.044",
+              "local": [
+                1184.123046875,
+                -649.8167724609375
+              ],
+              "absolute": [
+                1248.607421875,
+                -633.3167724609375
+              ],
+              "dimensions_raw": [
+                280.0,
+                238.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.020",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                1248.607421875,
+                1388.607421875,
+                -633.3167724609375,
+                -752.3167724609375
+              ]
+            },
+            {
+              "name": "Reroute.097",
+              "local": [
+                877.400390625,
+                -849.6705932617188
+              ],
+              "absolute": [
+                941.884765625,
+                -833.1705932617188
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": "Frame.020",
+              "kind": "REROUTE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                936.884765625,
+                946.884765625,
+                -828.1705932617188,
+                -838.1705932617188
+              ]
+            },
+            {
+              "name": "Switch.045",
+              "local": [
+                29.974609375,
+                -30.0
+              ],
+              "absolute": [
+                3228.474609375,
+                -100.0
+              ],
+              "dimensions_raw": [
+                280.0,
+                238.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.023",
+              "kind": "NODE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                3228.474609375,
+                3368.474609375,
+                -100.0,
+                -219.0
+              ]
+            },
+            {
+              "name": "Frame.023",
+              "local": [
+                30.0,
+                -30.0
+              ],
+              "absolute": [
+                3198.5,
+                -70.0
+              ],
+              "dimensions_raw": [
+                400.0,
+                358.0
+              ],
+              "width_raw": 200.0,
+              "parent": "Frame.028",
+              "kind": "FRAME",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                3198.5,
+                3398.5,
+                -70.0,
+                -249.0
+              ]
+            },
+            {
+              "name": "Switch.046",
+              "local": [
+                725.361328125,
+                -664.4773559570312
+              ],
+              "absolute": [
+                789.845703125,
+                -647.9773559570312
+              ],
+              "dimensions_raw": [
+                280.0,
+                238.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.020",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                789.845703125,
+                929.845703125,
+                -647.9773559570312,
+                -766.9773559570312
+              ]
+            },
+            {
+              "name": "Boolean Math.011",
+              "local": [
+                537.228515625,
+                -664.8902587890625
+              ],
+              "absolute": [
+                601.712890625,
+                -648.3902587890625
+              ],
+              "dimensions_raw": [
+                280.0,
+                150.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.020",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                601.712890625,
+                741.712890625,
+                -648.3902587890625,
+                -723.3902587890625
+              ]
+            },
+            {
+              "name": "Frame.028",
+              "local": [
+                3168.5,
+                -40.0
+              ],
+              "absolute": [
+                3168.5,
+                -40.0
+              ],
+              "dimensions_raw": [
+                520.0,
+                478.0
+              ],
+              "width_raw": 260.0,
+              "parent": null,
+              "kind": "FRAME",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                3168.5,
+                3428.5,
+                -40.0,
+                -279.0
+              ]
+            },
+            {
+              "name": "Reroute.156",
+              "local": [
+                -447.9609375,
+                -1846.16943359375
+              ],
+              "absolute": [
+                -447.9609375,
+                -1846.16943359375
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": null,
+              "kind": "REROUTE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                -452.9609375,
+                -442.9609375,
+                -1841.16943359375,
+                -1851.16943359375
+              ]
+            },
+            {
+              "name": "Reroute.157",
+              "local": [
+                -701.193359375,
+                918.2101440429688
+              ],
+              "absolute": [
+                -701.193359375,
+                918.2101440429688
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": null,
+              "kind": "REROUTE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                -706.193359375,
+                -696.193359375,
+                923.2101440429688,
+                913.2101440429688
+              ]
+            },
+            {
+              "name": "Reroute.169",
+              "local": [
+                -808.40234375,
+                -1894.01220703125
+              ],
+              "absolute": [
+                -808.40234375,
+                -1894.01220703125
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": null,
+              "kind": "REROUTE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                -813.40234375,
+                -803.40234375,
+                -1889.01220703125,
+                -1899.01220703125
+              ]
+            },
+            {
+              "name": "Reroute.058",
+              "local": [
+                1224.693359375,
+                140.0
+              ],
+              "absolute": [
+                1224.693359375,
+                140.0
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": null,
+              "kind": "REROUTE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                1219.693359375,
+                1229.693359375,
+                145.0,
+                135.0
+              ]
+            },
+            {
+              "name": "Reroute.183",
+              "local": [
+                1449.9736328125,
+                -35.0
+              ],
+              "absolute": [
+                -851.5263671875,
+                -700.0
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": "Frame.021",
+              "kind": "REROUTE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                -856.5263671875,
+                -846.5263671875,
+                -695.0,
+                -705.0
+              ]
+            },
+            {
+              "name": "Reroute.188",
+              "local": [
+                -459.998046875,
+                -1720.0001220703125
+              ],
+              "absolute": [
+                -459.998046875,
+                -1720.0001220703125
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": null,
+              "kind": "REROUTE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                -464.998046875,
+                -454.998046875,
+                -1715.0001220703125,
+                -1725.0001220703125
+              ]
+            },
+            {
+              "name": "Reroute.197",
+              "local": [
+                461.384765625,
+                -678.82177734375
+              ],
+              "absolute": [
+                525.869140625,
+                -662.32177734375
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": "Frame.020",
+              "kind": "REROUTE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                520.869140625,
+                530.869140625,
+                -657.32177734375,
+                -667.32177734375
+              ]
+            },
+            {
+              "name": "Fixture External Inputs",
+              "local": [
+                -4000.0,
+                3000.0
+              ],
+              "absolute": [
+                -4000.0,
+                3000.0
+              ],
+              "dimensions_raw": [
+                280.0,
+                696.0
+              ],
+              "width_raw": 140.0,
+              "parent": null,
+              "kind": "NODE",
+              "selected": false,
+              "hide": true,
+              "normalized_box": [
+                -3999.5,
+                -3859.5,
+                3003.5,
+                2655.5
+              ]
+            }
+          ],
+          "generated_reroutes": [],
+          "snapshot_ms": 2.2882090124767274,
+          "write_ms": 3.6245830124244094,
+          "verified_after_redraw": true,
+          "redraw_passes": 1,
+          "total_ms": 200.42512501822785,
+          "wire_routes": [
+            {
+              "source": "Reroute.197",
+              "target": "Switch.007",
+              "output": 0,
+              "input": 1,
+              "points": [
+                [
+                  550.26953125,
+                  -696.7279052734375
+                ],
+                [
+                  550.26953125,
+                  -632.3167724609375
+                ],
+                [
+                  1420.203125,
+                  -632.3167724609375
+                ],
+                [
+                  1420.203125,
+                  -607.4441528320312
+                ]
+              ]
+            }
+          ],
+          "routing_search": {
+            "check_complete": true,
+            "pair_checks": 3047,
+            "pair_budget": 100000,
+            "max_routes": 24,
+            "routed_links": 1
+          },
+          "diagnostic_ms": 6.363041000440717
+        },
+        "links": [
+          {
+            "source": "Reroute.051",
+            "target": "Switch.020",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 82.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "False",
+            "multi_input": false
+          },
+          {
+            "source": "Store Named Attribute.003",
+            "target": "Switch.020",
+            "output": 0,
+            "input": 2,
+            "sort_id": 0,
+            "source_offset": 37.0,
+            "target_offset": 104.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Geometry",
+            "target_socket": "True",
+            "multi_input": false
+          },
+          {
+            "source": "Switch.029",
+            "target": "Switch.020",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Switch",
+            "multi_input": false
+          },
+          {
+            "source": "Group Input.023",
+            "target": "Named Attribute.001",
+            "output": 26,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 37.0,
+            "target_offset": 37.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_26",
+            "target_socket": "Name",
+            "multi_input": false
+          },
+          {
+            "source": "Group Input.023",
+            "target": "Store Named Attribute.003",
+            "output": 26,
+            "input": 2,
+            "sort_id": 0,
+            "source_offset": 37.0,
+            "target_offset": 81.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_26",
+            "target_socket": "Name",
+            "multi_input": false
+          },
+          {
+            "source": "Vector Math.014",
+            "target": "Store Named Attribute.003",
+            "output": 0,
+            "input": 3,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 103.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Vector",
+            "target_socket": "Value",
+            "multi_input": false
+          },
+          {
+            "source": "Reroute.051",
+            "target": "Store Named Attribute.003",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 37.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Geometry",
+            "multi_input": false
+          },
+          {
+            "source": "Named Attribute.001",
+            "target": "Vector Math.014",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 37.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Attribute",
+            "target_socket": "Vector",
+            "multi_input": false
+          },
+          {
+            "source": "Combine XYZ.008",
+            "target": "Vector Math.014",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 37.0,
+            "target_offset": 82.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Vector",
+            "target_socket": "Vector_001",
+            "multi_input": false
+          },
+          {
+            "source": "Reroute.169",
+            "target": "Switch.021",
+            "output": 0,
+            "input": 2,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 104.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "True",
+            "multi_input": false
+          },
+          {
+            "source": "Reroute.188",
+            "target": "Switch.021",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Switch",
+            "multi_input": false
+          },
+          {
+            "source": "Switch.021",
+            "target": "Math.001",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 82.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Value_001",
+            "multi_input": false
+          },
+          {
+            "source": "Switch.044",
+            "target": "Switch.007",
+            "output": 0,
+            "input": 2,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 104.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "True",
+            "multi_input": false
+          },
+          {
+            "source": "Reroute.197",
+            "target": "Math.021",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Value",
+            "multi_input": false
+          },
+          {
+            "source": "Group Input.025",
+            "target": "Switch.007",
+            "output": 29,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 37.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_29",
+            "target_socket": "Switch",
+            "multi_input": false
+          },
+          {
+            "source": "Reroute.091",
+            "target": "Reroute.051",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Input",
+            "multi_input": false
+          },
+          {
+            "source": "Reroute.157",
+            "target": "Math.021",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 82.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Value_001",
+            "multi_input": false
+          },
+          {
+            "source": "Math.021",
+            "target": "Math.039",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Value",
+            "target_socket": "Value",
+            "multi_input": false
+          },
+          {
+            "source": "Switch.028",
+            "target": "Math.039",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 82.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Value_001",
+            "multi_input": false
+          },
+          {
+            "source": "Math.037",
+            "target": "Reroute.081",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Value",
+            "target_socket": "Input",
+            "multi_input": false
+          },
+          {
+            "source": "Reroute.097",
+            "target": "Switch.027",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 82.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "False",
+            "multi_input": false
+          },
+          {
+            "source": "Switch.036",
+            "target": "Reroute.091",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Input",
+            "multi_input": false
+          },
+          {
+            "source": "Reroute.081",
+            "target": "Switch.028",
+            "output": 0,
+            "input": 2,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 104.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "True",
+            "multi_input": false
+          },
+          {
+            "source": "Math.039",
+            "target": "Switch.027",
+            "output": 0,
+            "input": 2,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 104.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Value",
+            "target_socket": "True",
+            "multi_input": false
+          },
+          {
+            "source": "Evaluate on Domain.001",
+            "target": "Switch.028",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 37.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Value",
+            "target_socket": "Switch",
+            "multi_input": false
+          },
+          {
+            "source": "Reroute.183",
+            "target": "Evaluate on Domain.001",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 37.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Value",
+            "multi_input": false
+          },
+          {
+            "source": "Reroute.058",
+            "target": "Switch.029",
+            "output": 0,
+            "input": 2,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 104.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "True",
+            "multi_input": false
+          },
+          {
+            "source": "Group Input.030",
+            "target": "Switch.029",
+            "output": 25,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 37.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_25",
+            "target_socket": "Switch",
+            "multi_input": false
+          },
+          {
+            "source": "Switch.007",
+            "target": "Combine XYZ.008",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 59.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Y",
+            "multi_input": false
+          },
+          {
+            "source": "Switch.027",
+            "target": "Switch.044",
+            "output": 0,
+            "input": 2,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 104.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "True",
+            "multi_input": false
+          },
+          {
+            "source": "Reroute.097",
+            "target": "Switch.044",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 82.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "False",
+            "multi_input": false
+          },
+          {
+            "source": "Math.021",
+            "target": "Reroute.097",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Value",
+            "target_socket": "Input",
+            "multi_input": false
+          },
+          {
+            "source": "Group Input.052",
+            "target": "Switch.044",
+            "output": 13,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 37.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_13",
+            "target_socket": "Switch",
+            "multi_input": false
+          },
+          {
+            "source": "Switch.020",
+            "target": "Switch.045",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 82.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "False",
+            "multi_input": false
+          },
+          {
+            "source": "Group Input.029",
+            "target": "Switch.046",
+            "output": 24,
+            "input": 2,
+            "sort_id": 0,
+            "source_offset": 37.0,
+            "target_offset": 104.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_24",
+            "target_socket": "True",
+            "multi_input": false
+          },
+          {
+            "source": "Reroute.156",
+            "target": "Boolean Math.011",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 37.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Boolean",
+            "multi_input": false
+          },
+          {
+            "source": "Boolean Math.011",
+            "target": "Switch.046",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 37.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Boolean",
+            "target_socket": "Switch",
+            "multi_input": false
+          },
+          {
+            "source": "Switch.046",
+            "target": "Switch.027",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Switch",
+            "multi_input": false
+          },
+          {
+            "source": "Reroute.197",
+            "target": "Switch.007",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 82.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "False",
+            "multi_input": false
+          },
+          {
+            "source": "Math.001",
+            "target": "Reroute.197",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Value",
+            "target_socket": "Input",
+            "multi_input": false
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Reroute.058",
+            "output": 30,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 309.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_30",
+            "target_socket": "Input",
+            "multi_input": false
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Reroute.188",
+            "output": 30,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 309.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_30",
+            "target_socket": "Input",
+            "multi_input": false
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Reroute.157",
+            "output": 32,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 329.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_32",
+            "target_socket": "Input",
+            "multi_input": false
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Reroute.156",
+            "output": 30,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 309.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_30",
+            "target_socket": "Input",
+            "multi_input": false
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Reroute.169",
+            "output": 32,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 329.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_32",
+            "target_socket": "Input",
+            "multi_input": false
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Switch.045",
+            "output": 30,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 309.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_30",
+            "target_socket": "Switch",
+            "multi_input": false
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Switch.045",
+            "output": 31,
+            "input": 2,
+            "sort_id": 0,
+            "source_offset": 319.0,
+            "target_offset": 104.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_31",
+            "target_socket": "True",
+            "multi_input": false
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Math.037",
+            "output": 32,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 329.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_32",
+            "target_socket": "Value",
+            "multi_input": false
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Switch.036",
+            "output": 30,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 309.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_30",
+            "target_socket": "Switch",
+            "multi_input": false
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Switch.036",
+            "output": 31,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 319.0,
+            "target_offset": 82.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_31",
+            "target_socket": "False",
+            "multi_input": false
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Switch.036",
+            "output": 31,
+            "input": 2,
+            "sort_id": 0,
+            "source_offset": 319.0,
+            "target_offset": 104.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_31",
+            "target_socket": "True",
+            "multi_input": false
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Reroute.183",
+            "output": 30,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 309.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_30",
+            "target_socket": "Input",
+            "multi_input": false
+          }
+        ],
+        "target_absolute_locations": {
+          "Store Named Attribute.003": [
+            2045.03125,
+            -244.04122924804688
+          ],
+          "Switch.020": [
+            2235.03125,
+            -137.72560119628906
+          ],
+          "Named Attribute.001": [
+            1588.720703125,
+            -400.0000305175781
+          ],
+          "Group Input.023": [
+            1411.181640625,
+            -400.0000305175781
+          ],
+          "Reroute.051": [
+            1891.271484375,
+            -198.123291015625
+          ],
+          "Frame.020": [
+            64.484375,
+            16.5
+          ],
+          "Vector Math.014": [
+            1828.720703125,
+            -416.72210693359375
+          ],
+          "Combine XYZ.008": [
+            1588.720703125,
+            -501.44415283203125
+          ],
+          "Switch.021": [
+            151.134765625,
+            -708.7279052734375
+          ],
+          "Math.001": [
+            351.26953125,
+            -661.7279052734375
+          ],
+          "Switch.007": [
+            1444.203125,
+            -525.4441528320312
+          ],
+          "Math.021": [
+            630.869140625,
+            -798.1705932617188
+          ],
+          "Group Input.025": [
+            1240.001953125,
+            -548.4441528320312
+          ],
+          "Math.037": [
+            -2271.5263671875,
+            -1298.5
+          ],
+          "Frame.021": [
+            -2301.5,
+            -665.0
+          ],
+          "Reroute.081": [
+            99.484375,
+            -1082.361083984375
+          ],
+          "Math.039": [
+            801.265625,
+            -862.4368896484375
+          ],
+          "Switch.027": [
+            964.203125,
+            -751.1705932617188
+          ],
+          "Group Input.029": [
+            605.76953125,
+            -739.2239990234375
+          ],
+          "Switch.028": [
+            608.291015625,
+            -909.4368896484375
+          ],
+          "Reroute.091": [
+            208.306640625,
+            -188.13571166992188
+          ],
+          "Evaluate on Domain.001": [
+            415.748046875,
+            -932.4368896484375
+          ],
+          "Switch.029": [
+            1948.900390625,
+            -13.528209686279297
+          ],
+          "Group Input.030": [
+            1730.15234375,
+            -30.02386474609375
+          ],
+          "Switch.036": [
+            -111.52734375,
+            -119.99999237060547
+          ],
+          "Group Input.052": [
+            1046.09375,
+            -656.3167724609375
+          ],
+          "Switch.044": [
+            1204.203125,
+            -682.1705932617188
+          ],
+          "Reroute.097": [
+            800.869140625,
+            -833.1705932617188
+          ],
+          "Switch.045": [
+            3228.474609375,
+            -100.0
+          ],
+          "Frame.023": [
+            3198.5,
+            -70.0
+          ],
+          "Switch.046": [
+            768.607421875,
+            -672.2239990234375
+          ],
+          "Boolean Math.011": [
+            601.712890625,
+            -648.3902587890625
+          ],
+          "Frame.028": [
+            3168.5,
+            -40.0
+          ],
+          "Reroute.156": [
+            -447.9609375,
+            -1846.16943359375
+          ],
+          "Reroute.157": [
+            -701.193359375,
+            918.2101440429688
+          ],
+          "Reroute.169": [
+            -808.40234375,
+            -1894.01220703125
+          ],
+          "Reroute.058": [
+            1224.693359375,
+            140.0
+          ],
+          "Reroute.183": [
+            -851.5263671875,
+            -700.0
+          ],
+          "Reroute.188": [
+            -459.998046875,
+            -1720.0001220703125
+          ],
+          "Reroute.197": [
+            521.26953125,
+            -696.7279052734375
+          ],
+          "Fixture External Inputs": [
+            -4000.0,
+            3000.0
+          ]
+        },
+        "move_reasons": {
+          "Boolean Math.011": "Selected layout unit",
+          "Combine XYZ.008": "Selected layout unit",
+          "Evaluate on Domain.001": "Selected layout unit",
+          "Group Input.023": "Selected layout unit",
+          "Group Input.025": "Selected layout unit",
+          "Group Input.029": "Selected layout unit",
+          "Group Input.052": "Selected layout unit",
+          "Math.001": "Selected layout unit",
+          "Math.021": "Selected layout unit",
+          "Math.039": "Selected layout unit",
+          "Named Attribute.001": "Selected layout unit",
+          "Reroute.097": "Internal reroute socket alignment",
+          "Reroute.197": "Internal reroute socket alignment",
+          "Switch.007": "Selected layout unit",
+          "Switch.021": "Selected layout unit",
+          "Switch.027": "Selected layout unit",
+          "Switch.028": "Selected layout unit",
+          "Switch.044": "Selected layout unit",
+          "Switch.046": "Selected layout unit",
+          "Vector Math.014": "Selected layout unit"
+        },
+        "alignment_decisions": {},
+        "partial_results": [
+          {
+            "nodes": [
+              "Boolean Math.011",
+              "Combine XYZ.008",
+              "Evaluate on Domain.001",
+              "Group Input.023",
+              "Group Input.025",
+              "Group Input.029",
+              "Group Input.052",
+              "Math.001",
+              "Math.021",
+              "Math.039",
+              "Named Attribute.001",
+              "Reroute.097",
+              "Reroute.197",
+              "Switch.007",
+              "Switch.021",
+              "Switch.027",
+              "Switch.028",
+              "Switch.044",
+              "Switch.046",
+              "Vector Math.014"
+            ],
+            "method": "local",
+            "reason": "internal_wire_obstruction",
+            "moved": 16
+          }
+        ],
+        "warnings": [
+          "Internal selection wires may still be obstructed; see Smart Align Layout Debug."
+        ],
+        "metrics": {
+          "nodes": 41,
+          "selected": 20,
+          "links": 52,
+          "moved": 17,
+          "fixed_conflicts": 0,
+          "partial_scopes": 1,
+          "width": 1817.5859375,
+          "height": 631.4368896484375,
+          "solve_ms": 61.81866698898375,
+          "socket_geometry": "estimated; logical port order is authoritative",
+          "generated_reroutes": 4,
+          "node_overlaps": 0,
+          "node_overlap_check_complete": true,
+          "estimated_wire_node_hits": 1,
+          "wire_check_complete": true,
+          "endpoint_chord_crossings": 1,
+          "crossing_check_complete": true,
+          "diagnostic_pair_budget": 100000,
+          "wire_scope": "selection_internal",
+          "internal_links_checked": 22
+        }
+      }
+    },
+    {
+      "test": "repeat_no_growth_or_drift",
+      "pass": true
+    },
+    {
+      "test": "undo_restores_nodes_and_links",
+      "pass": true
+    },
+    {
+      "test": "redo_restores_routes",
+      "pass": true
+    },
+    {
+      "test": "frame_toggle_same_card_layout",
+      "pass": true
+    },
+    {
+      "test": "injected_failure_restores_existing_routes",
+      "pass": true
+    },
+    {
+      "test": "unselected_generated_routes_preserved",
+      "pass": true
+    },
+    {
+      "test": "muted_generated_routes_preserved",
+      "pass": true
+    }
+  ],
+  "earlier_fixture_gui": {
+    "partial_eight_layout": [
+      {
+        "test": "hybrid_alignment_and_fixed_nodes",
+        "pass": true,
+        "report": {
+          "feature": "Smart Align Layout Preview",
+          "metadata": {
+            "geometry_scale": 2.0,
+            "raw_nodes": [
+              {
+                "name": "Set Position.002",
+                "local": [
+                  2624.3837890625,
+                  -170.00006103515625
+                ],
+                "absolute": [
+                  1191.853515625,
+                  239.99993896484375
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  184.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  1191.853515625,
+                  1331.853515625,
+                  239.99993896484375,
+                  147.99993896484375
+                ]
+              },
+              {
+                "name": "Transform Point.001",
+                "local": [
+                  2384.3837890625,
+                  -469.9999694824219
+                ],
+                "absolute": [
+                  951.853515625,
+                  -59.999969482421875
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  140.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": true,
+                "hide": false,
+                "normalized_box": [
+                  951.853515625,
+                  1091.853515625,
+                  -59.999969482421875,
+                  -129.99996948242188
+                ]
+              },
+              {
+                "name": "Reroute.077",
+                "local": [
+                  35.0,
+                  -690.775146484375
+                ],
+                "absolute": [
+                  -1397.5302734375,
+                  -280.7751159667969
+                ],
+                "dimensions_raw": [
+                  20.0,
+                  20.0
+                ],
+                "width_raw": 20.0,
+                "parent": "Frame.021",
+                "kind": "REROUTE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  -1402.5302734375,
+                  -1392.5302734375,
+                  -275.7751159667969,
+                  -285.7751159667969
+                ]
+              },
+              {
+                "name": "Vector Math.015",
+                "local": [
+                  1664.3818359375,
+                  -430.00006103515625
+                ],
+                "absolute": [
+                  231.8515625,
+                  -20.00006103515625
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  198.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": true,
+                "hide": false,
+                "normalized_box": [
+                  231.8515625,
+                  371.8515625,
+                  -20.00006103515625,
+                  -119.00006103515625
+                ]
+              },
+              {
+                "name": "Combine XYZ.009",
+                "local": [
+                  1432.5302734375,
+                  -589.0528564453125
+                ],
+                "absolute": [
+                  0.0,
+                  -179.05282592773438
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  238.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": true,
+                "hide": false,
+                "normalized_box": [
+                  0.0,
+                  140.0,
+                  -179.05282592773438,
+                  -298.0528259277344
+                ]
+              },
+              {
+                "name": "Math.037",
+                "local": [
+                  1084.3837890625,
+                  -473.2862243652344
+                ],
+                "absolute": [
+                  -348.146484375,
+                  -63.286224365234375
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  198.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  -348.146484375,
+                  -208.146484375,
+                  -63.286224365234375,
+                  -162.28622436523438
+                ]
+              },
+              {
+                "name": "Switch.023",
+                "local": [
+                  1237.80859375,
+                  -65.28665161132812
+                ],
+                "absolute": [
+                  -194.7216796875,
+                  344.7133483886719
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  238.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  -194.7216796875,
+                  -54.7216796875,
+                  344.7133483886719,
+                  225.71334838867188
+                ]
+              },
+              {
+                "name": "Compare.004",
+                "local": [
+                  1037.578125,
+                  -195.29595947265625
+                ],
+                "absolute": [
+                  -394.9521484375,
+                  214.70404052734375
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  238.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  -394.9521484375,
+                  -254.9521484375,
+                  214.70404052734375,
+                  95.70404052734375
+                ]
+              },
+              {
+                "name": "Switch.024",
+                "local": [
+                  2824.3828125,
+                  -30.000030517578125
+                ],
+                "absolute": [
+                  1391.8525390625,
+                  379.9999694824219
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  238.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  1391.8525390625,
+                  1531.8525390625,
+                  379.9999694824219,
+                  260.9999694824219
+                ]
+              },
+              {
+                "name": "Reroute.079",
+                "local": [
+                  2504.3837890625,
+                  -130.0
+                ],
+                "absolute": [
+                  1071.853515625,
+                  280.0
+                ],
+                "dimensions_raw": [
+                  20.0,
+                  20.0
+                ],
+                "width_raw": 20.0,
+                "parent": "Frame.021",
+                "kind": "REROUTE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  1066.853515625,
+                  1076.853515625,
+                  285.0,
+                  275.0
+                ]
+              },
+              {
+                "name": "Group Input.027",
+                "local": [
+                  2535.912109375,
+                  -30.000030517578125
+                ],
+                "absolute": [
+                  1103.3818359375,
+                  379.9999694824219
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  104.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  1103.3818359375,
+                  1243.3818359375,
+                  379.9999694824219,
+                  327.9999694824219
+                ]
+              },
+              {
+                "name": "Frame.021",
+                "local": [
+                  -1432.5302734375,
+                  410.0
+                ],
+                "absolute": [
+                  -1432.5302734375,
+                  410.0
+                ],
+                "dimensions_raw": [
+                  5989.060546875,
+                  2650.000244140625
+                ],
+                "width_raw": 2994.5302734375,
+                "parent": null,
+                "kind": "FRAME",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  -1432.5302734375,
+                  1562.0,
+                  410.0,
+                  -915.0001220703125
+                ]
+              },
+              {
+                "name": "Mix",
+                "local": [
+                  1249.9833984375,
+                  -694.9619140625
+                ],
+                "absolute": [
+                  -182.546875,
+                  -284.9618835449219
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  242.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  -182.546875,
+                  -42.546875,
+                  -284.9618835449219,
+                  -405.9618835449219
+                ]
+              },
+              {
+                "name": "Transform Point.004",
+                "local": [
+                  743.3857421875,
+                  -1078.06494140625
+                ],
+                "absolute": [
+                  -689.14453125,
+                  -668.06494140625
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  140.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  -689.14453125,
+                  -549.14453125,
+                  -668.06494140625,
+                  -738.06494140625
+                ]
+              },
+              {
+                "name": "Vector Math.017",
+                "local": [
+                  1484.3818359375,
+                  -410.0
+                ],
+                "absolute": [
+                  51.8515625,
+                  0.0
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  198.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": true,
+                "hide": false,
+                "normalized_box": [
+                  51.8515625,
+                  191.8515625,
+                  0.0,
+                  -99.0
+                ]
+              },
+              {
+                "name": "Vector Math.018",
+                "local": [
+                  1824.3828125,
+                  -410.0
+                ],
+                "absolute": [
+                  391.8525390625,
+                  0.0
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  198.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": true,
+                "hide": false,
+                "normalized_box": [
+                  391.8525390625,
+                  531.8525390625,
+                  0.0,
+                  -99.0
+                ]
+              },
+              {
+                "name": "Mix.001",
+                "local": [
+                  2024.3837890625,
+                  -430.00006103515625
+                ],
+                "absolute": [
+                  591.853515625,
+                  -20.00006103515625
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  242.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": true,
+                "hide": false,
+                "normalized_box": [
+                  591.853515625,
+                  731.853515625,
+                  -20.00006103515625,
+                  -141.00006103515625
+                ]
+              },
+              {
+                "name": "Vector Math.019",
+                "local": [
+                  1655.8935546875,
+                  -577.3206787109375
+                ],
+                "absolute": [
+                  223.36328125,
+                  -167.32064819335938
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  198.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": true,
+                "hide": false,
+                "normalized_box": [
+                  223.36328125,
+                  363.36328125,
+                  -167.32064819335938,
+                  -266.3206481933594
+                ]
+              },
+              {
+                "name": "Reroute.093",
+                "local": [
+                  1384.3837890625,
+                  -469.9999694824219
+                ],
+                "absolute": [
+                  -48.146484375,
+                  -59.999969482421875
+                ],
+                "dimensions_raw": [
+                  20.0,
+                  20.0
+                ],
+                "width_raw": 20.0,
+                "parent": "Frame.021",
+                "kind": "REROUTE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  -53.146484375,
+                  -43.146484375,
+                  -54.999969482421875,
+                  -64.99996948242188
+                ]
+              },
+              {
+                "name": "Switch.031",
+                "local": [
+                  2204.3837890625,
+                  -450.0
+                ],
+                "absolute": [
+                  771.853515625,
+                  -40.0
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  238.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": true,
+                "hide": false,
+                "normalized_box": [
+                  771.853515625,
+                  911.853515625,
+                  -40.0,
+                  -159.0
+                ]
+              },
+              {
+                "name": "Reroute.113",
+                "local": [
+                  1404.1748046875,
+                  -658.6690673828125
+                ],
+                "absolute": [
+                  -28.35546875,
+                  -248.66903686523438
+                ],
+                "dimensions_raw": [
+                  20.0,
+                  20.0
+                ],
+                "width_raw": 20.0,
+                "parent": "Frame.021",
+                "kind": "REROUTE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  -33.35546875,
+                  -23.35546875,
+                  -243.66903686523438,
+                  -253.66903686523438
+                ]
+              },
+              {
+                "name": "Reroute.134",
+                "local": [
+                  1475.9111328125,
+                  -1290.0001220703125
+                ],
+                "absolute": [
+                  43.380859375,
+                  -880.0001220703125
+                ],
+                "dimensions_raw": [
+                  20.0,
+                  20.0
+                ],
+                "width_raw": 20.0,
+                "parent": "Frame.021",
+                "kind": "REROUTE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  38.380859375,
+                  48.380859375,
+                  -875.0001220703125,
+                  -885.0001220703125
+                ]
+              },
+              {
+                "name": "Reroute.183",
+                "local": [
+                  2504.3837890625,
+                  -270.0
+                ],
+                "absolute": [
+                  1071.853515625,
+                  140.0
+                ],
+                "dimensions_raw": [
+                  20.0,
+                  20.0
+                ],
+                "width_raw": 20.0,
+                "parent": "Frame.021",
+                "kind": "REROUTE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  1066.853515625,
+                  1076.853515625,
+                  145.0,
+                  135.0
+                ]
+              },
+              {
+                "name": "Fixture External Inputs",
+                "local": [
+                  -4000.0,
+                  3000.0
+                ],
+                "absolute": [
+                  -4000.0,
+                  3000.0
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  736.0
+                ],
+                "width_raw": 140.0,
+                "parent": null,
+                "kind": "NODE",
+                "selected": false,
+                "hide": true,
+                "normalized_box": [
+                  -3999.5,
+                  -3859.5,
+                  3003.5,
+                  2635.5
+                ]
+              }
+            ],
+            "generated_reroutes": [],
+            "snapshot_ms": 1.7599590064492077,
+            "write_ms": 0.97870800527744,
+            "verified_after_redraw": true,
+            "redraw_passes": 1,
+            "total_ms": 92.38770802039653,
+            "wire_routes": [
+              {
+                "source": "Combine XYZ.009",
+                "target": "Vector Math.019",
+                "output": 0,
+                "input": 1,
+                "points": [
+                  [
+                    164.0,
+                    -451.5
+                  ],
+                  [
+                    164.0,
+                    -198.5
+                  ]
+                ]
+              }
+            ],
+            "routing_search": {
+              "check_complete": true,
+              "pair_checks": 352,
+              "pair_budget": 100000,
+              "max_routes": 24,
+              "routed_links": 1
+            },
+            "diagnostic_ms": 1.7733330023474991
+          },
+          "links": [
+            {
+              "source": "Reroute.077",
+              "target": "Transform Point.001",
+              "output": 0,
+              "input": 1,
+              "sort_id": 0,
+              "source_offset": 5.0,
+              "target_offset": 56.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Output",
+              "target_socket": "Transform",
+              "multi_input": false
+            },
+            {
+              "source": "Reroute.079",
+              "target": "Set Position.002",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 5.0,
+              "target_offset": 37.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Output",
+              "target_socket": "Geometry",
+              "multi_input": false
+            },
+            {
+              "source": "Transform Point.001",
+              "target": "Set Position.002",
+              "output": 0,
+              "input": 2,
+              "sort_id": 0,
+              "source_offset": 34.0,
+              "target_offset": 81.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Vector",
+              "target_socket": "Position",
+              "multi_input": false
+            },
+            {
+              "source": "Vector Math.017",
+              "target": "Vector Math.015",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 35.0,
+              "target_offset": 60.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Vector",
+              "target_socket": "Vector",
+              "multi_input": false
+            },
+            {
+              "source": "Combine XYZ.009",
+              "target": "Vector Math.015",
+              "output": 0,
+              "input": 1,
+              "sort_id": 0,
+              "source_offset": 37.0,
+              "target_offset": 82.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Vector",
+              "target_socket": "Vector_001",
+              "multi_input": false
+            },
+            {
+              "source": "Reroute.113",
+              "target": "Combine XYZ.009",
+              "output": 0,
+              "input": 1,
+              "sort_id": 0,
+              "source_offset": 5.0,
+              "target_offset": 59.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Output",
+              "target_socket": "Y",
+              "multi_input": false
+            },
+            {
+              "source": "Reroute.113",
+              "target": "Combine XYZ.009",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 5.0,
+              "target_offset": 37.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Output",
+              "target_socket": "X",
+              "multi_input": false
+            },
+            {
+              "source": "Reroute.183",
+              "target": "Set Position.002",
+              "output": 0,
+              "input": 1,
+              "sort_id": 0,
+              "source_offset": 5.0,
+              "target_offset": 59.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Output",
+              "target_socket": "Selection",
+              "multi_input": false
+            },
+            {
+              "source": "Compare.004",
+              "target": "Switch.023",
+              "output": 0,
+              "input": 2,
+              "sort_id": 0,
+              "source_offset": 37.0,
+              "target_offset": 104.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Result",
+              "target_socket": "True",
+              "multi_input": false
+            },
+            {
+              "source": "Set Position.002",
+              "target": "Switch.024",
+              "output": 0,
+              "input": 2,
+              "sort_id": 0,
+              "source_offset": 37.0,
+              "target_offset": 104.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Geometry",
+              "target_socket": "True",
+              "multi_input": false
+            },
+            {
+              "source": "Reroute.079",
+              "target": "Switch.024",
+              "output": 0,
+              "input": 1,
+              "sort_id": 0,
+              "source_offset": 5.0,
+              "target_offset": 82.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Output",
+              "target_socket": "False",
+              "multi_input": false
+            },
+            {
+              "source": "Group Input.027",
+              "target": "Switch.024",
+              "output": 24,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 37.0,
+              "target_offset": 60.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Socket_24",
+              "target_socket": "Switch",
+              "multi_input": false
+            },
+            {
+              "source": "Mix",
+              "target": "Combine XYZ.009",
+              "output": 0,
+              "input": 2,
+              "sort_id": 0,
+              "source_offset": 37.0,
+              "target_offset": 81.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Result_Float",
+              "target_socket": "Z",
+              "multi_input": false
+            },
+            {
+              "source": "Math.037",
+              "target": "Mix",
+              "output": 0,
+              "input": 2,
+              "sort_id": 0,
+              "source_offset": 35.0,
+              "target_offset": 59.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Value",
+              "target_socket": "A_Float",
+              "multi_input": false
+            },
+            {
+              "source": "Reroute.093",
+              "target": "Vector Math.017",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 5.0,
+              "target_offset": 60.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Output",
+              "target_socket": "Vector",
+              "multi_input": false
+            },
+            {
+              "source": "Transform Point.004",
+              "target": "Vector Math.017",
+              "output": 0,
+              "input": 1,
+              "sort_id": 0,
+              "source_offset": 34.0,
+              "target_offset": 82.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Vector",
+              "target_socket": "Vector_001",
+              "multi_input": false
+            },
+            {
+              "source": "Vector Math.015",
+              "target": "Vector Math.018",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 35.0,
+              "target_offset": 60.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Vector",
+              "target_socket": "Vector",
+              "multi_input": false
+            },
+            {
+              "source": "Transform Point.004",
+              "target": "Vector Math.018",
+              "output": 0,
+              "input": 1,
+              "sort_id": 0,
+              "source_offset": 34.0,
+              "target_offset": 82.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Vector",
+              "target_socket": "Vector_001",
+              "multi_input": false
+            },
+            {
+              "source": "Vector Math.018",
+              "target": "Mix.001",
+              "output": 0,
+              "input": 5,
+              "sort_id": 0,
+              "source_offset": 35.0,
+              "target_offset": 81.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Vector",
+              "target_socket": "B_Vector",
+              "multi_input": false
+            },
+            {
+              "source": "Reroute.093",
+              "target": "Vector Math.019",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 5.0,
+              "target_offset": 60.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Output",
+              "target_socket": "Vector",
+              "multi_input": false
+            },
+            {
+              "source": "Combine XYZ.009",
+              "target": "Vector Math.019",
+              "output": 0,
+              "input": 1,
+              "sort_id": 0,
+              "source_offset": 37.0,
+              "target_offset": 82.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Vector",
+              "target_socket": "Vector_001",
+              "multi_input": false
+            },
+            {
+              "source": "Vector Math.019",
+              "target": "Mix.001",
+              "output": 0,
+              "input": 4,
+              "sort_id": 0,
+              "source_offset": 35.0,
+              "target_offset": 59.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Vector",
+              "target_socket": "A_Vector",
+              "multi_input": false
+            },
+            {
+              "source": "Mix.001",
+              "target": "Switch.031",
+              "output": 1,
+              "input": 2,
+              "sort_id": 0,
+              "source_offset": 37.0,
+              "target_offset": 104.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Result_Vector",
+              "target_socket": "True",
+              "multi_input": false
+            },
+            {
+              "source": "Vector Math.019",
+              "target": "Switch.031",
+              "output": 0,
+              "input": 1,
+              "sort_id": 0,
+              "source_offset": 35.0,
+              "target_offset": 82.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Vector",
+              "target_socket": "False",
+              "multi_input": false
+            },
+            {
+              "source": "Switch.031",
+              "target": "Transform Point.001",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 35.0,
+              "target_offset": 34.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Output",
+              "target_socket": "Vector",
+              "multi_input": false
+            },
+            {
+              "source": "Reroute.134",
+              "target": "Switch.031",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 5.0,
+              "target_offset": 60.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Output",
+              "target_socket": "Switch",
+              "multi_input": false
+            },
+            {
+              "source": "Math.037",
+              "target": "Reroute.113",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 35.0,
+              "target_offset": 5.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Value",
+              "target_socket": "Input",
+              "multi_input": false
+            },
+            {
+              "source": "Switch.023",
+              "target": "Reroute.183",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 35.0,
+              "target_offset": 5.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Output",
+              "target_socket": "Input",
+              "multi_input": false
+            },
+            {
+              "source": "Fixture External Inputs",
+              "target": "Compare.004",
+              "output": 33,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 339.0,
+              "target_offset": 37.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Socket_33",
+              "target_socket": "A",
+              "multi_input": false
+            },
+            {
+              "source": "Fixture External Inputs",
+              "target": "Math.037",
+              "output": 33,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 339.0,
+              "target_offset": 60.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Socket_33",
+              "target_socket": "Value",
+              "multi_input": false
+            },
+            {
+              "source": "Fixture External Inputs",
+              "target": "Reroute.077",
+              "output": 32,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 329.0,
+              "target_offset": 5.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Socket_32",
+              "target_socket": "Input",
+              "multi_input": false
+            },
+            {
+              "source": "Fixture External Inputs",
+              "target": "Reroute.079",
+              "output": 31,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 319.0,
+              "target_offset": 5.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Socket_31",
+              "target_socket": "Input",
+              "multi_input": false
+            },
+            {
+              "source": "Fixture External Inputs",
+              "target": "Reroute.093",
+              "output": 34,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 349.0,
+              "target_offset": 5.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Socket_34",
+              "target_socket": "Input",
+              "multi_input": false
+            },
+            {
+              "source": "Fixture External Inputs",
+              "target": "Reroute.134",
+              "output": 30,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 309.0,
+              "target_offset": 5.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Socket_30",
+              "target_socket": "Input",
+              "multi_input": false
+            },
+            {
+              "source": "Fixture External Inputs",
+              "target": "Switch.023",
+              "output": 30,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 309.0,
+              "target_offset": 60.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Socket_30",
+              "target_socket": "Switch",
+              "multi_input": false
+            },
+            {
+              "source": "Fixture External Inputs",
+              "target": "Switch.023",
+              "output": 30,
+              "input": 1,
+              "sort_id": 0,
+              "source_offset": 309.0,
+              "target_offset": 82.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Socket_30",
+              "target_socket": "False",
+              "multi_input": false
+            },
+            {
+              "source": "Fixture External Inputs",
+              "target": "Transform Point.004",
+              "output": 34,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 349.0,
+              "target_offset": 34.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Socket_34",
+              "target_socket": "Vector",
+              "multi_input": false
+            },
+            {
+              "source": "Fixture External Inputs",
+              "target": "Transform Point.004",
+              "output": 32,
+              "input": 1,
+              "sort_id": 0,
+              "source_offset": 329.0,
+              "target_offset": 56.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Socket_32",
+              "target_socket": "Transform",
+              "multi_input": false
+            }
+          ],
+          "target_absolute_locations": {
+            "Set Position.002": [
+              1191.853515625,
+              239.99993896484375
+            ],
+            "Transform Point.001": [
+              951.853515625,
+              -50.5
+            ],
+            "Reroute.077": [
+              -1397.5302734375,
+              -280.775146484375
+            ],
+            "Vector Math.015": [
+              190.3707275390625,
+              -265.5
+            ],
+            "Combine XYZ.009": [
+              0.0,
+              -414.5
+            ],
+            "Math.037": [
+              -348.146484375,
+              -63.286224365234375
+            ],
+            "Switch.023": [
+              -194.7216796875,
+              344.7133483886719
+            ],
+            "Compare.004": [
+              -394.9521484375,
+              214.70404052734375
+            ],
+            "Switch.024": [
+              1391.8525390625,
+              379.9999694824219
+            ],
+            "Reroute.079": [
+              1071.853515625,
+              280.0
+            ],
+            "Group Input.027": [
+              1103.3818359375,
+              379.9999694824219
+            ],
+            "Frame.021": [
+              -1432.5302734375,
+              410.0
+            ],
+            "Mix": [
+              -182.546875,
+              -284.9619140625
+            ],
+            "Transform Point.004": [
+              -689.14453125,
+              -668.06494140625
+            ],
+            "Vector Math.017": [
+              0.0,
+              -265.5
+            ],
+            "Vector Math.018": [
+              380.741455078125,
+              -265.5
+            ],
+            "Mix.001": [
+              571.112060546875,
+              -167.5
+            ],
+            "Vector Math.019": [
+              380.741455078125,
+              -116.5
+            ],
+            "Reroute.093": [
+              -48.146484375,
+              -59.999969482421875
+            ],
+            "Switch.031": [
+              761.48291015625,
+              -49.5
+            ],
+            "Reroute.113": [
+              -28.35546875,
+              -248.6690673828125
+            ],
+            "Reroute.134": [
+              43.380859375,
+              -880.0001220703125
+            ],
+            "Reroute.183": [
+              1071.853515625,
+              140.0
+            ],
+            "Fixture External Inputs": [
+              -4000.0,
+              3000.0
+            ]
+          },
+          "move_reasons": {
+            "Combine XYZ.009": "Selected layout unit",
+            "Mix.001": "Selected layout unit",
+            "Switch.031": "Selected layout unit",
+            "Transform Point.001": "Selected layout unit",
+            "Vector Math.015": "Selected layout unit",
+            "Vector Math.017": "Selected layout unit",
+            "Vector Math.018": "Selected layout unit",
+            "Vector Math.019": "Selected layout unit"
+          },
+          "alignment_decisions": {
+            "Combine XYZ.009": {
+              "horizontal": "right",
+              "vertical": "socket",
+              "target": "Vector Math.015",
+              "vertical_error": 104.0,
+              "vertical_satisfied": false
+            },
+            "Mix.001": {
+              "horizontal": "left",
+              "vertical": "socket",
+              "target": "Switch.031",
+              "vertical_error": 51.0,
+              "vertical_satisfied": false
+            },
+            "Switch.031": {
+              "horizontal": "left",
+              "vertical": "socket",
+              "target": "Transform Point.001",
+              "vertical_error": 0.0,
+              "vertical_satisfied": true
+            },
+            "Transform Point.001": {
+              "horizontal": "left",
+              "vertical": "anchor",
+              "target": null,
+              "vertical_error": 0.0,
+              "vertical_satisfied": true
+            },
+            "Vector Math.015": {
+              "horizontal": "left",
+              "vertical": "top",
+              "target": "Vector Math.018",
+              "vertical_error": 0.0,
+              "vertical_satisfied": true
+            },
+            "Vector Math.017": {
+              "horizontal": "right",
+              "vertical": "top",
+              "target": "Vector Math.015",
+              "vertical_error": 0.0,
+              "vertical_satisfied": true
+            },
+            "Vector Math.018": {
+              "horizontal": "right",
+              "vertical": "socket",
+              "target": "Mix.001",
+              "vertical_error": 52.0,
+              "vertical_satisfied": false
+            },
+            "Vector Math.019": {
+              "horizontal": "right",
+              "vertical": "top",
+              "target": "Mix.001",
+              "vertical_error": 51.0,
+              "vertical_satisfied": false
+            }
+          },
+          "partial_results": [
+            {
+              "nodes": [
+                "Combine XYZ.009",
+                "Mix.001",
+                "Switch.031",
+                "Transform Point.001",
+                "Vector Math.015",
+                "Vector Math.017",
+                "Vector Math.018",
+                "Vector Math.019"
+              ],
+              "method": "structured",
+              "reason": null,
+              "moved": 8
+            }
+          ],
+          "warnings": [],
+          "metrics": {
+            "nodes": 24,
+            "selected": 8,
+            "links": 38,
+            "moved": 8,
+            "fixed_conflicts": 0,
+            "partial_scopes": 1,
+            "width": 1091.853515625,
+            "height": 484.0,
+            "solve_ms": 2.7715840260498226,
+            "socket_geometry": "estimated; logical port order is authoritative",
+            "generated_reroutes": 2,
+            "node_overlaps": 0,
+            "node_overlap_check_complete": true,
+            "estimated_wire_node_hits": 0,
+            "wire_check_complete": true,
+            "endpoint_chord_crossings": 0,
+            "crossing_check_complete": true,
+            "diagnostic_pair_budget": 100000,
+            "wire_scope": "selection_internal",
+            "internal_links_checked": 9
+          }
+        }
+      },
+      {
+        "test": "repeat_stability",
+        "pass": true
+      },
+      {
+        "test": "undo_restores_original",
+        "pass": true
+      },
+      {
+        "test": "redo_restores_alignment",
+        "pass": true
+      }
+    ],
+    "partial_branch_layout": [
+      {
+        "test": "hybrid_alignment_and_fixed_nodes",
+        "pass": true,
+        "report": {
+          "feature": "Smart Align Layout Preview",
+          "metadata": {
+            "geometry_scale": 2.0,
+            "raw_nodes": [
+              {
+                "name": "Blur Attribute",
+                "local": [
+                  1271.3935546875,
+                  -236.2779541015625
+                ],
+                "absolute": [
+                  1191.515625,
+                  532.5489501953125
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  184.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  1191.515625,
+                  1331.515625,
+                  532.5489501953125,
+                  440.5489501953125
+                ]
+              },
+              {
+                "name": "Combine Transform",
+                "local": [
+                  259.5908203125,
+                  -711.4783935546875
+                ],
+                "absolute": [
+                  179.712890625,
+                  57.3485107421875
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  198.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": true,
+                "hide": false,
+                "normalized_box": [
+                  179.712890625,
+                  319.712890625,
+                  57.3485107421875,
+                  -41.6514892578125
+                ]
+              },
+              {
+                "name": "Compare.004",
+                "local": [
+                  1448.1953125,
+                  -238.65936279296875
+                ],
+                "absolute": [
+                  1368.3173828125,
+                  530.1675415039062
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  238.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  1368.3173828125,
+                  1508.3173828125,
+                  530.1675415039062,
+                  411.16754150390625
+                ]
+              },
+              {
+                "name": "Frame.021",
+                "local": [
+                  -79.8779296875,
+                  768.826904296875
+                ],
+                "absolute": [
+                  -79.8779296875,
+                  768.826904296875
+                ],
+                "dimensions_raw": [
+                  5929.755859375,
+                  2736.726806640625
+                ],
+                "width_raw": 2964.8779296875,
+                "parent": null,
+                "kind": "FRAME",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  -79.8779296875,
+                  2885.0,
+                  768.826904296875,
+                  -599.5364990234375
+                ]
+              },
+              {
+                "name": "Invert Matrix",
+                "local": [
+                  507.7568359375,
+                  -623.3294677734375
+                ],
+                "absolute": [
+                  427.87890625,
+                  145.4974365234375
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  140.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": true,
+                "hide": false,
+                "normalized_box": [
+                  427.87890625,
+                  567.87890625,
+                  145.4974365234375,
+                  75.4974365234375
+                ]
+              },
+              {
+                "name": "Math.036",
+                "local": [
+                  1335.0,
+                  -693.363525390625
+                ],
+                "absolute": [
+                  1255.1220703125,
+                  75.46337890625
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  56.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": true,
+                "hide": true,
+                "normalized_box": [
+                  1255.6220703125,
+                  1395.6220703125,
+                  78.96337890625,
+                  50.96337890625
+                ]
+              },
+              {
+                "name": "Math.037",
+                "local": [
+                  1495.0009765625,
+                  -673.363525390625
+                ],
+                "absolute": [
+                  1415.123046875,
+                  95.46337890625
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  198.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  1415.123046875,
+                  1555.123046875,
+                  95.46337890625,
+                  -3.53662109375
+                ]
+              },
+              {
+                "name": "Math.038",
+                "local": [
+                  975.0,
+                  -733.363525390625
+                ],
+                "absolute": [
+                  895.1220703125,
+                  35.46337890625
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  56.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": true,
+                "hide": true,
+                "normalized_box": [
+                  895.6220703125,
+                  1035.6220703125,
+                  38.96337890625,
+                  10.96337890625
+                ]
+              },
+              {
+                "name": "Math.040",
+                "local": [
+                  875.0,
+                  -873.3634033203125
+                ],
+                "absolute": [
+                  795.1220703125,
+                  -104.5364990234375
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  56.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": true,
+                "hide": true,
+                "normalized_box": [
+                  795.6220703125,
+                  935.6220703125,
+                  -101.0364990234375,
+                  -129.0364990234375
+                ]
+              },
+              {
+                "name": "Math.041",
+                "local": [
+                  875.0,
+                  -913.3634033203125
+                ],
+                "absolute": [
+                  795.1220703125,
+                  -144.5364990234375
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  56.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": true,
+                "hide": true,
+                "normalized_box": [
+                  795.6220703125,
+                  935.6220703125,
+                  -141.0364990234375,
+                  -169.0364990234375
+                ]
+              },
+              {
+                "name": "Math.051",
+                "local": [
+                  975.0,
+                  -633.363525390625
+                ],
+                "absolute": [
+                  895.1220703125,
+                  135.46337890625
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  56.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": true,
+                "hide": true,
+                "normalized_box": [
+                  895.6220703125,
+                  1035.6220703125,
+                  138.96337890625,
+                  110.96337890625
+                ]
+              },
+              {
+                "name": "Position.004",
+                "local": [
+                  490.0927734375,
+                  -492.49560546875
+                ],
+                "absolute": [
+                  410.21484375,
+                  276.331298828125
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  100.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": true,
+                "hide": false,
+                "normalized_box": [
+                  410.21484375,
+                  550.21484375,
+                  276.331298828125,
+                  226.331298828125
+                ]
+              },
+              {
+                "name": "Reroute.068",
+                "local": [
+                  159.212890625,
+                  -35.0
+                ],
+                "absolute": [
+                  79.3349609375,
+                  733.826904296875
+                ],
+                "dimensions_raw": [
+                  20.0,
+                  20.0
+                ],
+                "width_raw": 20.0,
+                "parent": "Frame.021",
+                "kind": "REROUTE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  74.3349609375,
+                  84.3349609375,
+                  738.826904296875,
+                  728.826904296875
+                ]
+              },
+              {
+                "name": "Reroute.069",
+                "local": [
+                  140.4677734375,
+                  -45.898681640625
+                ],
+                "absolute": [
+                  60.58984375,
+                  722.92822265625
+                ],
+                "dimensions_raw": [
+                  20.0,
+                  20.0
+                ],
+                "width_raw": 20.0,
+                "parent": "Frame.021",
+                "kind": "REROUTE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  55.58984375,
+                  65.58984375,
+                  727.92822265625,
+                  717.92822265625
+                ]
+              },
+              {
+                "name": "Reroute.070",
+                "local": [
+                  117.408203125,
+                  -76.81256103515625
+                ],
+                "absolute": [
+                  37.5302734375,
+                  692.0143432617188
+                ],
+                "dimensions_raw": [
+                  20.0,
+                  20.0
+                ],
+                "width_raw": 20.0,
+                "parent": "Frame.021",
+                "kind": "REROUTE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  32.5302734375,
+                  42.5302734375,
+                  697.0143432617188,
+                  687.0143432617188
+                ]
+              },
+              {
+                "name": "Reroute.071",
+                "local": [
+                  109.7841796875,
+                  -94.68743896484375
+                ],
+                "absolute": [
+                  29.90625,
+                  674.1394653320312
+                ],
+                "dimensions_raw": [
+                  20.0,
+                  20.0
+                ],
+                "width_raw": 20.0,
+                "parent": "Frame.021",
+                "kind": "REROUTE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  24.90625,
+                  34.90625,
+                  679.1394653320312,
+                  669.1394653320312
+                ]
+              },
+              {
+                "name": "Reroute.077",
+                "local": [
+                  445.6171875,
+                  -734.1385498046875
+                ],
+                "absolute": [
+                  365.7392578125,
+                  34.6883544921875
+                ],
+                "dimensions_raw": [
+                  20.0,
+                  20.0
+                ],
+                "width_raw": 20.0,
+                "parent": "Frame.021",
+                "kind": "REROUTE",
+                "selected": true,
+                "hide": false,
+                "normalized_box": [
+                  360.7392578125,
+                  370.7392578125,
+                  39.6883544921875,
+                  29.6883544921875
+                ]
+              },
+              {
+                "name": "Reroute.084",
+                "local": [
+                  697.501953125,
+                  -746.181396484375
+                ],
+                "absolute": [
+                  617.6240234375,
+                  22.6455078125
+                ],
+                "dimensions_raw": [
+                  20.0,
+                  20.0
+                ],
+                "width_raw": 20.0,
+                "parent": "Frame.021",
+                "kind": "REROUTE",
+                "selected": true,
+                "hide": false,
+                "normalized_box": [
+                  612.6240234375,
+                  622.6240234375,
+                  27.6455078125,
+                  17.6455078125
+                ]
+              },
+              {
+                "name": "Reroute.086",
+                "local": [
+                  -532.5009765625,
+                  -1503.1942138671875
+                ],
+                "absolute": [
+                  -532.5009765625,
+                  -1503.1942138671875
+                ],
+                "dimensions_raw": [
+                  20.0,
+                  20.0
+                ],
+                "width_raw": 20.0,
+                "parent": null,
+                "kind": "REROUTE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  -537.5009765625,
+                  -527.5009765625,
+                  -1498.1942138671875,
+                  -1508.1942138671875
+                ]
+              },
+              {
+                "name": "Reroute.087",
+                "local": [
+                  246.52734375,
+                  -1333.3634033203125
+                ],
+                "absolute": [
+                  166.6494140625,
+                  -564.5364990234375
+                ],
+                "dimensions_raw": [
+                  20.0,
+                  20.0
+                ],
+                "width_raw": 20.0,
+                "parent": "Frame.021",
+                "kind": "REROUTE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  161.6494140625,
+                  171.6494140625,
+                  -559.5364990234375,
+                  -569.5364990234375
+                ]
+              },
+              {
+                "name": "Reroute.093",
+                "local": [
+                  1795.0009765625,
+                  -513.3634033203125
+                ],
+                "absolute": [
+                  1715.123046875,
+                  255.4635009765625
+                ],
+                "dimensions_raw": [
+                  20.0,
+                  20.0
+                ],
+                "width_raw": 20.0,
+                "parent": "Frame.021",
+                "kind": "REROUTE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  1710.123046875,
+                  1720.123046875,
+                  260.4635009765625,
+                  250.4635009765625
+                ]
+              },
+              {
+                "name": "Reroute.098",
+                "local": [
+                  35.0,
+                  -1153.363525390625
+                ],
+                "absolute": [
+                  -44.8779296875,
+                  -384.53662109375
+                ],
+                "dimensions_raw": [
+                  20.0,
+                  20.0
+                ],
+                "width_raw": 20.0,
+                "parent": "Frame.021",
+                "kind": "REROUTE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  -49.8779296875,
+                  -39.8779296875,
+                  -379.53662109375,
+                  -389.53662109375
+                ]
+              },
+              {
+                "name": "Reroute.146",
+                "local": [
+                  1003.671875,
+                  -841.603759765625
+                ],
+                "absolute": [
+                  923.7939453125,
+                  -72.77685546875
+                ],
+                "dimensions_raw": [
+                  20.0,
+                  20.0
+                ],
+                "width_raw": 20.0,
+                "parent": "Frame.021",
+                "kind": "REROUTE",
+                "selected": true,
+                "hide": false,
+                "normalized_box": [
+                  918.7939453125,
+                  928.7939453125,
+                  -67.77685546875,
+                  -77.77685546875
+                ]
+              },
+              {
+                "name": "Reroute.167",
+                "local": [
+                  -144.888671875,
+                  -83.944580078125
+                ],
+                "absolute": [
+                  -144.888671875,
+                  -83.944580078125
+                ],
+                "dimensions_raw": [
+                  20.0,
+                  20.0
+                ],
+                "width_raw": 20.0,
+                "parent": null,
+                "kind": "REROUTE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  -149.888671875,
+                  -139.888671875,
+                  -78.944580078125,
+                  -88.944580078125
+                ]
+              },
+              {
+                "name": "Separate Transform",
+                "local": [
+                  79.8779296875,
+                  -768.826904296875
+                ],
+                "absolute": [
+                  0.0,
+                  0.0
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  238.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": true,
+                "hide": false,
+                "normalized_box": [
+                  0.0,
+                  140.0,
+                  0.0,
+                  -119.0
+                ]
+              },
+              {
+                "name": "Separate XYZ.002",
+                "local": [
+                  822.08203125,
+                  -575.9923095703125
+                ],
+                "absolute": [
+                  742.2041015625,
+                  192.8345947265625
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  150.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": true,
+                "hide": false,
+                "normalized_box": [
+                  742.2041015625,
+                  882.2041015625,
+                  192.8345947265625,
+                  117.8345947265625
+                ]
+              },
+              {
+                "name": "Separate XYZ.003",
+                "local": [
+                  790.677734375,
+                  -747.48974609375
+                ],
+                "absolute": [
+                  710.7998046875,
+                  21.337158203125
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  150.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": true,
+                "hide": false,
+                "normalized_box": [
+                  710.7998046875,
+                  850.7998046875,
+                  21.337158203125,
+                  -53.662841796875
+                ]
+              },
+              {
+                "name": "Switch.022",
+                "local": [
+                  1141.8818359375,
+                  -806.2728271484375
+                ],
+                "absolute": [
+                  1062.00390625,
+                  -37.4459228515625
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  238.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": true,
+                "hide": false,
+                "normalized_box": [
+                  1062.00390625,
+                  1202.00390625,
+                  -37.4459228515625,
+                  -156.4459228515625
+                ]
+              },
+              {
+                "name": "Switch.025",
+                "local": [
+                  1154.6640625,
+                  -565.3070068359375
+                ],
+                "absolute": [
+                  1074.7861328125,
+                  203.5198974609375
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  238.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": true,
+                "hide": false,
+                "normalized_box": [
+                  1074.7861328125,
+                  1214.7861328125,
+                  203.5198974609375,
+                  84.5198974609375
+                ]
+              },
+              {
+                "name": "Transform Point",
+                "local": [
+                  665.0146484375,
+                  -521.15478515625
+                ],
+                "absolute": [
+                  585.13671875,
+                  247.672119140625
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  140.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": true,
+                "hide": false,
+                "normalized_box": [
+                  585.13671875,
+                  725.13671875,
+                  247.672119140625,
+                  177.672119140625
+                ]
+              },
+              {
+                "name": "Transform Point.001",
+                "local": [
+                  2795.0009765625,
+                  -513.3634033203125
+                ],
+                "absolute": [
+                  2715.123046875,
+                  255.4635009765625
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  140.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  2715.123046875,
+                  2855.123046875,
+                  255.4635009765625,
+                  185.4635009765625
+                ]
+              },
+              {
+                "name": "Transform Point.004",
+                "local": [
+                  1154.0029296875,
+                  -1121.4283447265625
+                ],
+                "absolute": [
+                  1074.125,
+                  -352.6014404296875
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  140.0
+                ],
+                "width_raw": 140.0,
+                "parent": "Frame.021",
+                "kind": "NODE",
+                "selected": false,
+                "hide": false,
+                "normalized_box": [
+                  1074.125,
+                  1214.125,
+                  -352.6014404296875,
+                  -422.6014404296875
+                ]
+              },
+              {
+                "name": "Fixture External Inputs",
+                "local": [
+                  -4000.0,
+                  3000.0
+                ],
+                "absolute": [
+                  -4000.0,
+                  3000.0
+                ],
+                "dimensions_raw": [
+                  280.0,
+                  116.0
+                ],
+                "width_raw": 140.0,
+                "parent": null,
+                "kind": "NODE",
+                "selected": false,
+                "hide": true,
+                "normalized_box": [
+                  -3999.5,
+                  -3859.5,
+                  3003.5,
+                  2945.5
+                ]
+              }
+            ],
+            "generated_reroutes": [],
+            "snapshot_ms": 1.5967499930411577,
+            "write_ms": 1.109834003727883,
+            "verified_after_redraw": true,
+            "redraw_passes": 1,
+            "total_ms": 99.541917006718,
+            "wire_routes": [],
+            "routing_search": {
+              "check_complete": true,
+              "pair_checks": 1170,
+              "pair_budget": 100000,
+              "max_routes": 24,
+              "routed_links": 0
+            },
+            "diagnostic_ms": 2.225209027528763
+          },
+          "links": [
+            {
+              "source": "Reroute.077",
+              "target": "Invert Matrix",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 5.0,
+              "target_offset": 34.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Output",
+              "target_socket": "Matrix",
+              "multi_input": false
+            },
+            {
+              "source": "Invert Matrix",
+              "target": "Transform Point",
+              "output": 0,
+              "input": 1,
+              "sort_id": 0,
+              "source_offset": 34.0,
+              "target_offset": 56.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Matrix",
+              "target_socket": "Transform",
+              "multi_input": false
+            },
+            {
+              "source": "Position.004",
+              "target": "Transform Point",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 34.0,
+              "target_offset": 34.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Position",
+              "target_socket": "Vector",
+              "multi_input": false
+            },
+            {
+              "source": "Reroute.077",
+              "target": "Transform Point.001",
+              "output": 0,
+              "input": 1,
+              "sort_id": 0,
+              "source_offset": 5.0,
+              "target_offset": 56.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Output",
+              "target_socket": "Transform",
+              "multi_input": false
+            },
+            {
+              "source": "Transform Point",
+              "target": "Separate XYZ.002",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 34.0,
+              "target_offset": 60.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Vector",
+              "target_socket": "Vector",
+              "multi_input": false
+            },
+            {
+              "source": "Math.036",
+              "target": "Math.037",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 14.0,
+              "target_offset": 60.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Value",
+              "target_socket": "Value",
+              "multi_input": false
+            },
+            {
+              "source": "Switch.022",
+              "target": "Math.036",
+              "output": 0,
+              "input": 1,
+              "sort_id": 0,
+              "source_offset": 35.0,
+              "target_offset": 19.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Output",
+              "target_socket": "Value_001",
+              "multi_input": false
+            },
+            {
+              "source": "Reroute.146",
+              "target": "Switch.022",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 5.0,
+              "target_offset": 60.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Output",
+              "target_socket": "Switch",
+              "multi_input": false
+            },
+            {
+              "source": "Reroute.098",
+              "target": "Separate Transform",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 5.0,
+              "target_offset": 104.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Output",
+              "target_socket": "Transform",
+              "multi_input": false
+            },
+            {
+              "source": "Combine Transform",
+              "target": "Reroute.077",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 35.0,
+              "target_offset": 5.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Transform",
+              "target_socket": "Input",
+              "multi_input": false
+            },
+            {
+              "source": "Separate Transform",
+              "target": "Combine Transform",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 35.0,
+              "target_offset": 60.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Translation",
+              "target_socket": "Translation",
+              "multi_input": false
+            },
+            {
+              "source": "Separate Transform",
+              "target": "Combine Transform",
+              "output": 1,
+              "input": 1,
+              "sort_id": 0,
+              "source_offset": 57.0,
+              "target_offset": 82.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Rotation",
+              "target_socket": "Rotation",
+              "multi_input": false
+            },
+            {
+              "source": "Math.041",
+              "target": "Switch.022",
+              "output": 0,
+              "input": 2,
+              "sort_id": 0,
+              "source_offset": 14.0,
+              "target_offset": 104.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Value",
+              "target_socket": "True",
+              "multi_input": false
+            },
+            {
+              "source": "Math.040",
+              "target": "Switch.022",
+              "output": 0,
+              "input": 1,
+              "sort_id": 0,
+              "source_offset": 14.0,
+              "target_offset": 82.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Value",
+              "target_socket": "False",
+              "multi_input": false
+            },
+            {
+              "source": "Reroute.070",
+              "target": "Math.040",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 5.0,
+              "target_offset": 9.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Output",
+              "target_socket": "Value",
+              "multi_input": false
+            },
+            {
+              "source": "Reroute.071",
+              "target": "Math.041",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 5.0,
+              "target_offset": 9.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Output",
+              "target_socket": "Value",
+              "multi_input": false
+            },
+            {
+              "source": "Reroute.069",
+              "target": "Math.041",
+              "output": 0,
+              "input": 1,
+              "sort_id": 0,
+              "source_offset": 5.0,
+              "target_offset": 19.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Output",
+              "target_socket": "Value_001",
+              "multi_input": false
+            },
+            {
+              "source": "Reroute.068",
+              "target": "Math.040",
+              "output": 0,
+              "input": 1,
+              "sort_id": 0,
+              "source_offset": 5.0,
+              "target_offset": 19.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Output",
+              "target_socket": "Value_001",
+              "multi_input": false
+            },
+            {
+              "source": "Reroute.086",
+              "target": "Reroute.084",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 5.0,
+              "target_offset": 5.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Output",
+              "target_socket": "Input",
+              "multi_input": false
+            },
+            {
+              "source": "Reroute.084",
+              "target": "Math.038",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 5.0,
+              "target_offset": 9.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Output",
+              "target_socket": "Value",
+              "multi_input": false
+            },
+            {
+              "source": "Separate Transform",
+              "target": "Separate XYZ.003",
+              "output": 2,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 79.0,
+              "target_offset": 60.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Scale",
+              "target_socket": "Vector",
+              "multi_input": false
+            },
+            {
+              "source": "Separate XYZ.003",
+              "target": "Math.038",
+              "output": 2,
+              "input": 1,
+              "sort_id": 0,
+              "source_offset": 35.0,
+              "target_offset": 19.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Z",
+              "target_socket": "Value_001",
+              "multi_input": false
+            },
+            {
+              "source": "Math.038",
+              "target": "Switch.025",
+              "output": 0,
+              "input": 2,
+              "sort_id": 0,
+              "source_offset": 14.0,
+              "target_offset": 104.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Value",
+              "target_socket": "True",
+              "multi_input": false
+            },
+            {
+              "source": "Switch.025",
+              "target": "Math.036",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 35.0,
+              "target_offset": 9.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Output",
+              "target_socket": "Value",
+              "multi_input": false
+            },
+            {
+              "source": "Reroute.087",
+              "target": "Switch.025",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 5.0,
+              "target_offset": 60.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Output",
+              "target_socket": "Switch",
+              "multi_input": false
+            },
+            {
+              "source": "Invert Matrix",
+              "target": "Transform Point.004",
+              "output": 0,
+              "input": 1,
+              "sort_id": 0,
+              "source_offset": 34.0,
+              "target_offset": 56.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Matrix",
+              "target_socket": "Transform",
+              "multi_input": false
+            },
+            {
+              "source": "Transform Point",
+              "target": "Reroute.093",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 34.0,
+              "target_offset": 5.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Vector",
+              "target_socket": "Input",
+              "multi_input": false
+            },
+            {
+              "source": "Separate XYZ.002",
+              "target": "Math.051",
+              "output": 2,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 35.0,
+              "target_offset": 14.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Z",
+              "target_socket": "Value",
+              "multi_input": false
+            },
+            {
+              "source": "Math.051",
+              "target": "Switch.025",
+              "output": 0,
+              "input": 1,
+              "sort_id": 0,
+              "source_offset": 14.0,
+              "target_offset": 82.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Value",
+              "target_socket": "False",
+              "multi_input": false
+            },
+            {
+              "source": "Reroute.167",
+              "target": "Reroute.146",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 5.0,
+              "target_offset": 5.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Output",
+              "target_socket": "Input",
+              "multi_input": false
+            },
+            {
+              "source": "Fixture External Inputs",
+              "target": "Blur Attribute",
+              "output": 2,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 29.0,
+              "target_offset": 37.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Socket_2",
+              "target_socket": "Value",
+              "multi_input": false
+            },
+            {
+              "source": "Fixture External Inputs",
+              "target": "Compare.004",
+              "output": 2,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 29.0,
+              "target_offset": 37.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Socket_2",
+              "target_socket": "A",
+              "multi_input": false
+            },
+            {
+              "source": "Fixture External Inputs",
+              "target": "Reroute.068",
+              "output": 2,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 29.0,
+              "target_offset": 5.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Socket_2",
+              "target_socket": "Input",
+              "multi_input": false
+            },
+            {
+              "source": "Fixture External Inputs",
+              "target": "Reroute.069",
+              "output": 2,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 29.0,
+              "target_offset": 5.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Socket_2",
+              "target_socket": "Input",
+              "multi_input": false
+            },
+            {
+              "source": "Fixture External Inputs",
+              "target": "Reroute.070",
+              "output": 2,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 29.0,
+              "target_offset": 5.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Socket_2",
+              "target_socket": "Input",
+              "multi_input": false
+            },
+            {
+              "source": "Fixture External Inputs",
+              "target": "Reroute.071",
+              "output": 2,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 29.0,
+              "target_offset": 5.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Socket_2",
+              "target_socket": "Input",
+              "multi_input": false
+            },
+            {
+              "source": "Fixture External Inputs",
+              "target": "Reroute.086",
+              "output": 2,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 29.0,
+              "target_offset": 5.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Socket_2",
+              "target_socket": "Input",
+              "multi_input": false
+            },
+            {
+              "source": "Fixture External Inputs",
+              "target": "Reroute.087",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 9.0,
+              "target_offset": 5.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Socket_0",
+              "target_socket": "Input",
+              "multi_input": false
+            },
+            {
+              "source": "Fixture External Inputs",
+              "target": "Reroute.098",
+              "output": 1,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 19.0,
+              "target_offset": 5.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Socket_1",
+              "target_socket": "Input",
+              "multi_input": false
+            },
+            {
+              "source": "Fixture External Inputs",
+              "target": "Reroute.167",
+              "output": 0,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 9.0,
+              "target_offset": 5.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Socket_0",
+              "target_socket": "Input",
+              "multi_input": false
+            },
+            {
+              "source": "Fixture External Inputs",
+              "target": "Transform Point.001",
+              "output": 3,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 39.0,
+              "target_offset": 34.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Socket_3",
+              "target_socket": "Vector",
+              "multi_input": false
+            },
+            {
+              "source": "Fixture External Inputs",
+              "target": "Transform Point.004",
+              "output": 3,
+              "input": 0,
+              "sort_id": 0,
+              "source_offset": 39.0,
+              "target_offset": 34.0,
+              "valid": true,
+              "muted": false,
+              "hidden": false,
+              "source_socket": "Socket_3",
+              "target_socket": "Vector",
+              "multi_input": false
+            }
+          ],
+          "target_absolute_locations": {
+            "Blur Attribute": [
+              1191.515625,
+              532.5489501953125
+            ],
+            "Combine Transform": [
+              179.37457275390625,
+              77.39898681640625
+            ],
+            "Compare.004": [
+              1368.3173828125,
+              530.1675415039062
+            ],
+            "Frame.021": [
+              -79.8779296875,
+              768.826904296875
+            ],
+            "Invert Matrix": [
+              394.7392578125,
+              76.39898681640625
+            ],
+            "Math.036": [
+              1255.1220703125,
+              193.89898681640625
+            ],
+            "Math.037": [
+              1415.123046875,
+              95.46337890625
+            ],
+            "Math.038": [
+              896.3729248046875,
+              73.89898681640625
+            ],
+            "Math.040": [
+              896.3729248046875,
+              -92.10101318359375
+            ],
+            "Math.041": [
+              896.3729248046875,
+              -170.10101318359375
+            ],
+            "Math.051": [
+              896.3729248046875,
+              151.89898681640625
+            ],
+            "Position.004": [
+              394.7392578125,
+              176.39898681640625
+            ],
+            "Reroute.068": [
+              79.3349609375,
+              733.826904296875
+            ],
+            "Reroute.069": [
+              60.58984375,
+              722.92822265625
+            ],
+            "Reroute.070": [
+              37.5302734375,
+              692.0143432617188
+            ],
+            "Reroute.071": [
+              29.90625,
+              674.1394653320312
+            ],
+            "Reroute.077": [
+              365.7392578125,
+              34.6883544921875
+            ],
+            "Reroute.084": [
+              617.6240234375,
+              22.6455078125
+            ],
+            "Reroute.086": [
+              -532.5009765625,
+              -1503.1942138671875
+            ],
+            "Reroute.087": [
+              166.6494140625,
+              -564.5364990234375
+            ],
+            "Reroute.093": [
+              1715.123046875,
+              255.4635009765625
+            ],
+            "Reroute.098": [
+              -44.8779296875,
+              -384.53662109375
+            ],
+            "Reroute.146": [
+              923.7939453125,
+              -72.77685546875
+            ],
+            "Reroute.167": [
+              -144.888671875,
+              -83.944580078125
+            ],
+            "Separate Transform": [
+              0.0,
+              77.39898681640625
+            ],
+            "Separate XYZ.002": [
+              722.7392578125,
+              176.39898681640625
+            ],
+            "Separate XYZ.003": [
+              722.7392578125,
+              1.39898681640625
+            ],
+            "Switch.022": [
+              1076.2474365234375,
+              54.39898681640625
+            ],
+            "Switch.025": [
+              1076.2474365234375,
+              223.39898681640625
+            ],
+            "Transform Point": [
+              558.7392578125,
+              176.39898681640625
+            ],
+            "Transform Point.001": [
+              2715.123046875,
+              255.4635009765625
+            ],
+            "Transform Point.004": [
+              1074.125,
+              -352.6014404296875
+            ],
+            "Fixture External Inputs": [
+              -4000.0,
+              3000.0
+            ]
+          },
+          "move_reasons": {
+            "Combine Transform": "Selected layout unit",
+            "Invert Matrix": "Selected layout unit",
+            "Math.036": "Selected layout unit",
+            "Math.038": "Selected layout unit",
+            "Math.040": "Selected layout unit",
+            "Math.041": "Selected layout unit",
+            "Math.051": "Selected layout unit",
+            "Position.004": "Selected layout unit",
+            "Reroute.077": "Selected layout unit",
+            "Reroute.084": "Selected layout unit",
+            "Reroute.146": "Selected layout unit",
+            "Separate Transform": "Selected layout unit",
+            "Separate XYZ.002": "Selected layout unit",
+            "Separate XYZ.003": "Selected layout unit",
+            "Switch.022": "Selected layout unit",
+            "Switch.025": "Selected layout unit",
+            "Transform Point": "Selected layout unit"
+          },
+          "alignment_decisions": {
+            "Combine Transform": {
+              "horizontal": "left",
+              "vertical": "socket",
+              "target": "Invert Matrix",
+              "vertical_error": 0.0,
+              "vertical_satisfied": true
+            },
+            "Invert Matrix": {
+              "horizontal": "right",
+              "vertical": "top",
+              "target": "Transform Point",
+              "vertical_error": 100.0,
+              "vertical_satisfied": false
+            },
+            "Math.036": {
+              "horizontal": "left",
+              "vertical": "anchor",
+              "target": null,
+              "vertical_error": 0.0,
+              "vertical_satisfied": true
+            },
+            "Math.038": {
+              "horizontal": "left",
+              "vertical": "socket",
+              "target": "Switch.025",
+              "vertical_error": 56.0,
+              "vertical_satisfied": false
+            },
+            "Math.040": {
+              "horizontal": "left",
+              "vertical": "socket",
+              "target": "Switch.022",
+              "vertical_error": 75.0,
+              "vertical_satisfied": false
+            },
+            "Math.041": {
+              "horizontal": "left",
+              "vertical": "socket",
+              "target": "Switch.022",
+              "vertical_error": 131.0,
+              "vertical_satisfied": false
+            },
+            "Math.051": {
+              "horizontal": "left",
+              "vertical": "socket",
+              "target": "Switch.025",
+              "vertical_error": 0.0,
+              "vertical_satisfied": true
+            },
+            "Position.004": {
+              "horizontal": "right",
+              "vertical": "top",
+              "target": "Transform Point",
+              "vertical_error": 0.0,
+              "vertical_satisfied": true
+            },
+            "Separate Transform": {
+              "horizontal": "left",
+              "vertical": "top",
+              "target": "Combine Transform",
+              "vertical_error": 0.0,
+              "vertical_satisfied": true
+            },
+            "Separate XYZ.002": {
+              "horizontal": "left",
+              "vertical": "socket",
+              "target": "Math.051",
+              "vertical_error": 0.0,
+              "vertical_satisfied": true
+            },
+            "Separate XYZ.003": {
+              "horizontal": "left",
+              "vertical": "socket",
+              "target": "Math.038",
+              "vertical_error": 92.0,
+              "vertical_satisfied": false
+            },
+            "Switch.022": {
+              "horizontal": "right",
+              "vertical": "socket",
+              "target": "Math.036",
+              "vertical_error": 159.0,
+              "vertical_satisfied": false
+            },
+            "Switch.025": {
+              "horizontal": "right",
+              "vertical": "socket",
+              "target": "Math.036",
+              "vertical_error": 0.0,
+              "vertical_satisfied": true
+            },
+            "Transform Point": {
+              "horizontal": "left",
+              "vertical": "top",
+              "target": "Separate XYZ.002",
+              "vertical_error": 0.0,
+              "vertical_satisfied": true
+            }
+          },
+          "partial_results": [
+            {
+              "nodes": [
+                "Combine Transform",
+                "Invert Matrix",
+                "Math.036",
+                "Math.038",
+                "Math.040",
+                "Math.041",
+                "Math.051",
+                "Position.004",
+                "Reroute.077",
+                "Reroute.084",
+                "Reroute.146",
+                "Separate Transform",
+                "Separate XYZ.002",
+                "Separate XYZ.003",
+                "Switch.022",
+                "Switch.025",
+                "Transform Point"
+              ],
+              "method": "structured",
+              "reason": null,
+              "moved": 14
+            }
+          ],
+          "warnings": [
+            "Internal selection wires may still be obstructed; see Smart Align Layout Debug."
+          ],
+          "metrics": {
+            "nodes": 33,
+            "selected": 17,
+            "links": 42,
+            "moved": 14,
+            "fixed_conflicts": 0,
+            "partial_scopes": 1,
+            "width": 1395.6220703125,
+            "height": 418.0,
+            "solve_ms": 6.178915995405987,
+            "socket_geometry": "estimated; logical port order is authoritative",
+            "generated_reroutes": 0,
+            "node_overlaps": 0,
+            "node_overlap_check_complete": true,
+            "estimated_wire_node_hits": 1,
+            "wire_check_complete": true,
+            "endpoint_chord_crossings": 0,
+            "crossing_check_complete": true,
+            "diagnostic_pair_budget": 100000,
+            "wire_scope": "selection_internal",
+            "internal_links_checked": 18
+          }
+        }
+      },
+      {
+        "test": "repeat_stability",
+        "pass": true
+      },
+      {
+        "test": "undo_restores_original",
+        "pass": true
+      },
+      {
+        "test": "redo_restores_alignment",
+        "pass": true
+      }
+    ]
+  },
+  "full_tree": {
+    "False": {
+      "metrics": {
+        "nodes": 617,
+        "selected": 20,
+        "links": 768,
+        "moved": 17,
+        "fixed_conflicts": 0,
+        "partial_scopes": 1,
+        "width": 1817.5859375,
+        "height": 631.4368896484375,
+        "solve_ms": 568.6018750000001,
+        "socket_geometry": "estimated; logical port order is authoritative"
+      },
+      "before_diagnostics": {
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 3,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 1,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 22
+      },
+      "after_diagnostics": {
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 1,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 1,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 22
+      },
+      "routes": [
+        {
+          "source": "Reroute.197",
+          "target": "Switch.007",
+          "output": 0,
+          "input": 1,
+          "points": [
+            [
+              17550.26953125,
+              -696.7279357910156
+            ],
+            [
+              17550.26953125,
+              -632.3167724609375
+            ],
+            [
+              18420.203125,
+              -632.3167724609375
+            ],
+            [
+              18420.203125,
+              -607.4441528320312
+            ]
+          ]
+        }
+      ],
+      "routing_search": {
+        "check_complete": true,
+        "pair_checks": 14732,
+        "pair_budget": 100000,
+        "max_routes": 24,
+        "routed_links": 1
+      },
+      "repeat_max_delta": 0.0,
+      "fixed_cards_moved": []
+    },
+    "True": {
+      "metrics": {
+        "nodes": 617,
+        "selected": 21,
+        "links": 768,
+        "moved": 17,
+        "fixed_conflicts": 0,
+        "partial_scopes": 1,
+        "width": 2340.515625,
+        "height": 1139.861083984375,
+        "solve_ms": 498.58816700000006,
+        "socket_geometry": "estimated; logical port order is authoritative"
+      },
+      "before_diagnostics": {
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 3,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 1,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 31
+      },
+      "after_diagnostics": {
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 3,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 1,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 31
+      },
+      "routes": [
+        {
+          "source": "Reroute.197",
+          "target": "Switch.007",
+          "output": 0,
+          "input": 1,
+          "points": [
+            [
+              17550.26953125,
+              -696.7279357910156
+            ],
+            [
+              17550.26953125,
+              -632.3167724609375
+            ],
+            [
+              18420.203125,
+              -632.3167724609375
+            ],
+            [
+              18420.203125,
+              -607.4441528320312
+            ]
+          ]
+        }
+      ],
+      "routing_search": {
+        "check_complete": true,
+        "pair_checks": 14732,
+        "pair_budget": 100000,
+        "max_routes": 24,
+        "routed_links": 1
+      },
+      "repeat_max_delta": 0.0,
+      "fixed_cards_moved": []
+    }
+  },
+  "frame_toggle_max_card_delta": 0.0,
+  "limits": [
+    "Socket positions and curves are estimated; one internal hit remains in the 20-child case.",
+    "Endpoint chord crossings are not routed-curve crossings.",
+    "GUI reconstruction retains node geometry and logical links, not original scene evaluation."
+  ],
+  "source_sha256": {
+    "layout_operator.py": "5479532225bdd751918a3d4626f49283648c72ef3049b51c99129f1e7fc127a9",
+    "layout_route_adapter.py": "2752a5ee7e385148ed800ed4c8ba17e1b614c6b5f50eae340f9105a026e7f7ec",
+    "layout_routing.py": "2d365bf989aa0f8cf0472084074b2d646cc2aedef0fc921ce994fbc7e17b8d6e",
+    "ui.py": "ad6bc9bbe83fa5925a518489ff0d076869c31134f6a1d055bb027df5fef1f564",
+    "layout.py": "3a2b33c94cf392665c324c4030fdc9c4a4fe7ac52cc99248d20971f6c92c1f0e",
+    "translations.py": "e3b2c55457b9196a0bb3a6b7467b0e79229be1a7f9d094de27a786a8b52ca535",
+    "preferences.py": "a57c66614728660a613a17337e8045bfbd941bcc3bd4fa0600e80854468a9169",
+    "__init__.py": "bc0cba0cfc32c9109de89034827ee9c82e1a49de0bb00021319b57ddaa08a67b",
+    "context.py": "c4703be657b3955b4098df3688b3ff41676b6538ab8bcbb2f1526331731a480f",
+    "debug.py": "50af34758dae2418d4dc1051dbd68b2b2c5d8b1c7b13477812895a69e14c74a3",
+    "geometry.py": "f2dc96389ec4d8f06cf2a63e363479e025a0bd2a0f6762c701b090b740fabcaa",
+    "layout_adapter.py": "fe3390662be3f63d7885c2c07223e6a11785d750633b760f7c564cc0edbcdf89",
+    "operators.py": "cd9a45e1c1b5533732ce50b4d84c8c7186d8f49d499cf9d5aa1c19abdf81dadd",
+    "snapping.py": "bbc4fb9b475ada08f9f72b13bdf7e69ac30b1f73ef30e3a2c141ecd02c8c6cf0"
+  }
+}

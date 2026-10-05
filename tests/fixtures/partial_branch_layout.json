@@ -1,0 +1,2113 @@
+{
+  "description": "Partial selection regression: two external-fed math branches, collapsed nodes, fixed boundary reroutes, and fixed downstream consumers. Geometry normalized around the selection.",
+  "nodes": [
+    {
+      "key": "Blur Attribute",
+      "box": [
+        1191.515625,
+        1331.515625,
+        532.5489501953125,
+        414.5489501953125
+      ],
+      "location": [
+        1191.515625,
+        532.5489501953125
+      ],
+      "selected": false,
+      "parent": "Frame.021",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Combine Transform",
+      "box": [
+        179.712890625,
+        319.712890625,
+        57.3485107421875,
+        -41.6514892578125
+      ],
+      "location": [
+        179.712890625,
+        57.3485107421875
+      ],
+      "selected": true,
+      "parent": "Frame.021",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Compare.004",
+      "box": [
+        1368.3173828125,
+        1508.3173828125,
+        530.1675415039062,
+        411.16754150390625
+      ],
+      "location": [
+        1368.3173828125,
+        530.1675415039062
+      ],
+      "selected": false,
+      "parent": "Frame.021",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Frame.021",
+      "box": [
+        -79.8779296875,
+        3325.1494140625,
+        774.8269348144531,
+        -599.5365905761719
+      ],
+      "location": [
+        -79.8779296875,
+        774.8269348144531
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "FRAME",
+      "collapsed": false
+    },
+    {
+      "key": "Invert Matrix",
+      "box": [
+        427.87890625,
+        567.87890625,
+        145.4974365234375,
+        75.4974365234375
+      ],
+      "location": [
+        427.87890625,
+        145.4974365234375
+      ],
+      "selected": true,
+      "parent": "Frame.021",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Math.036",
+      "box": [
+        1255.6220703125,
+        1395.6220703125,
+        78.96337890625,
+        50.96337890625
+      ],
+      "location": [
+        1255.1220703125,
+        75.46337890625
+      ],
+      "selected": true,
+      "parent": "Frame.021",
+      "kind": "NODE",
+      "collapsed": true
+    },
+    {
+      "key": "Math.037",
+      "box": [
+        1415.123046875,
+        1555.123046875,
+        95.46337890625,
+        -3.53662109375
+      ],
+      "location": [
+        1415.123046875,
+        95.46337890625
+      ],
+      "selected": false,
+      "parent": "Frame.021",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Math.038",
+      "box": [
+        895.6220703125,
+        1035.6220703125,
+        38.96337890625,
+        10.96337890625
+      ],
+      "location": [
+        895.1220703125,
+        35.46337890625
+      ],
+      "selected": true,
+      "parent": "Frame.021",
+      "kind": "NODE",
+      "collapsed": true
+    },
+    {
+      "key": "Math.040",
+      "box": [
+        795.6220703125,
+        935.6220703125,
+        -101.0364990234375,
+        -129.0364990234375
+      ],
+      "location": [
+        795.1220703125,
+        -104.5364990234375
+      ],
+      "selected": true,
+      "parent": "Frame.021",
+      "kind": "NODE",
+      "collapsed": true
+    },
+    {
+      "key": "Math.041",
+      "box": [
+        795.6220703125,
+        935.6220703125,
+        -141.0364990234375,
+        -169.0364990234375
+      ],
+      "location": [
+        795.1220703125,
+        -144.5364990234375
+      ],
+      "selected": true,
+      "parent": "Frame.021",
+      "kind": "NODE",
+      "collapsed": true
+    },
+    {
+      "key": "Math.051",
+      "box": [
+        895.6220703125,
+        1035.6220703125,
+        138.96337890625,
+        110.96337890625
+      ],
+      "location": [
+        895.1220703125,
+        135.46337890625
+      ],
+      "selected": true,
+      "parent": "Frame.021",
+      "kind": "NODE",
+      "collapsed": true
+    },
+    {
+      "key": "Position.004",
+      "box": [
+        410.21484375,
+        550.21484375,
+        276.331298828125,
+        226.331298828125
+      ],
+      "location": [
+        410.21484375,
+        276.331298828125
+      ],
+      "selected": true,
+      "parent": "Frame.021",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.068",
+      "box": [
+        74.3349609375,
+        84.3349609375,
+        738.8269348144531,
+        728.8269348144531
+      ],
+      "location": [
+        79.3349609375,
+        733.8269348144531
+      ],
+      "selected": false,
+      "parent": "Frame.021",
+      "kind": "REROUTE",
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.069",
+      "box": [
+        55.58984375,
+        65.58984375,
+        727.92822265625,
+        717.92822265625
+      ],
+      "location": [
+        60.58984375,
+        722.92822265625
+      ],
+      "selected": false,
+      "parent": "Frame.021",
+      "kind": "REROUTE",
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.070",
+      "box": [
+        32.5302734375,
+        42.5302734375,
+        697.0143432617188,
+        687.0143432617188
+      ],
+      "location": [
+        37.5302734375,
+        692.0143432617188
+      ],
+      "selected": false,
+      "parent": "Frame.021",
+      "kind": "REROUTE",
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.071",
+      "box": [
+        24.90625,
+        34.90625,
+        679.1394653320312,
+        669.1394653320312
+      ],
+      "location": [
+        29.90625,
+        674.1394653320312
+      ],
+      "selected": false,
+      "parent": "Frame.021",
+      "kind": "REROUTE",
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.077",
+      "box": [
+        360.7392578125,
+        370.7392578125,
+        39.6883544921875,
+        29.6883544921875
+      ],
+      "location": [
+        365.7392578125,
+        34.6883544921875
+      ],
+      "selected": true,
+      "parent": "Frame.021",
+      "kind": "REROUTE",
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.084",
+      "box": [
+        612.6240234375,
+        622.6240234375,
+        27.6455078125,
+        17.6455078125
+      ],
+      "location": [
+        617.6240234375,
+        22.6455078125
+      ],
+      "selected": true,
+      "parent": "Frame.021",
+      "kind": "REROUTE",
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.086",
+      "box": [
+        -537.5009765625,
+        -527.5009765625,
+        -1498.1942138671875,
+        -1508.1942138671875
+      ],
+      "location": [
+        -532.5009765625,
+        -1503.1942138671875
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.087",
+      "box": [
+        161.6494140625,
+        171.6494140625,
+        -559.5364990234375,
+        -569.5364990234375
+      ],
+      "location": [
+        166.6494140625,
+        -564.5364990234375
+      ],
+      "selected": false,
+      "parent": "Frame.021",
+      "kind": "REROUTE",
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.093",
+      "box": [
+        1710.123046875,
+        1720.123046875,
+        260.4635009765625,
+        250.4635009765625
+      ],
+      "location": [
+        1715.123046875,
+        255.4635009765625
+      ],
+      "selected": false,
+      "parent": "Frame.021",
+      "kind": "REROUTE",
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.098",
+      "box": [
+        -49.8779296875,
+        -39.8779296875,
+        -379.53662109375,
+        -389.53662109375
+      ],
+      "location": [
+        -44.8779296875,
+        -384.53662109375
+      ],
+      "selected": false,
+      "parent": "Frame.021",
+      "kind": "REROUTE",
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.146",
+      "box": [
+        918.7939453125,
+        928.7939453125,
+        -67.77685546875,
+        -77.77685546875
+      ],
+      "location": [
+        923.7939453125,
+        -72.77685546875
+      ],
+      "selected": true,
+      "parent": "Frame.021",
+      "kind": "REROUTE",
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.167",
+      "box": [
+        -149.888671875,
+        -139.888671875,
+        -78.944580078125,
+        -88.944580078125
+      ],
+      "location": [
+        -144.888671875,
+        -83.944580078125
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "collapsed": false
+    },
+    {
+      "key": "Separate Transform",
+      "box": [
+        0.0,
+        140.0,
+        0.0,
+        -119.0
+      ],
+      "location": [
+        0.0,
+        0.0
+      ],
+      "selected": true,
+      "parent": "Frame.021",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Separate XYZ.002",
+      "box": [
+        742.2041015625,
+        882.2041015625,
+        192.8345947265625,
+        117.8345947265625
+      ],
+      "location": [
+        742.2041015625,
+        192.8345947265625
+      ],
+      "selected": true,
+      "parent": "Frame.021",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Separate XYZ.003",
+      "box": [
+        710.7998046875,
+        850.7998046875,
+        21.337158203125,
+        -53.662841796875
+      ],
+      "location": [
+        710.7998046875,
+        21.337158203125
+      ],
+      "selected": true,
+      "parent": "Frame.021",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Switch.022",
+      "box": [
+        1062.00390625,
+        1202.00390625,
+        -37.4459228515625,
+        -156.4459228515625
+      ],
+      "location": [
+        1062.00390625,
+        -37.4459228515625
+      ],
+      "selected": true,
+      "parent": "Frame.021",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Switch.025",
+      "box": [
+        1074.7861328125,
+        1214.7861328125,
+        203.5198974609375,
+        84.5198974609375
+      ],
+      "location": [
+        1074.7861328125,
+        203.5198974609375
+      ],
+      "selected": true,
+      "parent": "Frame.021",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Transform Point",
+      "box": [
+        585.13671875,
+        725.13671875,
+        247.672119140625,
+        177.672119140625
+      ],
+      "location": [
+        585.13671875,
+        247.672119140625
+      ],
+      "selected": true,
+      "parent": "Frame.021",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Transform Point.001",
+      "box": [
+        2715.123046875,
+        2855.123046875,
+        255.4635009765625,
+        185.4635009765625
+      ],
+      "location": [
+        2715.123046875,
+        255.4635009765625
+      ],
+      "selected": false,
+      "parent": "Frame.021",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Transform Point.004",
+      "box": [
+        1074.125,
+        1214.125,
+        -352.6014404296875,
+        -422.6014404296875
+      ],
+      "location": [
+        1074.125,
+        -352.6014404296875
+      ],
+      "selected": false,
+      "parent": "Frame.021",
+      "kind": "NODE",
+      "collapsed": false
+    }
+  ],
+  "links": [
+    {
+      "source": "Reroute.077",
+      "target": "Invert Matrix",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 8.0,
+      "target_offset": 34.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Matrix"
+    },
+    {
+      "source": "Invert Matrix",
+      "target": "Transform Point",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 34.0,
+      "target_offset": 56.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Matrix",
+      "target_socket": "Transform"
+    },
+    {
+      "source": "Position.004",
+      "target": "Transform Point",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 34.0,
+      "target_offset": 34.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Position",
+      "target_socket": "Vector"
+    },
+    {
+      "source": "Reroute.077",
+      "target": "Transform Point.001",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 8.0,
+      "target_offset": 56.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Transform"
+    },
+    {
+      "source": "Transform Point",
+      "target": "Separate XYZ.002",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 34.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Vector",
+      "target_socket": "Vector"
+    },
+    {
+      "source": "Math.036",
+      "target": "Math.037",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 14.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "Value"
+    },
+    {
+      "source": "Switch.022",
+      "target": "Math.036",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 19.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Value_001"
+    },
+    {
+      "source": "Reroute.146",
+      "target": "Switch.022",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 8.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Switch"
+    },
+    {
+      "source": "Reroute.098",
+      "target": "Separate Transform",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 8.0,
+      "target_offset": 104.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Transform"
+    },
+    {
+      "source": "Combine Transform",
+      "target": "Reroute.077",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 8.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Transform",
+      "target_socket": "Input"
+    },
+    {
+      "source": "Separate Transform",
+      "target": "Combine Transform",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Translation",
+      "target_socket": "Translation"
+    },
+    {
+      "source": "Separate Transform",
+      "target": "Combine Transform",
+      "output": 1,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 57.0,
+      "target_offset": 82.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Rotation",
+      "target_socket": "Rotation"
+    },
+    {
+      "source": "Math.041",
+      "target": "Switch.022",
+      "output": 0,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 14.0,
+      "target_offset": 104.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "True"
+    },
+    {
+      "source": "Math.040",
+      "target": "Switch.022",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 14.0,
+      "target_offset": 82.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "False"
+    },
+    {
+      "source": "Reroute.070",
+      "target": "Math.040",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 8.0,
+      "target_offset": 9.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Value"
+    },
+    {
+      "source": "Reroute.071",
+      "target": "Math.041",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 8.0,
+      "target_offset": 9.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Value"
+    },
+    {
+      "source": "Reroute.069",
+      "target": "Math.041",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 8.0,
+      "target_offset": 19.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Value_001"
+    },
+    {
+      "source": "Reroute.068",
+      "target": "Math.040",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 8.0,
+      "target_offset": 19.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Value_001"
+    },
+    {
+      "source": "Reroute.086",
+      "target": "Reroute.084",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 8.0,
+      "target_offset": 8.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Input"
+    },
+    {
+      "source": "Reroute.084",
+      "target": "Math.038",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 8.0,
+      "target_offset": 9.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Value"
+    },
+    {
+      "source": "Separate Transform",
+      "target": "Separate XYZ.003",
+      "output": 2,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 79.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Scale",
+      "target_socket": "Vector"
+    },
+    {
+      "source": "Separate XYZ.003",
+      "target": "Math.038",
+      "output": 2,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 19.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Z",
+      "target_socket": "Value_001"
+    },
+    {
+      "source": "Math.038",
+      "target": "Switch.025",
+      "output": 0,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 14.0,
+      "target_offset": 104.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "True"
+    },
+    {
+      "source": "Switch.025",
+      "target": "Math.036",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 9.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Value"
+    },
+    {
+      "source": "Reroute.087",
+      "target": "Switch.025",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 8.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Switch"
+    },
+    {
+      "source": "Invert Matrix",
+      "target": "Transform Point.004",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 34.0,
+      "target_offset": 56.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Matrix",
+      "target_socket": "Transform"
+    },
+    {
+      "source": "Transform Point",
+      "target": "Reroute.093",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 34.0,
+      "target_offset": 8.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Vector",
+      "target_socket": "Input"
+    },
+    {
+      "source": "Separate XYZ.002",
+      "target": "Math.051",
+      "output": 2,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 14.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Z",
+      "target_socket": "Value"
+    },
+    {
+      "source": "Math.051",
+      "target": "Switch.025",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 14.0,
+      "target_offset": 82.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "False"
+    },
+    {
+      "source": "Reroute.167",
+      "target": "Reroute.146",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 8.0,
+      "target_offset": 8.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Input"
+    }
+  ],
+  "socket_profiles": {
+    "Blur Attribute": {
+      "type": "GeometryNodeBlurAttribute",
+      "hide": false,
+      "properties": {
+        "data_type": "FLOAT"
+      },
+      "inputs": [
+        {
+          "identifier": "Value",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": true,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Iterations",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "INT"
+        },
+        {
+          "identifier": "Weight",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Value",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Combine Transform": {
+      "type": "FunctionNodeCombineTransform",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Translation",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VECTOR"
+        },
+        {
+          "identifier": "Rotation",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "ROTATION"
+        },
+        {
+          "identifier": "Scale",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VECTOR"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Transform",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "MATRIX"
+        }
+      ]
+    },
+    "Compare.004": {
+      "type": "FunctionNodeCompare",
+      "hide": false,
+      "properties": {
+        "operation": "EQUAL",
+        "data_type": "FLOAT",
+        "mode": "ELEMENT"
+      },
+      "inputs": [
+        {
+          "identifier": "A",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "B",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Epsilon",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Result",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        }
+      ]
+    },
+    "Frame.021": {
+      "type": "NodeFrame",
+      "hide": false,
+      "properties": {},
+      "inputs": [],
+      "outputs": []
+    },
+    "Invert Matrix": {
+      "type": "FunctionNodeInvertMatrix",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Matrix",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "MATRIX"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Matrix",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "MATRIX"
+        },
+        {
+          "identifier": "Invertible",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        }
+      ]
+    },
+    "Math.036": {
+      "type": "ShaderNodeMath",
+      "hide": true,
+      "properties": {
+        "operation": "MULTIPLY"
+      },
+      "inputs": [
+        {
+          "identifier": "Value",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Value_001",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Value_002",
+          "hide": false,
+          "enabled": false,
+          "is_unavailable": true,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Value",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Math.037": {
+      "type": "ShaderNodeMath",
+      "hide": false,
+      "properties": {
+        "operation": "ADD"
+      },
+      "inputs": [
+        {
+          "identifier": "Value",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Value_001",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Value_002",
+          "hide": false,
+          "enabled": false,
+          "is_unavailable": true,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Value",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Math.038": {
+      "type": "ShaderNodeMath",
+      "hide": true,
+      "properties": {
+        "operation": "MULTIPLY"
+      },
+      "inputs": [
+        {
+          "identifier": "Value",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Value_001",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Value_002",
+          "hide": false,
+          "enabled": false,
+          "is_unavailable": true,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Value",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Math.040": {
+      "type": "ShaderNodeMath",
+      "hide": true,
+      "properties": {
+        "operation": "DIVIDE"
+      },
+      "inputs": [
+        {
+          "identifier": "Value",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Value_001",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Value_002",
+          "hide": false,
+          "enabled": false,
+          "is_unavailable": true,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Value",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Math.041": {
+      "type": "ShaderNodeMath",
+      "hide": true,
+      "properties": {
+        "operation": "DIVIDE"
+      },
+      "inputs": [
+        {
+          "identifier": "Value",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Value_001",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Value_002",
+          "hide": false,
+          "enabled": false,
+          "is_unavailable": true,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Value",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Math.051": {
+      "type": "ShaderNodeMath",
+      "hide": true,
+      "properties": {
+        "operation": "ABSOLUTE"
+      },
+      "inputs": [
+        {
+          "identifier": "Value",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Value_001",
+          "hide": false,
+          "enabled": false,
+          "is_unavailable": true,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Value_002",
+          "hide": false,
+          "enabled": false,
+          "is_unavailable": true,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Value",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Position.004": {
+      "type": "GeometryNodeInputPosition",
+      "hide": false,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        {
+          "identifier": "Position",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VECTOR"
+        }
+      ]
+    },
+    "Reroute.068": {
+      "type": "NodeReroute",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Input",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Reroute.069": {
+      "type": "NodeReroute",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Input",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Reroute.070": {
+      "type": "NodeReroute",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Input",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Reroute.071": {
+      "type": "NodeReroute",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Input",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Reroute.077": {
+      "type": "NodeReroute",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Input",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "MATRIX"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "MATRIX"
+        }
+      ]
+    },
+    "Reroute.084": {
+      "type": "NodeReroute",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Input",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Reroute.086": {
+      "type": "NodeReroute",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Input",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Reroute.087": {
+      "type": "NodeReroute",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Input",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        }
+      ]
+    },
+    "Reroute.093": {
+      "type": "NodeReroute",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Input",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VECTOR"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VECTOR"
+        }
+      ]
+    },
+    "Reroute.098": {
+      "type": "NodeReroute",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Input",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "MATRIX"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "MATRIX"
+        }
+      ]
+    },
+    "Reroute.146": {
+      "type": "NodeReroute",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Input",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        }
+      ]
+    },
+    "Reroute.167": {
+      "type": "NodeReroute",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Input",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        }
+      ]
+    },
+    "Separate Transform": {
+      "type": "FunctionNodeSeparateTransform",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Transform",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "MATRIX"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Translation",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VECTOR"
+        },
+        {
+          "identifier": "Rotation",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "ROTATION"
+        },
+        {
+          "identifier": "Scale",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VECTOR"
+        }
+      ]
+    },
+    "Separate XYZ.002": {
+      "type": "ShaderNodeSeparateXYZ",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Vector",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VECTOR"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "X",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Y",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Z",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Separate XYZ.003": {
+      "type": "ShaderNodeSeparateXYZ",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Vector",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VECTOR"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "X",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Y",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Z",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Switch.022": {
+      "type": "GeometryNodeSwitch",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Switch",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "False",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "True",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Switch.025": {
+      "type": "GeometryNodeSwitch",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Switch",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "False",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "True",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Transform Point": {
+      "type": "FunctionNodeTransformPoint",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Vector",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VECTOR"
+        },
+        {
+          "identifier": "Transform",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "MATRIX"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Vector",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VECTOR"
+        }
+      ]
+    },
+    "Transform Point.001": {
+      "type": "FunctionNodeTransformPoint",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Vector",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VECTOR"
+        },
+        {
+          "identifier": "Transform",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "MATRIX"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Vector",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VECTOR"
+        }
+      ]
+    },
+    "Transform Point.004": {
+      "type": "FunctionNodeTransformPoint",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Vector",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VECTOR"
+        },
+        {
+          "identifier": "Transform",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "MATRIX"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Vector",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VECTOR"
+        }
+      ]
+    }
+  }
+}

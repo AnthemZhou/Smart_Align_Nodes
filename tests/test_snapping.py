@@ -197,7 +197,7 @@ class SnappingTest(unittest.TestCase):
         moving = Box(97, 147, 100, 50, "Moving")
         target = Box(100, 150, 20, -30, "Target")
 
-        result = find_snaps(moving, [target], 5, 5, equal_spacing=False)
+        result = find_snaps(moving, [target], 5, 5)
 
         self.assertEqual(result.correction_x, 3)
         self.assertEqual(result.x_candidate.kind, "alignment")
@@ -207,81 +207,54 @@ class SnappingTest(unittest.TestCase):
         moving = Box(0, 50, 103, 53, "Moving")
         target = Box(100, 150, 100, 50, "Target")
 
-        result = find_snaps(moving, [target], 5, 5, equal_spacing=False)
+        result = find_snaps(moving, [target], 5, 5)
 
         self.assertEqual(result.correction_y, -3)
         self.assertEqual(result.y_candidate.moving_anchor, "top")
 
-    def test_spacing_continues_existing_horizontal_gap(self):
-        first = Box(0, 50, 100, 50, "First")
-        second = Box(70, 120, 100, 50, "Second")
-        moving = Box(137, 187, 100, 50, "Moving")
+    def test_bottom_edges_do_not_create_alignment_candidates(self):
+        moving = Box(0, 50, 53, 3, "Moving")
+        target = Box(100, 150, 100, 3, "Target")
 
-        result = find_snaps(moving, [first, second], 5, 5, equal_spacing=True)
-
-        self.assertEqual(result.correction_x, 3)
-        self.assertEqual(result.x_candidate.kind, "spacing")
-        self.assertEqual(result.x_candidate.placement, "after")
-        self.assertEqual(result.x_candidate.gap, 20)
-
-    def test_spacing_centers_node_between_two_neighbors(self):
-        first = Box(0, 50, 100, 50, "First")
-        second = Box(150, 200, 100, 50, "Second")
-        moving = Box(78, 118, 100, 50, "Moving")
-
-        result = find_snaps(moving, [first, second], 5, 5, equal_spacing=True)
-
-        self.assertEqual(result.correction_x, 2)
-        self.assertEqual(result.x_candidate.kind, "spacing")
-        self.assertEqual(result.x_candidate.placement, "between")
-        self.assertEqual(result.x_candidate.gap, 30)
-
-    def test_spacing_continues_existing_vertical_gap(self):
-        first = Box(0, 50, 100, 50, "First")
-        second = Box(0, 50, 30, -20, "Second")
-        moving = Box(0, 50, -37, -87, "Moving")
-
-        result = find_snaps(moving, [first, second], 5, 5, equal_spacing=True)
-
-        self.assertEqual(result.correction_y, -3)
-        self.assertEqual(result.y_candidate.kind, "spacing")
-        self.assertEqual(result.y_candidate.placement, "after")
-        self.assertEqual(result.y_candidate.gap, 20)
-
-    def test_default_vertical_gap_snaps_two_overlapping_nodes(self):
-        target = Box(0, 100, 100, 20, "Target")
-        moving = Box(10, 90, -7, -57, "Moving")
-
-        result = find_snaps(
-            moving,
-            [target],
-            5,
-            5,
-            equal_spacing=False,
-            vertical_gap=30,
-        )
-
-        self.assertEqual(result.correction_y, -3)
-        self.assertEqual(result.y_candidate.kind, "gap")
-        self.assertEqual(result.y_candidate.placement, "below")
-
-    def test_default_vertical_gap_requires_horizontal_overlap(self):
-        target = Box(0, 100, 100, 20, "Target")
-        moving = Box(120, 200, -10, -60, "Moving")
-
-        result = find_snaps(
-            moving,
-            [target],
-            5,
-            5,
-            equal_spacing=False,
-            vertical_gap=30,
-        )
+        result = find_snaps(moving, [target], 5, 5)
 
         self.assertIsNone(result.y_candidate)
 
+    def test_grid_snaps_normal_node_by_left_and_top(self):
+        moving = Box(23, 63, 77, 27, "Moving")
+
+        result = find_snaps(moving, [], 5, 5, grid_size=50)
+
+        self.assertEqual(result.correction_x, -23)
+        self.assertEqual(result.correction_y, 23)
+        self.assertEqual(result.x_candidate.kind, "grid")
+        self.assertEqual(result.y_candidate.kind, "grid")
+
+    def test_grid_skips_occupied_nearest_cell(self):
+        moving = Box(23, 63, 77, 27, "Moving")
+        occupied = Box(0, 40, 100, 50, "Occupied")
+
+        result = find_snaps(moving, [occupied], 5, 5, grid_size=50)
+        placed = moving.translated(result.correction_x, result.correction_y)
+
+        self.assertFalse(
+            placed.left < occupied.right
+            and placed.right > occupied.left
+            and placed.bottom < occupied.top
+            and placed.top > occupied.bottom
+        )
+
+    def test_frame_area_is_not_treated_as_occupied(self):
+        moving = Box(23, 63, 77, 27, "Moving")
+        frame = Box(0, 200, 200, -100, "Frame", False, (), True)
+
+        result = find_snaps(moving, [frame], 5, 5, grid_size=50)
+
+        self.assertEqual(result.correction_x, -23)
+        self.assertEqual(result.correction_y, 23)
+
     def test_axis_constraint_disables_other_axis(self):
-        moving = Box(97, 147, 103, 53, "Moving")
+        moving = Box(97, 147, 203, 153, "Moving")
         target = Box(100, 150, 100, 50, "Target")
 
         result = find_snaps(
@@ -289,7 +262,6 @@ class SnappingTest(unittest.TestCase):
             [target],
             5,
             5,
-            equal_spacing=False,
             axis_constraint="x",
         )
 
@@ -301,7 +273,7 @@ class SnappingTest(unittest.TestCase):
         moving = Box(95, 105, 55, 45, "Reroute", True)
         target = Box(100, 150, 100, 50, "Node")
 
-        result = find_snaps(moving, [target], 30, 30, equal_spacing=False)
+        result = find_snaps(moving, [target], 30, 30)
 
         self.assertIsNone(result.x_candidate)
         self.assertIsNone(result.y_candidate)
@@ -318,7 +290,7 @@ class SnappingTest(unittest.TestCase):
             (("socket:inputs:Vector:0", 55),),
         )
 
-        result = find_snaps(moving, [target], 5, 5, equal_spacing=False)
+        result = find_snaps(moving, [target], 5, 5)
 
         self.assertEqual(result.correction_y, 5)
         self.assertEqual(result.y_candidate.moving_anchor, "middle")
@@ -328,10 +300,10 @@ class SnappingTest(unittest.TestCase):
         )
 
     def test_reroutes_snap_by_center(self):
-        moving = Box(95, 105, 55, 45, "Moving Reroute", True)
+        moving = Box(95, 105, 80, 70, "Moving Reroute", True)
         target = Box(120, 130, 60, 50, "Target Reroute", True)
 
-        result = find_snaps(moving, [target], 30, 10, equal_spacing=False)
+        result = find_snaps(moving, [target], 30, 10)
 
         self.assertEqual(result.x_candidate.moving_anchor, "center")
         self.assertEqual(result.x_candidate.target_anchor, "center")
@@ -341,7 +313,7 @@ class SnappingTest(unittest.TestCase):
         moving = Box(45, 95, 100, 50, "Moving")
         target = Box(20, 120, 20, -30, "Target")
 
-        result = find_snaps(moving, [target], 5, 5, equal_spacing=False)
+        result = find_snaps(moving, [target], 5, 5)
 
         self.assertIsNone(result.x_candidate)
 
@@ -350,7 +322,7 @@ class SnappingTest(unittest.TestCase):
         first = Box(0, 50, 100, 50, "First")
         second = Box(100, 150, 100, 20, "Second")
 
-        result = find_snaps(moving, [first, second], 5, 5, equal_spacing=False)
+        result = find_snaps(moving, [first, second], 5, 5)
         final_box = moving.translated(result.correction_x, result.correction_y)
         segments = guide_segments(result, final_box)
 
@@ -358,39 +330,15 @@ class SnappingTest(unittest.TestCase):
         self.assertEqual(segments[0].start[0], -8.0)
         self.assertEqual(segments[0].end[0], 258.0)
 
-    def test_spacing_requires_real_orthogonal_overlap(self):
-        first = Box(0, 50, 100, 50, "First")
-        second = Box(70, 120, 100, 50, "Second")
-        moving = Box(137, 187, 45, -5, "Moving")
-
-        result = find_snaps(moving, [first, second], 5, 5, equal_spacing=True)
-
-        self.assertIsNone(result.x_candidate)
-
-    def test_spacing_result_builds_two_measurement_guides(self):
-        first = Box(0, 50, 100, 50, "First")
-        second = Box(70, 120, 100, 50, "Second")
-        moving = Box(137, 187, 100, 50, "Moving")
-        result = find_snaps(moving, [first, second], 5, 5, equal_spacing=True)
+    def test_grid_result_builds_two_short_guides(self):
+        moving = Box(23, 63, 77, 27, "Moving")
+        result = find_snaps(moving, [], 5, 5, grid_size=50)
         final_box = moving.translated(result.correction_x, result.correction_y)
 
         segments = guide_segments(result, final_box)
-        horizontal_measurements = [
-            segment
-            for segment in segments
-            if segment.kind == "spacing" and segment.start[1] == segment.end[1]
-        ]
 
-        self.assertEqual(len(horizontal_measurements), 2)
-        self.assertTrue(all(segment.start[1] == 75 for segment in horizontal_measurements))
-        self.assertTrue(all(segment.fade for segment in horizontal_measurements))
-        ticks = [
-            segment
-            for segment in segments
-            if segment.kind == "spacing" and segment.start[0] == segment.end[0]
-        ]
-        self.assertTrue(ticks)
-        self.assertTrue(all(not segment.fade for segment in ticks))
+        self.assertEqual(len(segments), 2)
+        self.assertTrue(all(segment.kind == "grid" for segment in segments))
 
 
 if __name__ == "__main__":

@@ -1,0 +1,3908 @@
+{
+  "nodes": [
+    {
+      "key": "Store Named Attribute.003",
+      "box": [
+        2045.03125,
+        2185.03125,
+        -244.04122924804688,
+        -409.0412292480469
+      ],
+      "location": [
+        2045.03125,
+        -244.04122924804688
+      ],
+      "selected": false,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Switch.020",
+      "box": [
+        2235.03125,
+        2375.03125,
+        -137.72560119628906,
+        -256.72560119628906
+      ],
+      "location": [
+        2235.03125,
+        -137.72560119628906
+      ],
+      "selected": false,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Named Attribute.001",
+      "box": [
+        1611.18359375,
+        1751.18359375,
+        -400.0000305175781,
+        -477.0000305175781
+      ],
+      "location": [
+        1611.18359375,
+        -400.0000305175781
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Group Input.023",
+      "box": [
+        1411.181640625,
+        1551.181640625,
+        -320.0,
+        -372.0
+      ],
+      "location": [
+        1411.181640625,
+        -320.0
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.051",
+      "box": [
+        1886.271484375,
+        1896.271484375,
+        -193.123291015625,
+        -203.123291015625
+      ],
+      "location": [
+        1891.271484375,
+        -198.123291015625
+      ],
+      "selected": false,
+      "parent": "Frame.020",
+      "kind": "REROUTE",
+      "collapsed": false
+    },
+    {
+      "key": "Frame.020",
+      "box": [
+        64.484375,
+        2405.0,
+        22.5,
+        -1117.361083984375
+      ],
+      "location": [
+        64.484375,
+        22.5
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "FRAME",
+      "collapsed": false
+    },
+    {
+      "key": "Vector Math.014",
+      "box": [
+        1828.720703125,
+        1968.720703125,
+        -403.6185302734375,
+        -502.6185302734375
+      ],
+      "location": [
+        1828.720703125,
+        -403.6185302734375
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Combine XYZ.008",
+      "box": [
+        1645.0703125,
+        1785.0703125,
+        -517.13916015625,
+        -636.13916015625
+      ],
+      "location": [
+        1645.0703125,
+        -517.13916015625
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Switch.021",
+      "box": [
+        151.134765625,
+        291.134765625,
+        -743.1340942382812,
+        -862.1340942382812
+      ],
+      "location": [
+        151.134765625,
+        -743.1340942382812
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Math.001",
+      "box": [
+        351.26953125,
+        491.26953125,
+        -614.085693359375,
+        -713.085693359375
+      ],
+      "location": [
+        351.26953125,
+        -614.085693359375
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Switch.007",
+      "box": [
+        1444.203125,
+        1584.203125,
+        -525.4441528320312,
+        -644.4441528320312
+      ],
+      "location": [
+        1444.203125,
+        -525.4441528320312
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Math.021",
+      "box": [
+        611.287109375,
+        751.287109375,
+        -809.32568359375,
+        -908.32568359375
+      ],
+      "location": [
+        611.287109375,
+        -809.32568359375
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Group Input.025",
+      "box": [
+        1240.001953125,
+        1380.001953125,
+        -540.0000610351562,
+        -592.0000610351562
+      ],
+      "location": [
+        1240.001953125,
+        -540.0000610351562
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Math.037",
+      "box": [
+        -2271.5263671875,
+        -2131.5263671875,
+        -1298.5,
+        -1397.5
+      ],
+      "location": [
+        -2271.5263671875,
+        -1298.5
+      ],
+      "selected": false,
+      "parent": "Frame.021",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Frame.021",
+      "box": [
+        -3766.52734375,
+        -361.5,
+        -380.6365661621094,
+        -1755.0000915527344
+      ],
+      "location": [
+        -3766.52734375,
+        -380.6365661621094
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "FRAME",
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.081",
+      "box": [
+        94.484375,
+        104.484375,
+        -1077.361083984375,
+        -1087.361083984375
+      ],
+      "location": [
+        99.484375,
+        -1082.361083984375
+      ],
+      "selected": false,
+      "parent": "Frame.020",
+      "kind": "REROUTE",
+      "collapsed": false
+    },
+    {
+      "key": "Math.039",
+      "box": [
+        819.841796875,
+        959.841796875,
+        -889.0288696289062,
+        -988.0288696289062
+      ],
+      "location": [
+        819.841796875,
+        -889.0288696289062
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Switch.027",
+      "box": [
+        1041.265625,
+        1181.265625,
+        -808.6536254882812,
+        -927.6536254882812
+      ],
+      "location": [
+        1041.265625,
+        -808.6536254882812
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Group Input.029",
+      "box": [
+        605.76953125,
+        745.76953125,
+        -739.2239990234375,
+        -791.2239990234375
+      ],
+      "location": [
+        605.76953125,
+        -739.2239990234375
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Switch.028",
+      "box": [
+        608.291015625,
+        748.291015625,
+        -943.8095703125,
+        -1062.8095703125
+      ],
+      "location": [
+        608.291015625,
+        -943.8095703125
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.091",
+      "box": [
+        203.306640625,
+        213.306640625,
+        -183.13571166992188,
+        -193.13571166992188
+      ],
+      "location": [
+        208.306640625,
+        -188.13571166992188
+      ],
+      "selected": false,
+      "parent": "Frame.020",
+      "kind": "REROUTE",
+      "collapsed": false
+    },
+    {
+      "key": "Evaluate on Domain.001",
+      "box": [
+        415.748046875,
+        555.748046875,
+        -917.22021484375,
+        -1016.22021484375
+      ],
+      "location": [
+        415.748046875,
+        -917.22021484375
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Switch.029",
+      "box": [
+        1948.900390625,
+        2088.900390625,
+        -13.528209686279297,
+        -132.5282096862793
+      ],
+      "location": [
+        1948.900390625,
+        -13.528209686279297
+      ],
+      "selected": false,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Group Input.030",
+      "box": [
+        1730.15234375,
+        1870.15234375,
+        -30.02386474609375,
+        -82.02386474609375
+      ],
+      "location": [
+        1730.15234375,
+        -30.02386474609375
+      ],
+      "selected": false,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Switch.036",
+      "box": [
+        -111.52734375,
+        28.47265625,
+        -119.99999237060547,
+        -238.99999237060547
+      ],
+      "location": [
+        -111.52734375,
+        -119.99999237060547
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Group Input.052",
+      "box": [
+        1046.09375,
+        1186.09375,
+        -638.017333984375,
+        -690.017333984375
+      ],
+      "location": [
+        1046.09375,
+        -638.017333984375
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Switch.044",
+      "box": [
+        1248.607421875,
+        1388.607421875,
+        -633.3167724609375,
+        -752.3167724609375
+      ],
+      "location": [
+        1248.607421875,
+        -633.3167724609375
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.097",
+      "box": [
+        936.884765625,
+        946.884765625,
+        -828.1705932617188,
+        -838.1705932617188
+      ],
+      "location": [
+        941.884765625,
+        -833.1705932617188
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "REROUTE",
+      "collapsed": false
+    },
+    {
+      "key": "Switch.045",
+      "box": [
+        3228.474609375,
+        3368.474609375,
+        -100.0,
+        -219.0
+      ],
+      "location": [
+        3228.474609375,
+        -100.0
+      ],
+      "selected": false,
+      "parent": "Frame.023",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Frame.023",
+      "box": [
+        2450.0,
+        3398.5,
+        36.0,
+        -249.0
+      ],
+      "location": [
+        2450.0,
+        36.0
+      ],
+      "selected": false,
+      "parent": "Frame.028",
+      "kind": "FRAME",
+      "collapsed": false
+    },
+    {
+      "key": "Switch.046",
+      "box": [
+        789.845703125,
+        929.845703125,
+        -647.9773559570312,
+        -766.9773559570312
+      ],
+      "location": [
+        789.845703125,
+        -647.9773559570312
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Boolean Math.011",
+      "box": [
+        601.712890625,
+        741.712890625,
+        -648.3902587890625,
+        -723.3902587890625
+      ],
+      "location": [
+        601.712890625,
+        -648.3902587890625
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "collapsed": false
+    },
+    {
+      "key": "Frame.028",
+      "box": [
+        2420.0,
+        4439.5,
+        72.0,
+        -279.0
+      ],
+      "location": [
+        2420.0,
+        72.0
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "FRAME",
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.156",
+      "box": [
+        -452.9609375,
+        -442.9609375,
+        -1841.16943359375,
+        -1851.16943359375
+      ],
+      "location": [
+        -447.9609375,
+        -1846.16943359375
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.157",
+      "box": [
+        -706.193359375,
+        -696.193359375,
+        923.2101440429688,
+        913.2101440429688
+      ],
+      "location": [
+        -701.193359375,
+        918.2101440429688
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.169",
+      "box": [
+        -813.40234375,
+        -803.40234375,
+        -1889.01220703125,
+        -1899.01220703125
+      ],
+      "location": [
+        -808.40234375,
+        -1894.01220703125
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.058",
+      "box": [
+        1219.693359375,
+        1229.693359375,
+        145.0,
+        135.0
+      ],
+      "location": [
+        1224.693359375,
+        140.0
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.183",
+      "box": [
+        -856.5263671875,
+        -846.5263671875,
+        -695.0,
+        -705.0
+      ],
+      "location": [
+        -851.5263671875,
+        -700.0
+      ],
+      "selected": false,
+      "parent": "Frame.021",
+      "kind": "REROUTE",
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.188",
+      "box": [
+        -464.998046875,
+        -454.998046875,
+        -1715.0001220703125,
+        -1725.0001220703125
+      ],
+      "location": [
+        -459.998046875,
+        -1720.0001220703125
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.197",
+      "box": [
+        520.869140625,
+        530.869140625,
+        -657.32177734375,
+        -667.32177734375
+      ],
+      "location": [
+        525.869140625,
+        -662.32177734375
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "REROUTE",
+      "collapsed": false
+    }
+  ],
+  "links": [
+    {
+      "source": "Reroute.051",
+      "target": "Switch.020",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 82.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "False"
+    },
+    {
+      "source": "Store Named Attribute.003",
+      "target": "Switch.020",
+      "output": 0,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 104.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Geometry",
+      "target_socket": "True"
+    },
+    {
+      "source": "Switch.029",
+      "target": "Switch.020",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Switch"
+    },
+    {
+      "source": "Group Input.023",
+      "target": "Named Attribute.001",
+      "output": 26,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 37.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Socket_17",
+      "target_socket": "Name"
+    },
+    {
+      "source": "Group Input.023",
+      "target": "Store Named Attribute.003",
+      "output": 26,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 81.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Socket_17",
+      "target_socket": "Name"
+    },
+    {
+      "source": "Vector Math.014",
+      "target": "Store Named Attribute.003",
+      "output": 0,
+      "input": 3,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 103.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Vector",
+      "target_socket": "Value"
+    },
+    {
+      "source": "Reroute.051",
+      "target": "Store Named Attribute.003",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 37.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Geometry"
+    },
+    {
+      "source": "Named Attribute.001",
+      "target": "Vector Math.014",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Attribute",
+      "target_socket": "Vector"
+    },
+    {
+      "source": "Combine XYZ.008",
+      "target": "Vector Math.014",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 82.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Vector",
+      "target_socket": "Vector_001"
+    },
+    {
+      "source": "Reroute.169",
+      "target": "Switch.021",
+      "output": 0,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 104.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "True"
+    },
+    {
+      "source": "Reroute.188",
+      "target": "Switch.021",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Switch"
+    },
+    {
+      "source": "Switch.021",
+      "target": "Math.001",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 82.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Value_001"
+    },
+    {
+      "source": "Switch.044",
+      "target": "Switch.007",
+      "output": 0,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 104.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "True"
+    },
+    {
+      "source": "Reroute.197",
+      "target": "Math.021",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Value"
+    },
+    {
+      "source": "Group Input.025",
+      "target": "Switch.007",
+      "output": 29,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Socket_29",
+      "target_socket": "Switch"
+    },
+    {
+      "source": "Reroute.091",
+      "target": "Reroute.051",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 5.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Input"
+    },
+    {
+      "source": "Reroute.157",
+      "target": "Math.021",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 82.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Value_001"
+    },
+    {
+      "source": "Math.021",
+      "target": "Math.039",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "Value"
+    },
+    {
+      "source": "Switch.028",
+      "target": "Math.039",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 82.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Value_001"
+    },
+    {
+      "source": "Math.037",
+      "target": "Reroute.081",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 5.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "Input"
+    },
+    {
+      "source": "Reroute.097",
+      "target": "Switch.027",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 82.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "False"
+    },
+    {
+      "source": "Switch.036",
+      "target": "Reroute.091",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 5.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Input"
+    },
+    {
+      "source": "Reroute.081",
+      "target": "Switch.028",
+      "output": 0,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 104.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "True"
+    },
+    {
+      "source": "Math.039",
+      "target": "Switch.027",
+      "output": 0,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 104.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "True"
+    },
+    {
+      "source": "Evaluate on Domain.001",
+      "target": "Switch.028",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "Switch"
+    },
+    {
+      "source": "Reroute.183",
+      "target": "Evaluate on Domain.001",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 37.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Value"
+    },
+    {
+      "source": "Reroute.058",
+      "target": "Switch.029",
+      "output": 0,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 104.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "True"
+    },
+    {
+      "source": "Group Input.030",
+      "target": "Switch.029",
+      "output": 25,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Socket_31",
+      "target_socket": "Switch"
+    },
+    {
+      "source": "Switch.007",
+      "target": "Combine XYZ.008",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 59.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Y"
+    },
+    {
+      "source": "Switch.027",
+      "target": "Switch.044",
+      "output": 0,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 104.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "True"
+    },
+    {
+      "source": "Reroute.097",
+      "target": "Switch.044",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 82.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "False"
+    },
+    {
+      "source": "Math.021",
+      "target": "Reroute.097",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 5.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "Input"
+    },
+    {
+      "source": "Group Input.052",
+      "target": "Switch.044",
+      "output": 13,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Socket_39",
+      "target_socket": "Switch"
+    },
+    {
+      "source": "Switch.020",
+      "target": "Switch.045",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 82.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "False"
+    },
+    {
+      "source": "Group Input.029",
+      "target": "Switch.046",
+      "output": 24,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 104.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Socket_30",
+      "target_socket": "True"
+    },
+    {
+      "source": "Reroute.156",
+      "target": "Boolean Math.011",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 37.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Boolean"
+    },
+    {
+      "source": "Boolean Math.011",
+      "target": "Switch.046",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Boolean",
+      "target_socket": "Switch"
+    },
+    {
+      "source": "Switch.046",
+      "target": "Switch.027",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Switch"
+    },
+    {
+      "source": "Reroute.197",
+      "target": "Switch.007",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 82.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "False"
+    },
+    {
+      "source": "Math.001",
+      "target": "Reroute.197",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 5.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "Input"
+    }
+  ],
+  "socket_profiles": {
+    "Group Input.025": {
+      "type": "NodeGroupInput",
+      "hide": false,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        {
+          "identifier": "Socket_0",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        },
+        {
+          "identifier": "Socket_5",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Socket_4",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_26",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_3",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "OBJECT"
+        },
+        {
+          "identifier": "Socket_27",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        },
+        {
+          "identifier": "Socket_2",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "INT"
+        },
+        {
+          "identifier": "Socket_11",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_36",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_32",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_33",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "INT"
+        },
+        {
+          "identifier": "Socket_37",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Socket_38",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Socket_39",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_10",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_25",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_21",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "OBJECT"
+        },
+        {
+          "identifier": "Socket_22",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "OBJECT"
+        },
+        {
+          "identifier": "Socket_23",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        },
+        {
+          "identifier": "Socket_24",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        },
+        {
+          "identifier": "Socket_28",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "INT"
+        },
+        {
+          "identifier": "Socket_15",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_13",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_14",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_30",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_31",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_17",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "STRING"
+        },
+        {
+          "identifier": "Socket_19",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_20",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_29",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "__extend__",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "CUSTOM"
+        }
+      ]
+    },
+    "Reroute.058": {
+      "type": "NodeReroute",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Input",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        }
+      ]
+    },
+    "Combine XYZ.008": {
+      "type": "ShaderNodeCombineXYZ",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "X",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Y",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Z",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Vector",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VECTOR"
+        }
+      ]
+    },
+    "Switch.046": {
+      "type": "GeometryNodeSwitch",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Switch",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "False",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "True",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        }
+      ]
+    },
+    "Group Input.023": {
+      "type": "NodeGroupInput",
+      "hide": false,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        {
+          "identifier": "Socket_0",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        },
+        {
+          "identifier": "Socket_5",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Socket_4",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_26",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_3",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "OBJECT"
+        },
+        {
+          "identifier": "Socket_27",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        },
+        {
+          "identifier": "Socket_2",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "INT"
+        },
+        {
+          "identifier": "Socket_11",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_36",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_32",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_33",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "INT"
+        },
+        {
+          "identifier": "Socket_37",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Socket_38",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Socket_39",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_10",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_25",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_21",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "OBJECT"
+        },
+        {
+          "identifier": "Socket_22",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "OBJECT"
+        },
+        {
+          "identifier": "Socket_23",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        },
+        {
+          "identifier": "Socket_24",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        },
+        {
+          "identifier": "Socket_28",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "INT"
+        },
+        {
+          "identifier": "Socket_15",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_13",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_14",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_30",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_31",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_17",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "STRING"
+        },
+        {
+          "identifier": "Socket_19",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_20",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_29",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "__extend__",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "CUSTOM"
+        }
+      ]
+    },
+    "Switch.029": {
+      "type": "GeometryNodeSwitch",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Switch",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "False",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "True",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        }
+      ]
+    },
+    "Group Input.030": {
+      "type": "NodeGroupInput",
+      "hide": false,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        {
+          "identifier": "Socket_0",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        },
+        {
+          "identifier": "Socket_5",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Socket_4",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_26",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_3",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "OBJECT"
+        },
+        {
+          "identifier": "Socket_27",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        },
+        {
+          "identifier": "Socket_2",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "INT"
+        },
+        {
+          "identifier": "Socket_11",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_36",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_32",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_33",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "INT"
+        },
+        {
+          "identifier": "Socket_37",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Socket_38",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Socket_39",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_10",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_25",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_21",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "OBJECT"
+        },
+        {
+          "identifier": "Socket_22",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "OBJECT"
+        },
+        {
+          "identifier": "Socket_23",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        },
+        {
+          "identifier": "Socket_24",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        },
+        {
+          "identifier": "Socket_28",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "INT"
+        },
+        {
+          "identifier": "Socket_15",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_13",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_14",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_30",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_31",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_17",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "STRING"
+        },
+        {
+          "identifier": "Socket_19",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_20",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_29",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "__extend__",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "CUSTOM"
+        }
+      ]
+    },
+    "Reroute.188": {
+      "type": "NodeReroute",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Input",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        }
+      ]
+    },
+    "Group Input.029": {
+      "type": "NodeGroupInput",
+      "hide": false,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        {
+          "identifier": "Socket_0",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        },
+        {
+          "identifier": "Socket_5",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Socket_4",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_26",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_3",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "OBJECT"
+        },
+        {
+          "identifier": "Socket_27",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        },
+        {
+          "identifier": "Socket_2",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "INT"
+        },
+        {
+          "identifier": "Socket_11",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_36",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_32",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_33",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "INT"
+        },
+        {
+          "identifier": "Socket_37",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Socket_38",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Socket_39",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_10",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_25",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_21",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "OBJECT"
+        },
+        {
+          "identifier": "Socket_22",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "OBJECT"
+        },
+        {
+          "identifier": "Socket_23",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        },
+        {
+          "identifier": "Socket_24",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        },
+        {
+          "identifier": "Socket_28",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "INT"
+        },
+        {
+          "identifier": "Socket_15",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_13",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_14",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_30",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_31",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_17",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "STRING"
+        },
+        {
+          "identifier": "Socket_19",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_20",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_29",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "__extend__",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "CUSTOM"
+        }
+      ]
+    },
+    "Boolean Math.011": {
+      "type": "FunctionNodeBooleanMath",
+      "hide": false,
+      "properties": {
+        "operation": "NOT"
+      },
+      "inputs": [
+        {
+          "identifier": "Boolean",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Boolean",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        }
+      ]
+    },
+    "Reroute.157": {
+      "type": "NodeReroute",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Input",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Store Named Attribute.003": {
+      "type": "GeometryNodeStoreNamedAttribute",
+      "hide": false,
+      "properties": {
+        "data_type": "FLOAT2"
+      },
+      "inputs": [
+        {
+          "identifier": "Geometry",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        },
+        {
+          "identifier": "Selection",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": true,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Name",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "STRING"
+        },
+        {
+          "identifier": "Value",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VECTOR"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Geometry",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        }
+      ]
+    },
+    "Reroute.156": {
+      "type": "NodeReroute",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Input",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        }
+      ]
+    },
+    "Math.021": {
+      "type": "ShaderNodeMath",
+      "hide": false,
+      "properties": {
+        "operation": "MULTIPLY"
+      },
+      "inputs": [
+        {
+          "identifier": "Value",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Value_001",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Value_002",
+          "hide": false,
+          "enabled": false,
+          "is_unavailable": true,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Value",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Reroute.169": {
+      "type": "NodeReroute",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Input",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Math.001": {
+      "type": "ShaderNodeMath",
+      "hide": false,
+      "properties": {
+        "operation": "MULTIPLY"
+      },
+      "inputs": [
+        {
+          "identifier": "Value",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Value_001",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Value_002",
+          "hide": false,
+          "enabled": false,
+          "is_unavailable": true,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Value",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Frame.020": {
+      "type": "NodeFrame",
+      "hide": false,
+      "properties": {},
+      "inputs": [],
+      "outputs": []
+    },
+    "Switch.007": {
+      "type": "GeometryNodeSwitch",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Switch",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "False",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "True",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Reroute.091": {
+      "type": "NodeReroute",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Input",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        }
+      ]
+    },
+    "Reroute.197": {
+      "type": "NodeReroute",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Input",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Switch.045": {
+      "type": "GeometryNodeSwitch",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Switch",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "False",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        },
+        {
+          "identifier": "True",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        }
+      ]
+    },
+    "Reroute.081": {
+      "type": "NodeReroute",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Input",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Group Input.052": {
+      "type": "NodeGroupInput",
+      "hide": false,
+      "properties": {},
+      "inputs": [],
+      "outputs": [
+        {
+          "identifier": "Socket_0",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        },
+        {
+          "identifier": "Socket_5",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Socket_4",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_26",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_3",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "OBJECT"
+        },
+        {
+          "identifier": "Socket_27",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        },
+        {
+          "identifier": "Socket_2",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "INT"
+        },
+        {
+          "identifier": "Socket_11",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_36",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_32",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_33",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "INT"
+        },
+        {
+          "identifier": "Socket_37",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Socket_38",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Socket_39",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_10",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_25",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_21",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "OBJECT"
+        },
+        {
+          "identifier": "Socket_22",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "OBJECT"
+        },
+        {
+          "identifier": "Socket_23",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        },
+        {
+          "identifier": "Socket_24",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        },
+        {
+          "identifier": "Socket_28",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "INT"
+        },
+        {
+          "identifier": "Socket_15",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_13",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_14",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_30",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_31",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "Socket_17",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "STRING"
+        },
+        {
+          "identifier": "Socket_19",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_20",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "MENU"
+        },
+        {
+          "identifier": "Socket_29",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "__extend__",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "CUSTOM"
+        }
+      ]
+    },
+    "Frame.023": {
+      "type": "NodeFrame",
+      "hide": false,
+      "properties": {},
+      "inputs": [],
+      "outputs": []
+    },
+    "Vector Math.014": {
+      "type": "ShaderNodeVectorMath",
+      "hide": false,
+      "properties": {
+        "operation": "MULTIPLY"
+      },
+      "inputs": [
+        {
+          "identifier": "Vector",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VECTOR"
+        },
+        {
+          "identifier": "Vector_001",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VECTOR"
+        },
+        {
+          "identifier": "Vector_002",
+          "hide": false,
+          "enabled": false,
+          "is_unavailable": true,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VECTOR"
+        },
+        {
+          "identifier": "Scale",
+          "hide": false,
+          "enabled": false,
+          "is_unavailable": true,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Vector",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VECTOR"
+        },
+        {
+          "identifier": "Value",
+          "hide": false,
+          "enabled": false,
+          "is_unavailable": true,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Switch.021": {
+      "type": "GeometryNodeSwitch",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Switch",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "False",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "True",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Math.037": {
+      "type": "ShaderNodeMath",
+      "hide": false,
+      "properties": {
+        "operation": "ADD"
+      },
+      "inputs": [
+        {
+          "identifier": "Value",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Value_001",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Value_002",
+          "hide": false,
+          "enabled": false,
+          "is_unavailable": true,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Value",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Switch.036": {
+      "type": "GeometryNodeSwitch",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Switch",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "False",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        },
+        {
+          "identifier": "True",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        }
+      ]
+    },
+    "Switch.028": {
+      "type": "GeometryNodeSwitch",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Switch",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "False",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "True",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Frame.028": {
+      "type": "NodeFrame",
+      "hide": false,
+      "properties": {},
+      "inputs": [],
+      "outputs": []
+    },
+    "Evaluate on Domain.001": {
+      "type": "GeometryNodeFieldOnDomain",
+      "hide": false,
+      "properties": {
+        "data_type": "FLOAT"
+      },
+      "inputs": [
+        {
+          "identifier": "Value",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Value",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Switch.027": {
+      "type": "GeometryNodeSwitch",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Switch",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "False",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "True",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Math.039": {
+      "type": "ShaderNodeMath",
+      "hide": false,
+      "properties": {
+        "operation": "MULTIPLY"
+      },
+      "inputs": [
+        {
+          "identifier": "Value",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Value_001",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "Value_002",
+          "hide": false,
+          "enabled": false,
+          "is_unavailable": true,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Value",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Named Attribute.001": {
+      "type": "GeometryNodeInputNamedAttribute",
+      "hide": false,
+      "properties": {
+        "data_type": "FLOAT_VECTOR"
+      },
+      "inputs": [
+        {
+          "identifier": "Name",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "STRING"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Attribute",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VECTOR"
+        },
+        {
+          "identifier": "Exists",
+          "hide": true,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": false,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        }
+      ]
+    },
+    "Switch.044": {
+      "type": "GeometryNodeSwitch",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Switch",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "False",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        },
+        {
+          "identifier": "True",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Reroute.097": {
+      "type": "NodeReroute",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Input",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "VALUE"
+        }
+      ]
+    },
+    "Reroute.183": {
+      "type": "NodeReroute",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Input",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        }
+      ]
+    },
+    "Reroute.051": {
+      "type": "NodeReroute",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Input",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        }
+      ]
+    },
+    "Switch.020": {
+      "type": "GeometryNodeSwitch",
+      "hide": false,
+      "properties": {},
+      "inputs": [
+        {
+          "identifier": "Switch",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "BOOLEAN"
+        },
+        {
+          "identifier": "False",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        },
+        {
+          "identifier": "True",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        }
+      ],
+      "outputs": [
+        {
+          "identifier": "Output",
+          "hide": false,
+          "enabled": true,
+          "is_unavailable": false,
+          "is_linked": true,
+          "hide_value": false,
+          "type": "GEOMETRY"
+        }
+      ]
+    },
+    "Frame.021": {
+      "type": "NodeFrame",
+      "hide": false,
+      "properties": {},
+      "inputs": [],
+      "outputs": []
+    }
+  }
+}

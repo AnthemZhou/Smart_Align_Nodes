@@ -1,0 +1,3810 @@
+{
+  "date": "2026-10-05",
+  "blender": "5.2.2",
+  "unit_tests_passed": 78,
+  "wire_scope": "selection_internal",
+  "full_tree_eight_selected": {
+    "nodes": 617,
+    "links": 768,
+    "before": {
+      "node_overlaps": 0,
+      "node_overlap_check_complete": true,
+      "estimated_wire_node_hits": 2,
+      "wire_check_complete": true,
+      "endpoint_chord_crossings": 0,
+      "crossing_check_complete": true,
+      "diagnostic_pair_budget": 100000,
+      "wire_scope": "selection_internal",
+      "internal_links_checked": 9
+    },
+    "after": {
+      "node_overlaps": 0,
+      "node_overlap_check_complete": true,
+      "estimated_wire_node_hits": 1,
+      "wire_check_complete": true,
+      "endpoint_chord_crossings": 0,
+      "crossing_check_complete": true,
+      "diagnostic_pair_budget": 100000,
+      "wire_scope": "selection_internal",
+      "internal_links_checked": 9
+    },
+    "metrics": {
+      "nodes": 617,
+      "selected": 8,
+      "links": 768,
+      "moved": 8,
+      "fixed_conflicts": 0,
+      "partial_scopes": 1,
+      "width": 1091.8535156249982,
+      "height": 484.0,
+      "solve_ms": 82.21370800000001,
+      "socket_geometry": "estimated; logical port order is authoritative"
+    },
+    "partial_results": [
+      {
+        "nodes": [
+          "Combine XYZ.009",
+          "Mix.001",
+          "Switch.031",
+          "Transform Point.001",
+          "Vector Math.015",
+          "Vector Math.017",
+          "Vector Math.018",
+          "Vector Math.019"
+        ],
+        "method": "structured",
+        "reason": null,
+        "moved": 8
+      }
+    ],
+    "repeat_max_delta": 0.0,
+    "fixed_nodes_unchanged": true
+  },
+  "full_tree_seventeen_selected": {
+    "socket": {
+      "nodes": 617,
+      "selected": 17,
+      "before": {
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 1,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 0,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 18
+      },
+      "after": {
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 1,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 0,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 18
+      },
+      "metrics": {
+        "nodes": 617,
+        "selected": 17,
+        "links": 768,
+        "moved": 14,
+        "fixed_conflicts": 0,
+        "partial_scopes": 1,
+        "width": 1395.6220703124964,
+        "height": 418.0,
+        "solve_ms": 215.80575000000002,
+        "socket_geometry": "estimated; logical port order is authoritative"
+      },
+      "repeat_max_delta": 0.0,
+      "warnings": [],
+      "alignment_decisions": {
+        "Combine Transform": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Invert Matrix",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Invert Matrix": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Transform Point",
+          "vertical_error": 78.0,
+          "vertical_satisfied": false
+        },
+        "Math.036": {
+          "horizontal": "left",
+          "vertical": "anchor",
+          "target": null,
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Math.038": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Switch.025",
+          "vertical_error": 56.0,
+          "vertical_satisfied": false
+        },
+        "Math.040": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Switch.022",
+          "vertical_error": 75.0,
+          "vertical_satisfied": false
+        },
+        "Math.041": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Switch.022",
+          "vertical_error": 131.0,
+          "vertical_satisfied": false
+        },
+        "Math.051": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Switch.025",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Position.004": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Transform Point",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Separate Transform": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Combine Transform",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Separate XYZ.002": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Math.051",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Separate XYZ.003": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Math.038",
+          "vertical_error": 92.0,
+          "vertical_satisfied": false
+        },
+        "Switch.022": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Math.036",
+          "vertical_error": 159.0,
+          "vertical_satisfied": false
+        },
+        "Switch.025": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Math.036",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Transform Point": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Separate XYZ.002",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        }
+      }
+    },
+    "adaptive": {
+      "nodes": 617,
+      "selected": 17,
+      "before": {
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 1,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 0,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 18
+      },
+      "after": {
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 1,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 0,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 18
+      },
+      "metrics": {
+        "nodes": 617,
+        "selected": 17,
+        "links": 768,
+        "moved": 14,
+        "fixed_conflicts": 0,
+        "partial_scopes": 1,
+        "width": 1395.6220703124964,
+        "height": 418.0,
+        "solve_ms": 190.77058300000004,
+        "socket_geometry": "estimated; logical port order is authoritative"
+      },
+      "repeat_max_delta": 0.0,
+      "warnings": [],
+      "alignment_decisions": {
+        "Combine Transform": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Invert Matrix",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Invert Matrix": {
+          "horizontal": "right",
+          "vertical": "top",
+          "target": "Transform Point",
+          "vertical_error": 100.0,
+          "vertical_satisfied": false
+        },
+        "Math.036": {
+          "horizontal": "left",
+          "vertical": "anchor",
+          "target": null,
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Math.038": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Switch.025",
+          "vertical_error": 56.0,
+          "vertical_satisfied": false
+        },
+        "Math.040": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Switch.022",
+          "vertical_error": 75.0,
+          "vertical_satisfied": false
+        },
+        "Math.041": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Switch.022",
+          "vertical_error": 131.0,
+          "vertical_satisfied": false
+        },
+        "Math.051": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Switch.025",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Position.004": {
+          "horizontal": "right",
+          "vertical": "top",
+          "target": "Transform Point",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Separate Transform": {
+          "horizontal": "left",
+          "vertical": "top",
+          "target": "Combine Transform",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Separate XYZ.002": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Math.051",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Separate XYZ.003": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Math.038",
+          "vertical_error": 92.0,
+          "vertical_satisfied": false
+        },
+        "Switch.022": {
+          "horizontal": "right",
+          "vertical": "socket",
+          "target": "Math.036",
+          "vertical_error": 159.0,
+          "vertical_satisfied": false
+        },
+        "Switch.025": {
+          "horizontal": "right",
+          "vertical": "socket",
+          "target": "Math.036",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Transform Point": {
+          "horizontal": "left",
+          "vertical": "top",
+          "target": "Separate XYZ.002",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        }
+      }
+    }
+  },
+  "gui_eight": [
+    {
+      "test": "hybrid_alignment_and_fixed_nodes",
+      "pass": true,
+      "report": {
+        "feature": "Smart Align Layout Preview",
+        "metadata": {
+          "geometry_scale": 2.0,
+          "raw_nodes": [
+            {
+              "name": "Set Position.002",
+              "local": [
+                2624.3837890625,
+                -170.00006103515625
+              ],
+              "absolute": [
+                1191.853515625,
+                239.99993896484375
+              ],
+              "dimensions_raw": [
+                280.0,
+                184.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                1191.853515625,
+                1331.853515625,
+                239.99993896484375,
+                147.99993896484375
+              ]
+            },
+            {
+              "name": "Transform Point.001",
+              "local": [
+                2384.3837890625,
+                -469.9999694824219
+              ],
+              "absolute": [
+                951.853515625,
+                -59.999969482421875
+              ],
+              "dimensions_raw": [
+                280.0,
+                140.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                951.853515625,
+                1091.853515625,
+                -59.999969482421875,
+                -129.99996948242188
+              ]
+            },
+            {
+              "name": "Reroute.077",
+              "local": [
+                35.0,
+                -690.775146484375
+              ],
+              "absolute": [
+                -1397.5302734375,
+                -280.7751159667969
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": "Frame.021",
+              "kind": "REROUTE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                -1402.5302734375,
+                -1392.5302734375,
+                -275.7751159667969,
+                -285.7751159667969
+              ]
+            },
+            {
+              "name": "Vector Math.015",
+              "local": [
+                1664.3818359375,
+                -430.00006103515625
+              ],
+              "absolute": [
+                231.8515625,
+                -20.00006103515625
+              ],
+              "dimensions_raw": [
+                280.0,
+                198.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                231.8515625,
+                371.8515625,
+                -20.00006103515625,
+                -119.00006103515625
+              ]
+            },
+            {
+              "name": "Combine XYZ.009",
+              "local": [
+                1432.5302734375,
+                -589.0528564453125
+              ],
+              "absolute": [
+                0.0,
+                -179.05282592773438
+              ],
+              "dimensions_raw": [
+                280.0,
+                238.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                0.0,
+                140.0,
+                -179.05282592773438,
+                -298.0528259277344
+              ]
+            },
+            {
+              "name": "Math.037",
+              "local": [
+                1084.3837890625,
+                -473.2862243652344
+              ],
+              "absolute": [
+                -348.146484375,
+                -63.286224365234375
+              ],
+              "dimensions_raw": [
+                280.0,
+                198.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                -348.146484375,
+                -208.146484375,
+                -63.286224365234375,
+                -162.28622436523438
+              ]
+            },
+            {
+              "name": "Switch.023",
+              "local": [
+                1237.80859375,
+                -65.28665161132812
+              ],
+              "absolute": [
+                -194.7216796875,
+                344.7133483886719
+              ],
+              "dimensions_raw": [
+                280.0,
+                238.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                -194.7216796875,
+                -54.7216796875,
+                344.7133483886719,
+                225.71334838867188
+              ]
+            },
+            {
+              "name": "Compare.004",
+              "local": [
+                1037.578125,
+                -195.29595947265625
+              ],
+              "absolute": [
+                -394.9521484375,
+                214.70404052734375
+              ],
+              "dimensions_raw": [
+                280.0,
+                238.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                -394.9521484375,
+                -254.9521484375,
+                214.70404052734375,
+                95.70404052734375
+              ]
+            },
+            {
+              "name": "Switch.024",
+              "local": [
+                2824.3828125,
+                -30.000030517578125
+              ],
+              "absolute": [
+                1391.8525390625,
+                379.9999694824219
+              ],
+              "dimensions_raw": [
+                280.0,
+                238.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                1391.8525390625,
+                1531.8525390625,
+                379.9999694824219,
+                260.9999694824219
+              ]
+            },
+            {
+              "name": "Reroute.079",
+              "local": [
+                2504.3837890625,
+                -130.0
+              ],
+              "absolute": [
+                1071.853515625,
+                280.0
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": "Frame.021",
+              "kind": "REROUTE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                1066.853515625,
+                1076.853515625,
+                285.0,
+                275.0
+              ]
+            },
+            {
+              "name": "Group Input.027",
+              "local": [
+                2535.912109375,
+                -30.000030517578125
+              ],
+              "absolute": [
+                1103.3818359375,
+                379.9999694824219
+              ],
+              "dimensions_raw": [
+                280.0,
+                104.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                1103.3818359375,
+                1243.3818359375,
+                379.9999694824219,
+                327.9999694824219
+              ]
+            },
+            {
+              "name": "Frame.021",
+              "local": [
+                -1432.5302734375,
+                410.0
+              ],
+              "absolute": [
+                -1432.5302734375,
+                410.0
+              ],
+              "dimensions_raw": [
+                5989.060546875,
+                2650.000244140625
+              ],
+              "width_raw": 2994.5302734375,
+              "parent": null,
+              "kind": "FRAME",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                -1432.5302734375,
+                1562.0,
+                410.0,
+                -915.0001220703125
+              ]
+            },
+            {
+              "name": "Mix",
+              "local": [
+                1249.9833984375,
+                -694.9619140625
+              ],
+              "absolute": [
+                -182.546875,
+                -284.9618835449219
+              ],
+              "dimensions_raw": [
+                280.0,
+                242.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                -182.546875,
+                -42.546875,
+                -284.9618835449219,
+                -405.9618835449219
+              ]
+            },
+            {
+              "name": "Transform Point.004",
+              "local": [
+                743.3857421875,
+                -1078.06494140625
+              ],
+              "absolute": [
+                -689.14453125,
+                -668.06494140625
+              ],
+              "dimensions_raw": [
+                280.0,
+                140.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                -689.14453125,
+                -549.14453125,
+                -668.06494140625,
+                -738.06494140625
+              ]
+            },
+            {
+              "name": "Vector Math.017",
+              "local": [
+                1484.3818359375,
+                -410.0
+              ],
+              "absolute": [
+                51.8515625,
+                0.0
+              ],
+              "dimensions_raw": [
+                280.0,
+                198.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                51.8515625,
+                191.8515625,
+                0.0,
+                -99.0
+              ]
+            },
+            {
+              "name": "Vector Math.018",
+              "local": [
+                1824.3828125,
+                -410.0
+              ],
+              "absolute": [
+                391.8525390625,
+                0.0
+              ],
+              "dimensions_raw": [
+                280.0,
+                198.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                391.8525390625,
+                531.8525390625,
+                0.0,
+                -99.0
+              ]
+            },
+            {
+              "name": "Mix.001",
+              "local": [
+                2024.3837890625,
+                -430.00006103515625
+              ],
+              "absolute": [
+                591.853515625,
+                -20.00006103515625
+              ],
+              "dimensions_raw": [
+                280.0,
+                242.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                591.853515625,
+                731.853515625,
+                -20.00006103515625,
+                -141.00006103515625
+              ]
+            },
+            {
+              "name": "Vector Math.019",
+              "local": [
+                1655.8935546875,
+                -577.3206787109375
+              ],
+              "absolute": [
+                223.36328125,
+                -167.32064819335938
+              ],
+              "dimensions_raw": [
+                280.0,
+                198.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                223.36328125,
+                363.36328125,
+                -167.32064819335938,
+                -266.3206481933594
+              ]
+            },
+            {
+              "name": "Reroute.093",
+              "local": [
+                1384.3837890625,
+                -469.9999694824219
+              ],
+              "absolute": [
+                -48.146484375,
+                -59.999969482421875
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": "Frame.021",
+              "kind": "REROUTE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                -53.146484375,
+                -43.146484375,
+                -54.999969482421875,
+                -64.99996948242188
+              ]
+            },
+            {
+              "name": "Switch.031",
+              "local": [
+                2204.3837890625,
+                -450.0
+              ],
+              "absolute": [
+                771.853515625,
+                -40.0
+              ],
+              "dimensions_raw": [
+                280.0,
+                238.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                771.853515625,
+                911.853515625,
+                -40.0,
+                -159.0
+              ]
+            },
+            {
+              "name": "Reroute.113",
+              "local": [
+                1404.1748046875,
+                -658.6690673828125
+              ],
+              "absolute": [
+                -28.35546875,
+                -248.66903686523438
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": "Frame.021",
+              "kind": "REROUTE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                -33.35546875,
+                -23.35546875,
+                -243.66903686523438,
+                -253.66903686523438
+              ]
+            },
+            {
+              "name": "Reroute.134",
+              "local": [
+                1475.9111328125,
+                -1290.0001220703125
+              ],
+              "absolute": [
+                43.380859375,
+                -880.0001220703125
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": "Frame.021",
+              "kind": "REROUTE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                38.380859375,
+                48.380859375,
+                -875.0001220703125,
+                -885.0001220703125
+              ]
+            },
+            {
+              "name": "Reroute.183",
+              "local": [
+                2504.3837890625,
+                -270.0
+              ],
+              "absolute": [
+                1071.853515625,
+                140.0
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": "Frame.021",
+              "kind": "REROUTE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                1066.853515625,
+                1076.853515625,
+                145.0,
+                135.0
+              ]
+            },
+            {
+              "name": "Fixture External Inputs",
+              "local": [
+                -4000.0,
+                3000.0
+              ],
+              "absolute": [
+                -4000.0,
+                3000.0
+              ],
+              "dimensions_raw": [
+                280.0,
+                736.0
+              ],
+              "width_raw": 140.0,
+              "parent": null,
+              "kind": "NODE",
+              "selected": false,
+              "hide": true,
+              "normalized_box": [
+                -3999.5,
+                -3859.5,
+                3003.5,
+                2635.5
+              ]
+            }
+          ],
+          "snapshot_ms": 1.5423330187331885,
+          "write_ms": 0.9511670214124024,
+          "verified_after_redraw": true,
+          "redraw_passes": 1,
+          "total_ms": 89.78712500538677,
+          "diagnostic_ms": 0.26808399707078934
+        },
+        "links": [
+          {
+            "source": "Reroute.077",
+            "target": "Transform Point.001",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 56.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Transform"
+          },
+          {
+            "source": "Reroute.079",
+            "target": "Set Position.002",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 37.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Geometry"
+          },
+          {
+            "source": "Transform Point.001",
+            "target": "Set Position.002",
+            "output": 0,
+            "input": 2,
+            "sort_id": 0,
+            "source_offset": 34.0,
+            "target_offset": 81.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Vector",
+            "target_socket": "Position"
+          },
+          {
+            "source": "Vector Math.017",
+            "target": "Vector Math.015",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Vector",
+            "target_socket": "Vector"
+          },
+          {
+            "source": "Combine XYZ.009",
+            "target": "Vector Math.015",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 37.0,
+            "target_offset": 82.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Vector",
+            "target_socket": "Vector_001"
+          },
+          {
+            "source": "Reroute.113",
+            "target": "Combine XYZ.009",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 59.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Y"
+          },
+          {
+            "source": "Reroute.113",
+            "target": "Combine XYZ.009",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 37.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "X"
+          },
+          {
+            "source": "Reroute.183",
+            "target": "Set Position.002",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 59.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Selection"
+          },
+          {
+            "source": "Compare.004",
+            "target": "Switch.023",
+            "output": 0,
+            "input": 2,
+            "sort_id": 0,
+            "source_offset": 37.0,
+            "target_offset": 104.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Result",
+            "target_socket": "True"
+          },
+          {
+            "source": "Set Position.002",
+            "target": "Switch.024",
+            "output": 0,
+            "input": 2,
+            "sort_id": 0,
+            "source_offset": 37.0,
+            "target_offset": 104.0,
+            "valid": false,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Geometry",
+            "target_socket": "True"
+          },
+          {
+            "source": "Reroute.079",
+            "target": "Switch.024",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 82.0,
+            "valid": false,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "False"
+          },
+          {
+            "source": "Group Input.027",
+            "target": "Switch.024",
+            "output": 24,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 37.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_24",
+            "target_socket": "Switch"
+          },
+          {
+            "source": "Mix",
+            "target": "Combine XYZ.009",
+            "output": 0,
+            "input": 2,
+            "sort_id": 0,
+            "source_offset": 37.0,
+            "target_offset": 81.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Result_Float",
+            "target_socket": "Z"
+          },
+          {
+            "source": "Math.037",
+            "target": "Mix",
+            "output": 0,
+            "input": 2,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 59.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Value",
+            "target_socket": "A_Float"
+          },
+          {
+            "source": "Reroute.093",
+            "target": "Vector Math.017",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Vector"
+          },
+          {
+            "source": "Transform Point.004",
+            "target": "Vector Math.017",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 34.0,
+            "target_offset": 82.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Vector",
+            "target_socket": "Vector_001"
+          },
+          {
+            "source": "Vector Math.015",
+            "target": "Vector Math.018",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Vector",
+            "target_socket": "Vector"
+          },
+          {
+            "source": "Transform Point.004",
+            "target": "Vector Math.018",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 34.0,
+            "target_offset": 82.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Vector",
+            "target_socket": "Vector_001"
+          },
+          {
+            "source": "Vector Math.018",
+            "target": "Mix.001",
+            "output": 0,
+            "input": 5,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 81.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Vector",
+            "target_socket": "B_Vector"
+          },
+          {
+            "source": "Reroute.093",
+            "target": "Vector Math.019",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Vector"
+          },
+          {
+            "source": "Combine XYZ.009",
+            "target": "Vector Math.019",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 37.0,
+            "target_offset": 82.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Vector",
+            "target_socket": "Vector_001"
+          },
+          {
+            "source": "Vector Math.019",
+            "target": "Mix.001",
+            "output": 0,
+            "input": 4,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 59.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Vector",
+            "target_socket": "A_Vector"
+          },
+          {
+            "source": "Mix.001",
+            "target": "Switch.031",
+            "output": 1,
+            "input": 2,
+            "sort_id": 0,
+            "source_offset": 37.0,
+            "target_offset": 104.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Result_Vector",
+            "target_socket": "True"
+          },
+          {
+            "source": "Vector Math.019",
+            "target": "Switch.031",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 82.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Vector",
+            "target_socket": "False"
+          },
+          {
+            "source": "Switch.031",
+            "target": "Transform Point.001",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 34.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Vector"
+          },
+          {
+            "source": "Reroute.134",
+            "target": "Switch.031",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Switch"
+          },
+          {
+            "source": "Math.037",
+            "target": "Reroute.113",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Value",
+            "target_socket": "Input"
+          },
+          {
+            "source": "Switch.023",
+            "target": "Reroute.183",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Input"
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Compare.004",
+            "output": 33,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 339.0,
+            "target_offset": 37.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_33",
+            "target_socket": "A"
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Math.037",
+            "output": 33,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 339.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_33",
+            "target_socket": "Value"
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Reroute.077",
+            "output": 32,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 329.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_32",
+            "target_socket": "Input"
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Reroute.079",
+            "output": 31,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 319.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_31",
+            "target_socket": "Input"
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Reroute.093",
+            "output": 34,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 349.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_34",
+            "target_socket": "Input"
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Reroute.134",
+            "output": 30,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 309.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_30",
+            "target_socket": "Input"
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Switch.023",
+            "output": 30,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 309.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_30",
+            "target_socket": "Switch"
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Switch.023",
+            "output": 30,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 309.0,
+            "target_offset": 82.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_30",
+            "target_socket": "False"
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Transform Point.004",
+            "output": 34,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 349.0,
+            "target_offset": 34.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_34",
+            "target_socket": "Vector"
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Transform Point.004",
+            "output": 32,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 329.0,
+            "target_offset": 56.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_32",
+            "target_socket": "Transform"
+          }
+        ],
+        "target_absolute_locations": {
+          "Set Position.002": [
+            1191.853515625,
+            239.99993896484375
+          ],
+          "Transform Point.001": [
+            951.853515625,
+            -50.5
+          ],
+          "Reroute.077": [
+            -1397.5302734375,
+            -280.775146484375
+          ],
+          "Vector Math.015": [
+            190.3707275390625,
+            -265.5
+          ],
+          "Combine XYZ.009": [
+            0.0,
+            -414.5
+          ],
+          "Math.037": [
+            -348.146484375,
+            -63.286224365234375
+          ],
+          "Switch.023": [
+            -194.7216796875,
+            344.7133483886719
+          ],
+          "Compare.004": [
+            -394.9521484375,
+            214.70404052734375
+          ],
+          "Switch.024": [
+            1391.8525390625,
+            379.9999694824219
+          ],
+          "Reroute.079": [
+            1071.853515625,
+            280.0
+          ],
+          "Group Input.027": [
+            1103.3818359375,
+            379.9999694824219
+          ],
+          "Frame.021": [
+            -1432.5302734375,
+            410.0
+          ],
+          "Mix": [
+            -182.546875,
+            -284.9619140625
+          ],
+          "Transform Point.004": [
+            -689.14453125,
+            -668.06494140625
+          ],
+          "Vector Math.017": [
+            0.0,
+            -265.5
+          ],
+          "Vector Math.018": [
+            380.741455078125,
+            -265.5
+          ],
+          "Mix.001": [
+            571.112060546875,
+            -167.5
+          ],
+          "Vector Math.019": [
+            380.741455078125,
+            -116.5
+          ],
+          "Reroute.093": [
+            -48.146484375,
+            -59.999969482421875
+          ],
+          "Switch.031": [
+            761.48291015625,
+            -49.5
+          ],
+          "Reroute.113": [
+            -28.35546875,
+            -248.6690673828125
+          ],
+          "Reroute.134": [
+            43.380859375,
+            -880.0001220703125
+          ],
+          "Reroute.183": [
+            1071.853515625,
+            140.0
+          ],
+          "Fixture External Inputs": [
+            -4000.0,
+            3000.0
+          ]
+        },
+        "move_reasons": {
+          "Combine XYZ.009": "Selected layout unit",
+          "Mix.001": "Selected layout unit",
+          "Switch.031": "Selected layout unit",
+          "Transform Point.001": "Selected layout unit",
+          "Vector Math.015": "Selected layout unit",
+          "Vector Math.017": "Selected layout unit",
+          "Vector Math.018": "Selected layout unit",
+          "Vector Math.019": "Selected layout unit"
+        },
+        "alignment_decisions": {
+          "Combine XYZ.009": {
+            "horizontal": "right",
+            "vertical": "socket",
+            "target": "Vector Math.015",
+            "vertical_error": 104.0,
+            "vertical_satisfied": false
+          },
+          "Mix.001": {
+            "horizontal": "left",
+            "vertical": "socket",
+            "target": "Switch.031",
+            "vertical_error": 51.0,
+            "vertical_satisfied": false
+          },
+          "Switch.031": {
+            "horizontal": "left",
+            "vertical": "socket",
+            "target": "Transform Point.001",
+            "vertical_error": 0.0,
+            "vertical_satisfied": true
+          },
+          "Transform Point.001": {
+            "horizontal": "left",
+            "vertical": "anchor",
+            "target": null,
+            "vertical_error": 0.0,
+            "vertical_satisfied": true
+          },
+          "Vector Math.015": {
+            "horizontal": "left",
+            "vertical": "top",
+            "target": "Vector Math.018",
+            "vertical_error": 0.0,
+            "vertical_satisfied": true
+          },
+          "Vector Math.017": {
+            "horizontal": "right",
+            "vertical": "top",
+            "target": "Vector Math.015",
+            "vertical_error": 0.0,
+            "vertical_satisfied": true
+          },
+          "Vector Math.018": {
+            "horizontal": "right",
+            "vertical": "socket",
+            "target": "Mix.001",
+            "vertical_error": 52.0,
+            "vertical_satisfied": false
+          },
+          "Vector Math.019": {
+            "horizontal": "right",
+            "vertical": "top",
+            "target": "Mix.001",
+            "vertical_error": 51.0,
+            "vertical_satisfied": false
+          }
+        },
+        "partial_results": [
+          {
+            "nodes": [
+              "Combine XYZ.009",
+              "Mix.001",
+              "Switch.031",
+              "Transform Point.001",
+              "Vector Math.015",
+              "Vector Math.017",
+              "Vector Math.018",
+              "Vector Math.019"
+            ],
+            "method": "structured",
+            "reason": null,
+            "moved": 8
+          }
+        ],
+        "warnings": [
+          "Internal selection wires may still be obstructed; see Smart Align Layout Debug."
+        ],
+        "metrics": {
+          "nodes": 24,
+          "selected": 8,
+          "links": 38,
+          "moved": 8,
+          "fixed_conflicts": 0,
+          "partial_scopes": 1,
+          "width": 1091.853515625,
+          "height": 484.0,
+          "solve_ms": 2.0804590021725744,
+          "socket_geometry": "estimated; logical port order is authoritative",
+          "node_overlaps": 0,
+          "node_overlap_check_complete": true,
+          "estimated_wire_node_hits": 1,
+          "wire_check_complete": true,
+          "endpoint_chord_crossings": 0,
+          "crossing_check_complete": true,
+          "diagnostic_pair_budget": 100000,
+          "wire_scope": "selection_internal",
+          "internal_links_checked": 9
+        }
+      }
+    },
+    {
+      "test": "repeat_stability",
+      "pass": true
+    },
+    {
+      "test": "undo_restores_original",
+      "pass": true
+    },
+    {
+      "test": "redo_restores_alignment",
+      "pass": true
+    }
+  ],
+  "gui_seventeen": [
+    {
+      "test": "hybrid_alignment_and_fixed_nodes",
+      "pass": true,
+      "report": {
+        "feature": "Smart Align Layout Preview",
+        "metadata": {
+          "geometry_scale": 2.0,
+          "raw_nodes": [
+            {
+              "name": "Blur Attribute",
+              "local": [
+                1271.3935546875,
+                -236.2779541015625
+              ],
+              "absolute": [
+                1191.515625,
+                532.5489501953125
+              ],
+              "dimensions_raw": [
+                280.0,
+                184.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                1191.515625,
+                1331.515625,
+                532.5489501953125,
+                440.5489501953125
+              ]
+            },
+            {
+              "name": "Combine Transform",
+              "local": [
+                259.5908203125,
+                -711.4783935546875
+              ],
+              "absolute": [
+                179.712890625,
+                57.3485107421875
+              ],
+              "dimensions_raw": [
+                280.0,
+                198.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                179.712890625,
+                319.712890625,
+                57.3485107421875,
+                -41.6514892578125
+              ]
+            },
+            {
+              "name": "Compare.004",
+              "local": [
+                1448.1953125,
+                -238.65936279296875
+              ],
+              "absolute": [
+                1368.3173828125,
+                530.1675415039062
+              ],
+              "dimensions_raw": [
+                280.0,
+                238.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                1368.3173828125,
+                1508.3173828125,
+                530.1675415039062,
+                411.16754150390625
+              ]
+            },
+            {
+              "name": "Frame.021",
+              "local": [
+                -79.8779296875,
+                768.826904296875
+              ],
+              "absolute": [
+                -79.8779296875,
+                768.826904296875
+              ],
+              "dimensions_raw": [
+                5929.755859375,
+                2736.726806640625
+              ],
+              "width_raw": 2964.8779296875,
+              "parent": null,
+              "kind": "FRAME",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                -79.8779296875,
+                2885.0,
+                768.826904296875,
+                -599.5364990234375
+              ]
+            },
+            {
+              "name": "Invert Matrix",
+              "local": [
+                507.7568359375,
+                -623.3294677734375
+              ],
+              "absolute": [
+                427.87890625,
+                145.4974365234375
+              ],
+              "dimensions_raw": [
+                280.0,
+                140.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                427.87890625,
+                567.87890625,
+                145.4974365234375,
+                75.4974365234375
+              ]
+            },
+            {
+              "name": "Math.036",
+              "local": [
+                1335.0,
+                -693.363525390625
+              ],
+              "absolute": [
+                1255.1220703125,
+                75.46337890625
+              ],
+              "dimensions_raw": [
+                280.0,
+                56.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": true,
+              "hide": true,
+              "normalized_box": [
+                1255.6220703125,
+                1395.6220703125,
+                78.96337890625,
+                50.96337890625
+              ]
+            },
+            {
+              "name": "Math.037",
+              "local": [
+                1495.0009765625,
+                -673.363525390625
+              ],
+              "absolute": [
+                1415.123046875,
+                95.46337890625
+              ],
+              "dimensions_raw": [
+                280.0,
+                198.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                1415.123046875,
+                1555.123046875,
+                95.46337890625,
+                -3.53662109375
+              ]
+            },
+            {
+              "name": "Math.038",
+              "local": [
+                975.0,
+                -733.363525390625
+              ],
+              "absolute": [
+                895.1220703125,
+                35.46337890625
+              ],
+              "dimensions_raw": [
+                280.0,
+                56.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": true,
+              "hide": true,
+              "normalized_box": [
+                895.6220703125,
+                1035.6220703125,
+                38.96337890625,
+                10.96337890625
+              ]
+            },
+            {
+              "name": "Math.040",
+              "local": [
+                875.0,
+                -873.3634033203125
+              ],
+              "absolute": [
+                795.1220703125,
+                -104.5364990234375
+              ],
+              "dimensions_raw": [
+                280.0,
+                56.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": true,
+              "hide": true,
+              "normalized_box": [
+                795.6220703125,
+                935.6220703125,
+                -101.0364990234375,
+                -129.0364990234375
+              ]
+            },
+            {
+              "name": "Math.041",
+              "local": [
+                875.0,
+                -913.3634033203125
+              ],
+              "absolute": [
+                795.1220703125,
+                -144.5364990234375
+              ],
+              "dimensions_raw": [
+                280.0,
+                56.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": true,
+              "hide": true,
+              "normalized_box": [
+                795.6220703125,
+                935.6220703125,
+                -141.0364990234375,
+                -169.0364990234375
+              ]
+            },
+            {
+              "name": "Math.051",
+              "local": [
+                975.0,
+                -633.363525390625
+              ],
+              "absolute": [
+                895.1220703125,
+                135.46337890625
+              ],
+              "dimensions_raw": [
+                280.0,
+                56.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": true,
+              "hide": true,
+              "normalized_box": [
+                895.6220703125,
+                1035.6220703125,
+                138.96337890625,
+                110.96337890625
+              ]
+            },
+            {
+              "name": "Position.004",
+              "local": [
+                490.0927734375,
+                -492.49560546875
+              ],
+              "absolute": [
+                410.21484375,
+                276.331298828125
+              ],
+              "dimensions_raw": [
+                280.0,
+                100.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                410.21484375,
+                550.21484375,
+                276.331298828125,
+                226.331298828125
+              ]
+            },
+            {
+              "name": "Reroute.068",
+              "local": [
+                159.212890625,
+                -35.0
+              ],
+              "absolute": [
+                79.3349609375,
+                733.826904296875
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": "Frame.021",
+              "kind": "REROUTE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                74.3349609375,
+                84.3349609375,
+                738.826904296875,
+                728.826904296875
+              ]
+            },
+            {
+              "name": "Reroute.069",
+              "local": [
+                140.4677734375,
+                -45.898681640625
+              ],
+              "absolute": [
+                60.58984375,
+                722.92822265625
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": "Frame.021",
+              "kind": "REROUTE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                55.58984375,
+                65.58984375,
+                727.92822265625,
+                717.92822265625
+              ]
+            },
+            {
+              "name": "Reroute.070",
+              "local": [
+                117.408203125,
+                -76.81256103515625
+              ],
+              "absolute": [
+                37.5302734375,
+                692.0143432617188
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": "Frame.021",
+              "kind": "REROUTE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                32.5302734375,
+                42.5302734375,
+                697.0143432617188,
+                687.0143432617188
+              ]
+            },
+            {
+              "name": "Reroute.071",
+              "local": [
+                109.7841796875,
+                -94.68743896484375
+              ],
+              "absolute": [
+                29.90625,
+                674.1394653320312
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": "Frame.021",
+              "kind": "REROUTE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                24.90625,
+                34.90625,
+                679.1394653320312,
+                669.1394653320312
+              ]
+            },
+            {
+              "name": "Reroute.077",
+              "local": [
+                445.6171875,
+                -734.1385498046875
+              ],
+              "absolute": [
+                365.7392578125,
+                34.6883544921875
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": "Frame.021",
+              "kind": "REROUTE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                360.7392578125,
+                370.7392578125,
+                39.6883544921875,
+                29.6883544921875
+              ]
+            },
+            {
+              "name": "Reroute.084",
+              "local": [
+                697.501953125,
+                -746.181396484375
+              ],
+              "absolute": [
+                617.6240234375,
+                22.6455078125
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": "Frame.021",
+              "kind": "REROUTE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                612.6240234375,
+                622.6240234375,
+                27.6455078125,
+                17.6455078125
+              ]
+            },
+            {
+              "name": "Reroute.086",
+              "local": [
+                -532.5009765625,
+                -1503.1942138671875
+              ],
+              "absolute": [
+                -532.5009765625,
+                -1503.1942138671875
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": null,
+              "kind": "REROUTE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                -537.5009765625,
+                -527.5009765625,
+                -1498.1942138671875,
+                -1508.1942138671875
+              ]
+            },
+            {
+              "name": "Reroute.087",
+              "local": [
+                246.52734375,
+                -1333.3634033203125
+              ],
+              "absolute": [
+                166.6494140625,
+                -564.5364990234375
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": "Frame.021",
+              "kind": "REROUTE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                161.6494140625,
+                171.6494140625,
+                -559.5364990234375,
+                -569.5364990234375
+              ]
+            },
+            {
+              "name": "Reroute.093",
+              "local": [
+                1795.0009765625,
+                -513.3634033203125
+              ],
+              "absolute": [
+                1715.123046875,
+                255.4635009765625
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": "Frame.021",
+              "kind": "REROUTE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                1710.123046875,
+                1720.123046875,
+                260.4635009765625,
+                250.4635009765625
+              ]
+            },
+            {
+              "name": "Reroute.098",
+              "local": [
+                35.0,
+                -1153.363525390625
+              ],
+              "absolute": [
+                -44.8779296875,
+                -384.53662109375
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": "Frame.021",
+              "kind": "REROUTE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                -49.8779296875,
+                -39.8779296875,
+                -379.53662109375,
+                -389.53662109375
+              ]
+            },
+            {
+              "name": "Reroute.146",
+              "local": [
+                1003.671875,
+                -841.603759765625
+              ],
+              "absolute": [
+                923.7939453125,
+                -72.77685546875
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": "Frame.021",
+              "kind": "REROUTE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                918.7939453125,
+                928.7939453125,
+                -67.77685546875,
+                -77.77685546875
+              ]
+            },
+            {
+              "name": "Reroute.167",
+              "local": [
+                -144.888671875,
+                -83.944580078125
+              ],
+              "absolute": [
+                -144.888671875,
+                -83.944580078125
+              ],
+              "dimensions_raw": [
+                20.0,
+                20.0
+              ],
+              "width_raw": 20.0,
+              "parent": null,
+              "kind": "REROUTE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                -149.888671875,
+                -139.888671875,
+                -78.944580078125,
+                -88.944580078125
+              ]
+            },
+            {
+              "name": "Separate Transform",
+              "local": [
+                79.8779296875,
+                -768.826904296875
+              ],
+              "absolute": [
+                0.0,
+                0.0
+              ],
+              "dimensions_raw": [
+                280.0,
+                238.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                0.0,
+                140.0,
+                0.0,
+                -119.0
+              ]
+            },
+            {
+              "name": "Separate XYZ.002",
+              "local": [
+                822.08203125,
+                -575.9923095703125
+              ],
+              "absolute": [
+                742.2041015625,
+                192.8345947265625
+              ],
+              "dimensions_raw": [
+                280.0,
+                150.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                742.2041015625,
+                882.2041015625,
+                192.8345947265625,
+                117.8345947265625
+              ]
+            },
+            {
+              "name": "Separate XYZ.003",
+              "local": [
+                790.677734375,
+                -747.48974609375
+              ],
+              "absolute": [
+                710.7998046875,
+                21.337158203125
+              ],
+              "dimensions_raw": [
+                280.0,
+                150.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                710.7998046875,
+                850.7998046875,
+                21.337158203125,
+                -53.662841796875
+              ]
+            },
+            {
+              "name": "Switch.022",
+              "local": [
+                1141.8818359375,
+                -806.2728271484375
+              ],
+              "absolute": [
+                1062.00390625,
+                -37.4459228515625
+              ],
+              "dimensions_raw": [
+                280.0,
+                238.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                1062.00390625,
+                1202.00390625,
+                -37.4459228515625,
+                -156.4459228515625
+              ]
+            },
+            {
+              "name": "Switch.025",
+              "local": [
+                1154.6640625,
+                -565.3070068359375
+              ],
+              "absolute": [
+                1074.7861328125,
+                203.5198974609375
+              ],
+              "dimensions_raw": [
+                280.0,
+                238.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                1074.7861328125,
+                1214.7861328125,
+                203.5198974609375,
+                84.5198974609375
+              ]
+            },
+            {
+              "name": "Transform Point",
+              "local": [
+                665.0146484375,
+                -521.15478515625
+              ],
+              "absolute": [
+                585.13671875,
+                247.672119140625
+              ],
+              "dimensions_raw": [
+                280.0,
+                140.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": true,
+              "hide": false,
+              "normalized_box": [
+                585.13671875,
+                725.13671875,
+                247.672119140625,
+                177.672119140625
+              ]
+            },
+            {
+              "name": "Transform Point.001",
+              "local": [
+                2795.0009765625,
+                -513.3634033203125
+              ],
+              "absolute": [
+                2715.123046875,
+                255.4635009765625
+              ],
+              "dimensions_raw": [
+                280.0,
+                140.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                2715.123046875,
+                2855.123046875,
+                255.4635009765625,
+                185.4635009765625
+              ]
+            },
+            {
+              "name": "Transform Point.004",
+              "local": [
+                1154.0029296875,
+                -1121.4283447265625
+              ],
+              "absolute": [
+                1074.125,
+                -352.6014404296875
+              ],
+              "dimensions_raw": [
+                280.0,
+                140.0
+              ],
+              "width_raw": 140.0,
+              "parent": "Frame.021",
+              "kind": "NODE",
+              "selected": false,
+              "hide": false,
+              "normalized_box": [
+                1074.125,
+                1214.125,
+                -352.6014404296875,
+                -422.6014404296875
+              ]
+            },
+            {
+              "name": "Fixture External Inputs",
+              "local": [
+                -4000.0,
+                3000.0
+              ],
+              "absolute": [
+                -4000.0,
+                3000.0
+              ],
+              "dimensions_raw": [
+                280.0,
+                116.0
+              ],
+              "width_raw": 140.0,
+              "parent": null,
+              "kind": "NODE",
+              "selected": false,
+              "hide": true,
+              "normalized_box": [
+                -3999.5,
+                -3859.5,
+                3003.5,
+                2945.5
+              ]
+            }
+          ],
+          "snapshot_ms": 1.4974999940022826,
+          "write_ms": 1.3582920073531568,
+          "verified_after_redraw": true,
+          "redraw_passes": 1,
+          "total_ms": 98.74341599061154,
+          "diagnostic_ms": 0.8254999993368983
+        },
+        "links": [
+          {
+            "source": "Reroute.077",
+            "target": "Invert Matrix",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 34.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Matrix"
+          },
+          {
+            "source": "Invert Matrix",
+            "target": "Transform Point",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 34.0,
+            "target_offset": 56.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Matrix",
+            "target_socket": "Transform"
+          },
+          {
+            "source": "Position.004",
+            "target": "Transform Point",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 34.0,
+            "target_offset": 34.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Position",
+            "target_socket": "Vector"
+          },
+          {
+            "source": "Reroute.077",
+            "target": "Transform Point.001",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 56.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Transform"
+          },
+          {
+            "source": "Transform Point",
+            "target": "Separate XYZ.002",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 34.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Vector",
+            "target_socket": "Vector"
+          },
+          {
+            "source": "Math.036",
+            "target": "Math.037",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 14.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Value",
+            "target_socket": "Value"
+          },
+          {
+            "source": "Switch.022",
+            "target": "Math.036",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 19.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Value_001"
+          },
+          {
+            "source": "Reroute.146",
+            "target": "Switch.022",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Switch"
+          },
+          {
+            "source": "Reroute.098",
+            "target": "Separate Transform",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 104.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Transform"
+          },
+          {
+            "source": "Combine Transform",
+            "target": "Reroute.077",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Transform",
+            "target_socket": "Input"
+          },
+          {
+            "source": "Separate Transform",
+            "target": "Combine Transform",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Translation",
+            "target_socket": "Translation"
+          },
+          {
+            "source": "Separate Transform",
+            "target": "Combine Transform",
+            "output": 1,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 57.0,
+            "target_offset": 82.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Rotation",
+            "target_socket": "Rotation"
+          },
+          {
+            "source": "Math.041",
+            "target": "Switch.022",
+            "output": 0,
+            "input": 2,
+            "sort_id": 0,
+            "source_offset": 14.0,
+            "target_offset": 104.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Value",
+            "target_socket": "True"
+          },
+          {
+            "source": "Math.040",
+            "target": "Switch.022",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 14.0,
+            "target_offset": 82.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Value",
+            "target_socket": "False"
+          },
+          {
+            "source": "Reroute.070",
+            "target": "Math.040",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 9.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Value"
+          },
+          {
+            "source": "Reroute.071",
+            "target": "Math.041",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 9.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Value"
+          },
+          {
+            "source": "Reroute.069",
+            "target": "Math.041",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 19.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Value_001"
+          },
+          {
+            "source": "Reroute.068",
+            "target": "Math.040",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 19.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Value_001"
+          },
+          {
+            "source": "Reroute.086",
+            "target": "Reroute.084",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Input"
+          },
+          {
+            "source": "Reroute.084",
+            "target": "Math.038",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 9.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Value"
+          },
+          {
+            "source": "Separate Transform",
+            "target": "Separate XYZ.003",
+            "output": 2,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 79.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Scale",
+            "target_socket": "Vector"
+          },
+          {
+            "source": "Separate XYZ.003",
+            "target": "Math.038",
+            "output": 2,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 19.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Z",
+            "target_socket": "Value_001"
+          },
+          {
+            "source": "Math.038",
+            "target": "Switch.025",
+            "output": 0,
+            "input": 2,
+            "sort_id": 0,
+            "source_offset": 14.0,
+            "target_offset": 104.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Value",
+            "target_socket": "True"
+          },
+          {
+            "source": "Switch.025",
+            "target": "Math.036",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 9.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Value"
+          },
+          {
+            "source": "Reroute.087",
+            "target": "Switch.025",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 60.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Switch"
+          },
+          {
+            "source": "Invert Matrix",
+            "target": "Transform Point.004",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 34.0,
+            "target_offset": 56.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Matrix",
+            "target_socket": "Transform"
+          },
+          {
+            "source": "Transform Point",
+            "target": "Reroute.093",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 34.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Vector",
+            "target_socket": "Input"
+          },
+          {
+            "source": "Separate XYZ.002",
+            "target": "Math.051",
+            "output": 2,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 35.0,
+            "target_offset": 14.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Z",
+            "target_socket": "Value"
+          },
+          {
+            "source": "Math.051",
+            "target": "Switch.025",
+            "output": 0,
+            "input": 1,
+            "sort_id": 0,
+            "source_offset": 14.0,
+            "target_offset": 82.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Value",
+            "target_socket": "False"
+          },
+          {
+            "source": "Reroute.167",
+            "target": "Reroute.146",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 5.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Output",
+            "target_socket": "Input"
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Blur Attribute",
+            "output": 2,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 29.0,
+            "target_offset": 37.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_2",
+            "target_socket": "Value"
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Compare.004",
+            "output": 2,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 29.0,
+            "target_offset": 37.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_2",
+            "target_socket": "A"
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Reroute.068",
+            "output": 2,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 29.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_2",
+            "target_socket": "Input"
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Reroute.069",
+            "output": 2,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 29.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_2",
+            "target_socket": "Input"
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Reroute.070",
+            "output": 2,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 29.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_2",
+            "target_socket": "Input"
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Reroute.071",
+            "output": 2,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 29.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_2",
+            "target_socket": "Input"
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Reroute.086",
+            "output": 2,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 29.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_2",
+            "target_socket": "Input"
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Reroute.087",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 9.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_0",
+            "target_socket": "Input"
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Reroute.098",
+            "output": 1,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 19.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_1",
+            "target_socket": "Input"
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Reroute.167",
+            "output": 0,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 9.0,
+            "target_offset": 5.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_0",
+            "target_socket": "Input"
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Transform Point.001",
+            "output": 3,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 39.0,
+            "target_offset": 34.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_3",
+            "target_socket": "Vector"
+          },
+          {
+            "source": "Fixture External Inputs",
+            "target": "Transform Point.004",
+            "output": 3,
+            "input": 0,
+            "sort_id": 0,
+            "source_offset": 39.0,
+            "target_offset": 34.0,
+            "valid": true,
+            "muted": false,
+            "hidden": false,
+            "source_socket": "Socket_3",
+            "target_socket": "Vector"
+          }
+        ],
+        "target_absolute_locations": {
+          "Blur Attribute": [
+            1191.515625,
+            532.5489501953125
+          ],
+          "Combine Transform": [
+            179.37457275390625,
+            77.39898681640625
+          ],
+          "Compare.004": [
+            1368.3173828125,
+            530.1675415039062
+          ],
+          "Frame.021": [
+            -79.8779296875,
+            768.826904296875
+          ],
+          "Invert Matrix": [
+            394.7392578125,
+            76.39898681640625
+          ],
+          "Math.036": [
+            1255.1220703125,
+            193.89898681640625
+          ],
+          "Math.037": [
+            1415.123046875,
+            95.46337890625
+          ],
+          "Math.038": [
+            896.3729248046875,
+            73.89898681640625
+          ],
+          "Math.040": [
+            896.3729248046875,
+            -92.10101318359375
+          ],
+          "Math.041": [
+            896.3729248046875,
+            -170.10101318359375
+          ],
+          "Math.051": [
+            896.3729248046875,
+            151.89898681640625
+          ],
+          "Position.004": [
+            394.7392578125,
+            176.39898681640625
+          ],
+          "Reroute.068": [
+            79.3349609375,
+            733.826904296875
+          ],
+          "Reroute.069": [
+            60.58984375,
+            722.92822265625
+          ],
+          "Reroute.070": [
+            37.5302734375,
+            692.0143432617188
+          ],
+          "Reroute.071": [
+            29.90625,
+            674.1394653320312
+          ],
+          "Reroute.077": [
+            365.7392578125,
+            34.6883544921875
+          ],
+          "Reroute.084": [
+            617.6240234375,
+            22.6455078125
+          ],
+          "Reroute.086": [
+            -532.5009765625,
+            -1503.1942138671875
+          ],
+          "Reroute.087": [
+            166.6494140625,
+            -564.5364990234375
+          ],
+          "Reroute.093": [
+            1715.123046875,
+            255.4635009765625
+          ],
+          "Reroute.098": [
+            -44.8779296875,
+            -384.53662109375
+          ],
+          "Reroute.146": [
+            923.7939453125,
+            -72.77685546875
+          ],
+          "Reroute.167": [
+            -144.888671875,
+            -83.944580078125
+          ],
+          "Separate Transform": [
+            0.0,
+            77.39898681640625
+          ],
+          "Separate XYZ.002": [
+            722.7392578125,
+            176.39898681640625
+          ],
+          "Separate XYZ.003": [
+            722.7392578125,
+            1.39898681640625
+          ],
+          "Switch.022": [
+            1076.2474365234375,
+            54.39898681640625
+          ],
+          "Switch.025": [
+            1076.2474365234375,
+            223.39898681640625
+          ],
+          "Transform Point": [
+            558.7392578125,
+            176.39898681640625
+          ],
+          "Transform Point.001": [
+            2715.123046875,
+            255.4635009765625
+          ],
+          "Transform Point.004": [
+            1074.125,
+            -352.6014404296875
+          ],
+          "Fixture External Inputs": [
+            -4000.0,
+            3000.0
+          ]
+        },
+        "move_reasons": {
+          "Combine Transform": "Selected layout unit",
+          "Invert Matrix": "Selected layout unit",
+          "Math.036": "Selected layout unit",
+          "Math.038": "Selected layout unit",
+          "Math.040": "Selected layout unit",
+          "Math.041": "Selected layout unit",
+          "Math.051": "Selected layout unit",
+          "Position.004": "Selected layout unit",
+          "Reroute.077": "Selected layout unit",
+          "Reroute.084": "Selected layout unit",
+          "Reroute.146": "Selected layout unit",
+          "Separate Transform": "Selected layout unit",
+          "Separate XYZ.002": "Selected layout unit",
+          "Separate XYZ.003": "Selected layout unit",
+          "Switch.022": "Selected layout unit",
+          "Switch.025": "Selected layout unit",
+          "Transform Point": "Selected layout unit"
+        },
+        "alignment_decisions": {
+          "Combine Transform": {
+            "horizontal": "left",
+            "vertical": "socket",
+            "target": "Invert Matrix",
+            "vertical_error": 0.0,
+            "vertical_satisfied": true
+          },
+          "Invert Matrix": {
+            "horizontal": "right",
+            "vertical": "top",
+            "target": "Transform Point",
+            "vertical_error": 100.0,
+            "vertical_satisfied": false
+          },
+          "Math.036": {
+            "horizontal": "left",
+            "vertical": "anchor",
+            "target": null,
+            "vertical_error": 0.0,
+            "vertical_satisfied": true
+          },
+          "Math.038": {
+            "horizontal": "left",
+            "vertical": "socket",
+            "target": "Switch.025",
+            "vertical_error": 56.0,
+            "vertical_satisfied": false
+          },
+          "Math.040": {
+            "horizontal": "left",
+            "vertical": "socket",
+            "target": "Switch.022",
+            "vertical_error": 75.0,
+            "vertical_satisfied": false
+          },
+          "Math.041": {
+            "horizontal": "left",
+            "vertical": "socket",
+            "target": "Switch.022",
+            "vertical_error": 131.0,
+            "vertical_satisfied": false
+          },
+          "Math.051": {
+            "horizontal": "left",
+            "vertical": "socket",
+            "target": "Switch.025",
+            "vertical_error": 0.0,
+            "vertical_satisfied": true
+          },
+          "Position.004": {
+            "horizontal": "right",
+            "vertical": "top",
+            "target": "Transform Point",
+            "vertical_error": 0.0,
+            "vertical_satisfied": true
+          },
+          "Separate Transform": {
+            "horizontal": "left",
+            "vertical": "top",
+            "target": "Combine Transform",
+            "vertical_error": 0.0,
+            "vertical_satisfied": true
+          },
+          "Separate XYZ.002": {
+            "horizontal": "left",
+            "vertical": "socket",
+            "target": "Math.051",
+            "vertical_error": 0.0,
+            "vertical_satisfied": true
+          },
+          "Separate XYZ.003": {
+            "horizontal": "left",
+            "vertical": "socket",
+            "target": "Math.038",
+            "vertical_error": 92.0,
+            "vertical_satisfied": false
+          },
+          "Switch.022": {
+            "horizontal": "right",
+            "vertical": "socket",
+            "target": "Math.036",
+            "vertical_error": 159.0,
+            "vertical_satisfied": false
+          },
+          "Switch.025": {
+            "horizontal": "right",
+            "vertical": "socket",
+            "target": "Math.036",
+            "vertical_error": 0.0,
+            "vertical_satisfied": true
+          },
+          "Transform Point": {
+            "horizontal": "left",
+            "vertical": "top",
+            "target": "Separate XYZ.002",
+            "vertical_error": 0.0,
+            "vertical_satisfied": true
+          }
+        },
+        "partial_results": [
+          {
+            "nodes": [
+              "Combine Transform",
+              "Invert Matrix",
+              "Math.036",
+              "Math.038",
+              "Math.040",
+              "Math.041",
+              "Math.051",
+              "Position.004",
+              "Reroute.077",
+              "Reroute.084",
+              "Reroute.146",
+              "Separate Transform",
+              "Separate XYZ.002",
+              "Separate XYZ.003",
+              "Switch.022",
+              "Switch.025",
+              "Transform Point"
+            ],
+            "method": "structured",
+            "reason": null,
+            "moved": 14
+          }
+        ],
+        "warnings": [
+          "Internal selection wires may still be obstructed; see Smart Align Layout Debug."
+        ],
+        "metrics": {
+          "nodes": 33,
+          "selected": 17,
+          "links": 42,
+          "moved": 14,
+          "fixed_conflicts": 0,
+          "partial_scopes": 1,
+          "width": 1395.6220703125,
+          "height": 418.0,
+          "solve_ms": 5.03504101652652,
+          "socket_geometry": "estimated; logical port order is authoritative",
+          "node_overlaps": 0,
+          "node_overlap_check_complete": true,
+          "estimated_wire_node_hits": 1,
+          "wire_check_complete": true,
+          "endpoint_chord_crossings": 0,
+          "crossing_check_complete": true,
+          "diagnostic_pair_budget": 100000,
+          "wire_scope": "selection_internal",
+          "internal_links_checked": 18
+        }
+      }
+    },
+    {
+      "test": "repeat_stability",
+      "pass": true
+    },
+    {
+      "test": "undo_restores_original",
+      "pass": true
+    },
+    {
+      "test": "redo_restores_alignment",
+      "pass": true
+    }
+  ],
+  "limits": [
+    "Socket positions and cubic paths are estimated. One internal obstruction remains in the eight-node case.",
+    "GUI fixture retains nearby obstacles and external endpoints, with a synthetic offscreen Group Input restoring omitted upstream socket types.",
+    "Historical mixed-scope wire counts cannot be compared directly with internal-only counts."
+  ],
+  "gui_matrix": [
+    {
+      "test": "frame_only",
+      "pass": true,
+      "metrics": {
+        "nodes": 6,
+        "selected": 2,
+        "links": 2,
+        "moved": 1,
+        "fixed_conflicts": 0,
+        "partial_scopes": 0,
+        "width": 450.0,
+        "height": 680.0,
+        "solve_ms": 2.4803749984130263,
+        "socket_geometry": "estimated; logical port order is authoritative",
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 0,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 0,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 2
+      },
+      "redraw_passes": 1,
+      "warnings": []
+    },
+    {
+      "test": "children_only",
+      "pass": true,
+      "metrics": {
+        "nodes": 6,
+        "selected": 2,
+        "links": 2,
+        "moved": 3,
+        "fixed_conflicts": 0,
+        "partial_scopes": 1,
+        "width": 304.0,
+        "height": 149.0,
+        "solve_ms": 0.2632919931784272,
+        "socket_geometry": "estimated; logical port order is authoritative",
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 0,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 0,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 1
+      },
+      "redraw_passes": 1,
+      "warnings": []
+    },
+    {
+      "test": "partial_frame",
+      "pass": true,
+      "metrics": {
+        "nodes": 6,
+        "selected": 4,
+        "links": 2,
+        "moved": 5,
+        "fixed_conflicts": 0,
+        "partial_scopes": 0,
+        "width": 680.0,
+        "height": 725.0,
+        "solve_ms": 0.21316701895557344,
+        "socket_geometry": "estimated; logical port order is authoritative",
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 0,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 0,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 2
+      },
+      "redraw_passes": 1,
+      "warnings": []
+    },
+    {
+      "test": "nested",
+      "pass": true,
+      "metrics": {
+        "nodes": 7,
+        "selected": 5,
+        "links": 2,
+        "moved": 6,
+        "fixed_conflicts": 0,
+        "partial_scopes": 0,
+        "width": 740.0,
+        "height": 755.0,
+        "solve_ms": 0.2449579769745469,
+        "socket_geometry": "estimated; logical port order is authoritative",
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 0,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 0,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 2
+      },
+      "redraw_passes": 1,
+      "warnings": []
+    },
+    {
+      "test": "manual",
+      "pass": true,
+      "metrics": {
+        "nodes": 6,
+        "selected": 4,
+        "links": 2,
+        "moved": 3,
+        "fixed_conflicts": 0,
+        "partial_scopes": 0,
+        "width": 1140.0,
+        "height": 900.0,
+        "solve_ms": 0.20962499547749758,
+        "socket_geometry": "estimated; logical port order is authoritative",
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 0,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 0,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 2
+      },
+      "redraw_passes": 2,
+      "warnings": []
+    },
+    {
+      "test": "collapsed",
+      "pass": true,
+      "metrics": {
+        "nodes": 6,
+        "selected": 4,
+        "links": 2,
+        "moved": 5,
+        "fixed_conflicts": 0,
+        "partial_scopes": 0,
+        "width": 680.0,
+        "height": 749.5,
+        "solve_ms": 0.19662498380057514,
+        "socket_geometry": "estimated; logical port order is authoritative",
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 0,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 0,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 2
+      },
+      "redraw_passes": 1,
+      "warnings": []
+    },
+    {
+      "test": "offscreen",
+      "pass": true,
+      "metrics": {
+        "nodes": 6,
+        "selected": 4,
+        "links": 2,
+        "moved": 5,
+        "fixed_conflicts": 0,
+        "partial_scopes": 0,
+        "width": 680.0,
+        "height": 725.0,
+        "solve_ms": 0.2023330016527325,
+        "socket_geometry": "estimated; logical port order is authoritative",
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 0,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 0,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 2
+      },
+      "redraw_passes": 1,
+      "warnings": []
+    },
+    {
+      "test": "ui_scale",
+      "pass": true,
+      "metrics": {
+        "nodes": 6,
+        "selected": 4,
+        "links": 2,
+        "moved": 5,
+        "fixed_conflicts": 0,
+        "partial_scopes": 0,
+        "width": 678.8,
+        "height": 718.9999984741212,
+        "solve_ms": 0.20195901743136346,
+        "socket_geometry": "estimated; logical port order is authoritative",
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 0,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 0,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 2
+      },
+      "redraw_passes": 1,
+      "warnings": []
+    },
+    {
+      "test": "cancel",
+      "pass": true
+    },
+    {
+      "test": "failure_rollback",
+      "pass": true
+    },
+    {
+      "test": "shortcut",
+      "pass": true,
+      "metrics": {
+        "nodes": 6,
+        "selected": 4,
+        "links": 2,
+        "moved": 5,
+        "fixed_conflicts": 0,
+        "partial_scopes": 0,
+        "width": 678.8,
+        "height": 718.9999984741212,
+        "solve_ms": 0.21275001927278936,
+        "socket_geometry": "estimated; logical port order is authoritative",
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 0,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 0,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 2
+      },
+      "redraw_passes": 1,
+      "warnings": []
+    },
+    {
+      "test": "multi_input",
+      "pass": true,
+      "metrics": {
+        "nodes": 3,
+        "selected": 3,
+        "links": 2,
+        "moved": 3,
+        "fixed_conflicts": 0,
+        "partial_scopes": 0,
+        "width": 380.0,
+        "height": 405.59999999999997,
+        "solve_ms": 0.1431250129826367,
+        "socket_geometry": "estimated; logical port order is authoritative",
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 0,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 0,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000,
+        "wire_scope": "selection_internal",
+        "internal_links_checked": 2
+      },
+      "redraw_passes": 1,
+      "warnings": []
+    }
+  ]
+}

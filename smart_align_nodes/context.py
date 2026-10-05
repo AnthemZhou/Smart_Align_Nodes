@@ -21,3 +21,26 @@ def selected_nodes_from_context(context):
     if tree is None:
         return None, []
     return tree, [node for node in tree.nodes if getattr(node, "select", False)]
+
+
+def layout_selected_names(tree):
+    """Expand selected Frames recursively without changing Blender selection."""
+    from collections import defaultdict
+    children = defaultdict(list)
+    selected, pending = set(), []
+    for node in tree.nodes:
+        if node.parent is not None:
+            children[node.parent.name].append(node.name)
+        if node.select:
+            selected.add(node.name)
+            if node.type == 'FRAME':
+                pending.append(node.name)
+    visited = set()
+    while pending:
+        parent = pending.pop()
+        if parent in visited:
+            continue
+        visited.add(parent)
+        selected.update(children[parent])
+        pending.extend(children[parent])
+    return selected

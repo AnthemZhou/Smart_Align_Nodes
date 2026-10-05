@@ -1,0 +1,115 @@
+{
+  "blender_version": "5.2.2",
+  "unit_tests_passed": 61,
+  "actual_case": {
+    "nodes": 617,
+    "selected": 17,
+    "before": {
+      "node_overlaps": 0,
+      "node_overlap_check_complete": true,
+      "estimated_wire_node_hits": 20,
+      "wire_check_complete": true,
+      "endpoint_chord_crossings": 39,
+      "crossing_check_complete": true,
+      "diagnostic_pair_budget": 100000
+    },
+    "after": {
+      "node_overlaps": 0,
+      "node_overlap_check_complete": true,
+      "estimated_wire_node_hits": 20,
+      "wire_check_complete": true,
+      "endpoint_chord_crossings": 34,
+      "crossing_check_complete": true,
+      "diagnostic_pair_budget": 100000
+    },
+    "new_plan_metrics": {
+      "nodes": 617,
+      "selected": 17,
+      "links": 768,
+      "moved": 7,
+      "fixed_conflicts": 0,
+      "partial_scopes": 1,
+      "width": 1395.6220703125,
+      "height": 416.7086181640625,
+      "solve_ms": 501.188167,
+      "socket_geometry": "estimated; logical port order is authoritative"
+    },
+    "repeat_max_delta": 0.0
+  },
+  "gui_partial": [
+    {
+      "test": "interactive_frame_reroute_layout",
+      "pass": true
+    },
+    {
+      "test": "one_undo_restores_original",
+      "pass": true
+    },
+    {
+      "test": "redo_restores_layout",
+      "pass": true
+    },
+    {
+      "test": "repeat_stability",
+      "pass": true
+    },
+    {
+      "test": "restore_after_frame_redraw",
+      "pass": true
+    },
+    {
+      "test": "register_reload_unregister",
+      "pass": true
+    }
+  ],
+  "gui_matrix": [
+    {
+      "test": "frame_only",
+      "pass": true
+    },
+    {
+      "test": "children_only",
+      "pass": true
+    },
+    {
+      "test": "partial_frame",
+      "pass": true
+    },
+    {
+      "test": "nested",
+      "pass": true
+    },
+    {
+      "test": "manual",
+      "pass": true
+    },
+    {
+      "test": "collapsed",
+      "pass": true
+    },
+    {
+      "test": "offscreen",
+      "pass": true
+    },
+    {
+      "test": "ui_scale",
+      "pass": true
+    },
+    {
+      "test": "cancel",
+      "pass": true
+    },
+    {
+      "test": "failure_rollback",
+      "pass": true
+    },
+    {
+      "test": "shortcut",
+      "pass": true
+    },
+    {
+      "test": "multi_input",
+      "pass": true
+    }
+  ]
+}

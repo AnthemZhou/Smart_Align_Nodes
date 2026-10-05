@@ -18,6 +18,7 @@ class Box:
     name: str = ""
     is_reroute: bool = False
     socket_ys: tuple = ()
+    is_frame: bool = False
 
     @property
     def width(self):
@@ -44,10 +45,17 @@ class Box:
             self.name,
             self.is_reroute,
             tuple((name, value + y) for name, value in self.socket_ys),
+            self.is_frame,
         )
 
 
-def box_from_mapping(mapping, name="", is_reroute=False, socket_ys=()):
+def box_from_mapping(
+    mapping,
+    name="",
+    is_reroute=False,
+    socket_ys=(),
+    is_frame=False,
+):
     if mapping is None:
         return None
     return Box(
@@ -58,6 +66,7 @@ def box_from_mapping(mapping, name="", is_reroute=False, socket_ys=()):
         name,
         is_reroute,
         tuple(socket_ys),
+        is_frame,
     )
 
 
@@ -89,6 +98,46 @@ def _socket_y_anchors(node, box):
     return tuple(sockets)
 
 
+
+def layout_socket_y_anchors(node, box):
+    """Layout-only estimates; leave interactive snapping calibration unchanged.
+
+    Blender 5.2 node_draw.cc/node_intern.hh: collapsed sockets use 10-unit
+    rows around the center. Conventional inputs follow outputs and controls,
+    ending 15 units above the bottom (17 with hidden trailing inputs).
+    Unknown custom/panel/vector widgets keep the original conservative estimate.
+    """
+    conventional = getattr(node, 'bl_idname', '') in {
+        'GeometryNodeSwitch', 'ShaderNodeSeparateXYZ', 'FunctionNodeCombineTransform',
+        'FunctionNodeSeparateTransform', 'ShaderNodeMath', 'ShaderNodeVectorMath',
+    }
+    shared_rows = getattr(node, 'bl_idname', '') in {
+        'FunctionNodeTransformPoint', 'FunctionNodeInvertMatrix', 'GeometryNodeInputPosition',
+    }
+    anchors = dict(_socket_y_anchors(node, box))
+    for direction in ('inputs', 'outputs'):
+        visible = _visible_sockets(node, direction)
+        simple = all(not getattr(s, 'is_multi_input', False) and
+                     (getattr(s, 'is_linked', False) or getattr(s, 'hide_value', False)
+                      or getattr(s, 'type', '') not in {'VECTOR', 'ROTATION', 'MATRIX'})
+                     for s in visible)
+        for i, socket in enumerate(visible):
+            identifier = getattr(socket, 'identifier', '') or getattr(socket, 'name', str(i))
+            key = f'socket:{direction}:{identifier}:{i}'
+            if getattr(node, 'hide', False):
+                anchors[key] = box.center_y + 10.0*((len(visible)-1)/2-i)
+            elif shared_rows:
+                anchors[key] = max(box.bottom+8, box.top-34.0-22.0*i)
+            elif direction == 'outputs' and conventional:
+                anchors[key] = max(box.bottom+8, box.top-35.0-22.0*i)
+            elif direction == 'inputs' and conventional and simple:
+                # The conventional loop adds spacing if a socket has a next
+                # RNA socket, even when that following socket is hidden.
+                all_inputs = list(node.inputs)
+                trailing_gap = 2.0 if visible[-1] != all_inputs[-1] else 0.0
+                anchors[key] = min(box.top-8, box.bottom+15.0+trailing_gap+22.0*(len(visible)-1-i))
+    return tuple(anchors.items())
+
 def node_box(node, reference_scale=None):
     flags = node_kind_flags(node)
     if flags["is_reroute"]:
@@ -109,6 +158,7 @@ def node_box(node, reference_scale=None):
         mapping,
         getattr(node, "name", ""),
         flags["is_reroute"],
+        is_frame=flags["is_frame"],
     )
     if box is not None and (box.width <= 0.0 or box.height <= 0.0):
         return None
@@ -122,6 +172,7 @@ def node_box(node, reference_scale=None):
         box.name,
         box.is_reroute,
         _socket_y_anchors(node, box),
+        box.is_frame,
     )
 
 
@@ -136,6 +187,8 @@ def union_boxes(boxes, name="Selection"):
         min(box.bottom for box in boxes),
         name,
         len(boxes) == 1 and boxes[0].is_reroute,
+        (),
+        len(boxes) == 1 and boxes[0].is_frame,
     )
 
 

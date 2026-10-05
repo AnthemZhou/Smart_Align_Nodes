@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-05",
+  "blender": "5.2.2",
+  "unit_tests": 90,
+  "matrix_cases": 12,
+  "frame_cases": [
+    "junction_alignment_and_routing",
+    "repeat_no_growth_or_drift",
+    "undo_restores_nodes_and_links",
+    "redo_restores_routes",
+    "frame_toggle_same_card_layout",
+    "injected_failure_restores_existing_routes",
+    "unselected_generated_routes_preserved",
+    "muted_generated_routes_preserved"
+  ],
+  "reuse_cases": [
+    "verification_failure_restores_initial_routes",
+    "junction_alignment_and_routing",
+    "repeat_no_growth_or_drift",
+    "undo_restores_nodes_and_links",
+    "redo_restores_routes",
+    "frame_toggle_same_card_layout",
+    "injected_failure_restores_existing_routes",
+    "unselected_generated_routes_preserved",
+    "muted_generated_routes_preserved"
+  ],
+  "spacing": [
+    {
+      "gap": 60,
+      "measured": [
+        60.0,
+        60.0
+      ],
+      "repeat_stable": true
+    },
+    {
+      "gap": 160,
+      "measured": [
+        160.0,
+        160.0
+      ],
+      "repeat_stable": true
+    },
+    {
+      "gap": 24,
+      "measured": [
+        24.0,
+        24.0
+      ],
+      "repeat_stable": true
+    },
+    {
+      "chinese_label": true,
+      "default": 100
+    }
+  ],
+  "first_draw": {
+    "routes_applied_before_invoke_returns": true,
+    "original": {
+      "horizontal_gap": 100,
+      "solve_calls": 1,
+      "routing_plan_ms": 3.3368750009685755,
+      "routing_passes": 1,
+      "routing_applied_before_redraw": true,
+      "total_ms": 157.85349998623133
+    },
+    "reuse": {
+      "horizontal_gap": 100,
+      "solve_calls": 1,
+      "routing_plan_ms": 2.0569590269587934,
+      "routing_passes": 1,
+      "routing_applied_before_redraw": true,
+      "total_ms": 150.2314999816008
+    }
+  },
+  "limits": [
+    "Node and wire mutations share one event; Blender evaluation/GPU frame latency is not measured.",
+    "Local selection boundaries and obstacle constraints can reduce the requested gap."
+  ]
+}

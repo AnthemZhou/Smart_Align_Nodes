@@ -1,4 +1,5 @@
 import bpy
+import sys
 from bpy.props import BoolProperty
 
 from .context import selected_nodes_from_context
@@ -11,6 +12,8 @@ from .debug import (
 from .geometry import local_location_for_absolute, node_box, snap_geometry
 from .preferences import get_preferences
 from .snapping import find_snaps, guide_segments
+from .layout_operator import SMART_ALIGN_NODES_OT_auto_layout
+from .translations import translate
 
 
 class SMART_ALIGN_NODES_OT_debug_selected(bpy.types.Operator):
@@ -27,7 +30,7 @@ class SMART_ALIGN_NODES_OT_debug_selected(bpy.types.Operator):
     def execute(self, context):
         tree, nodes = selected_nodes_from_context(context)
         if tree is None:
-            self.report({"WARNING"}, "No node tree found.")
+            self.report({"WARNING"}, translate("No node tree found."))
             return {"CANCELLED"}
 
         runtime_info = collect_runtime_info(context, bpy)
@@ -37,11 +40,11 @@ class SMART_ALIGN_NODES_OT_debug_selected(bpy.types.Operator):
 
         try:
             context.window_manager.clipboard = report
-            suffix = " Copied to clipboard."
+            suffix = " " + translate("Copied to clipboard.")
         except Exception:
             suffix = ""
 
-        self.report({"INFO"}, f"Debugged {len(nodes)} selected node(s).{suffix}")
+        self.report({"INFO"}, translate("Debugged {count} selected node(s).").format(count=len(nodes)) + suffix)
         return {"FINISHED"}
 
 
@@ -66,6 +69,32 @@ def _view_scale(region):
     scale_x = abs(float(x_sample[0]) - float(origin[0])) / 100.0
     scale_y = abs(float(y_sample[1]) - float(origin[1])) / 100.0
     return max(scale_x, 0.0001), max(scale_y, 0.0001)
+
+
+def _viewport_signature(region):
+    lower = region.view2d.region_to_view(0.0, 0.0)
+    upper = region.view2d.region_to_view(region.width, region.height)
+    return tuple(round(float(value), 4) for value in (*lower, *upper))
+
+
+def _visible_target_boxes(targets, region, geometry_scale, margin_pixels=32.0):
+    scale_x, scale_y = _view_scale(region)
+    lower = region.view2d.region_to_view(0.0, 0.0)
+    upper = region.view2d.region_to_view(region.width, region.height)
+    left = min(lower[0], upper[0]) / geometry_scale
+    right = max(lower[0], upper[0]) / geometry_scale
+    bottom = min(lower[1], upper[1]) / geometry_scale
+    top = max(lower[1], upper[1]) / geometry_scale
+    margin_x = margin_pixels / (scale_x * geometry_scale)
+    margin_y = margin_pixels / (scale_y * geometry_scale)
+    return tuple(
+        target
+        for target in targets
+        if target.right >= left - margin_x
+        and target.left <= right + margin_x
+        and target.top >= bottom - margin_y
+        and target.bottom <= top + margin_y
+    )
 
 
 def _drag_hits_node(event, region, nodes, geometry_scale):
@@ -103,20 +132,20 @@ class _SmartMoveMixin:
         area = getattr(context, "area", None)
         region = _window_region(area)
         if tree is None or not selected_nodes or area is None or region is None:
-            self.report({"WARNING"}, "Smart Snap requires selected nodes in a node editor.")
+            self.report({"WARNING"}, translate("Smart Snap requires selected nodes in a node editor."))
             return {"CANCELLED"}
 
         roots, moving_box, targets, geometry_scale = snap_geometry(
             tree, selected_nodes
         )
         if not roots:
-            self.report({"WARNING"}, "Selected node geometry is not ready.")
+            self.report({"WARNING"}, translate("Selected node geometry is not ready."))
             return {"CANCELLED"}
 
         fallback_scale = float(getattr(context.preferences.system, "dpi", 72)) / 72.0
         geometry_scale = max(float(geometry_scale or fallback_scale), 0.0001)
         if moving_box is None and not self.remove_on_cancel:
-            self.report({"WARNING"}, "Selected node geometry is not ready.")
+            self.report({"WARNING"}, translate("Selected node geometry is not ready."))
             return {"CANCELLED"}
         drag_invocation = getattr(self, "_force_drag_invocation", False)
         if drag_invocation and not _drag_hits_node(
@@ -129,7 +158,9 @@ class _SmartMoveMixin:
         self._region = region
         self._roots = roots
         self._moving_box = moving_box
-        self._targets = targets
+        self._all_targets = tuple(targets)
+        self._targets = ()
+        self._viewport_signature = None
         self._selected_nodes = list(selected_nodes)
         self._geometry_pending = moving_box is None
         self._geometry_scale = geometry_scale
@@ -147,6 +178,7 @@ class _SmartMoveMixin:
         )
         self._axis_constraint = None
         self._guide_segments = []
+        self._refresh_visible_targets(force=True)
 
         self._draw_handle = bpy.types.SpaceNodeEditor.draw_handler_add(
             self._draw_guides,
@@ -211,11 +243,14 @@ class _SmartMoveMixin:
                 return
             self._roots = roots
             self._moving_box = moving_box
-            self._targets = targets
+            self._all_targets = tuple(targets)
             self._geometry_scale = max(
                 float(geometry_scale or self._geometry_scale), 0.0001
             )
             self._geometry_pending = False
+            self._refresh_visible_targets(force=True)
+
+        self._refresh_visible_targets()
 
         mouse_x, mouse_y = _event_canvas_position(
             event, self._region, self._geometry_scale
@@ -230,9 +265,9 @@ class _SmartMoveMixin:
         moving = self._moving_box.translated(delta_x, delta_y)
         preferences = get_preferences(context)
         snap_distance = preferences.snap_distance if preferences is not None else 12
-        equal_spacing = preferences.equal_spacing if preferences is not None else True
         show_guides = preferences.show_guides if preferences is not None else True
-        vertical_gap = preferences.vertical_gap if preferences is not None else 30
+        grid_snap = preferences.grid_snap if preferences is not None else True
+        grid_size = preferences.grid_size if preferences is not None else 50
         scale_x, scale_y = _view_scale(self._region)
 
         if event.alt:
@@ -245,9 +280,8 @@ class _SmartMoveMixin:
                 self._targets,
                 snap_distance / (scale_x * self._geometry_scale),
                 snap_distance / (scale_y * self._geometry_scale),
-                equal_spacing=equal_spacing,
                 axis_constraint=self._axis_constraint,
-                vertical_gap=vertical_gap,
+                grid_size=grid_size if grid_snap else None,
             )
             correction_x = result.correction_x
             correction_y = result.correction_y
@@ -269,6 +303,17 @@ class _SmartMoveMixin:
             guide_segments(result, final_box) if result is not None and show_guides else []
         )
         self._area.tag_redraw()
+
+    def _refresh_visible_targets(self, force=False):
+        signature = _viewport_signature(self._region)
+        if not force and signature == self._viewport_signature:
+            return
+        self._viewport_signature = signature
+        self._targets = _visible_target_boxes(
+            self._all_targets,
+            self._region,
+            self._geometry_scale,
+        )
 
     def _restore_locations(self):
         for node in self._roots:
@@ -315,7 +360,7 @@ class _SmartMoveMixin:
         shader = gpu.shader.from_builtin("POLYLINE_SMOOTH_COLOR")
         colors = {
             "alignment": (0.12, 0.82, 0.92, 0.95),
-            "spacing": (1.0, 0.55, 0.12, 0.95),
+            "grid": (1.0, 0.55, 0.12, 0.88),
         }
         try:
             gpu.state.blend_set("ALPHA")
@@ -364,7 +409,7 @@ class _SmartMoveMixin:
 class SMART_ALIGN_NODES_OT_move_with_snap(_SmartMoveMixin, bpy.types.Operator):
     bl_idname = "smart_align_nodes.move_with_snap"
     bl_label = "Move with Smart Snap"
-    bl_description = "Move selected nodes with boundary and equal-spacing snapping"
+    bl_description = "Move selected nodes with boundary and grid snapping"
     bl_options = {"REGISTER", "UNDO", "BLOCKING"}
 
     remove_on_cancel: BoolProperty(
@@ -381,7 +426,7 @@ class SMART_ALIGN_NODES_OT_move_with_snap(_SmartMoveMixin, bpy.types.Operator):
 class SMART_ALIGN_NODES_OT_drag_with_snap(_SmartMoveMixin, bpy.types.Operator):
     bl_idname = "smart_align_nodes.drag_with_snap"
     bl_label = "Drag with Smart Snap"
-    bl_description = "Drag a node with boundary and equal-spacing snapping"
+    bl_description = "Drag a node with boundary and grid snapping"
     bl_options = {"REGISTER", "UNDO", "BLOCKING"}
 
     remove_on_cancel: BoolProperty(
@@ -432,6 +477,7 @@ class SMART_ALIGN_NODES_OT_duplicate_move(bpy.types.Operator):
 
 
 classes = (
+    SMART_ALIGN_NODES_OT_auto_layout,
     SMART_ALIGN_NODES_OT_debug_selected,
     SMART_ALIGN_NODES_OT_move_with_snap,
     SMART_ALIGN_NODES_OT_drag_with_snap,
@@ -599,6 +645,12 @@ def register():
             shift=True,
         )
         addon_keymaps.append((keymap, duplicate_item))
+        layout_item = keymap.keymap_items.new(
+            SMART_ALIGN_NODES_OT_auto_layout.bl_idname,
+            "O", "PRESS", oskey=sys.platform == "darwin",
+            ctrl=sys.platform != "darwin",
+        )
+        addon_keymaps.append((keymap, layout_item))
     _patch_node_add_transform()
     _patch_node_console_transform()
     if not bpy.app.timers.is_registered(_watch_node_console):

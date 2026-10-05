@@ -1,0 +1,1588 @@
+{
+  "description": "Adjust UVs - V selection captured 2026-10-05; full intersecting obstacle strips and external endpoints retained.",
+  "anchor": "Store Named Attribute.003",
+  "frame": "Frame.020",
+  "settings": {
+    "horizontal_gap": 100,
+    "avoid_fixed": true
+  },
+  "nodes": [
+    {
+      "key": "Index Switch.001",
+      "box": [
+        16708.47265625,
+        16848.47265625,
+        -180.0,
+        -345.0
+      ],
+      "location": [
+        16708.47265625,
+        -180.0
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Store Named Attribute.003",
+      "box": [
+        19045.03125,
+        19185.03125,
+        -244.04122924804688,
+        -409.0412292480469
+      ],
+      "location": [
+        19045.03125,
+        -244.04122924804688
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Switch.020",
+      "box": [
+        19235.03125,
+        19375.03125,
+        -137.72560119628906,
+        -256.72560119628906
+      ],
+      "location": [
+        19235.03125,
+        -137.72560119628906
+      ],
+      "selected": false,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Named Attribute.001",
+      "box": [
+        17352.728515625,
+        17492.728515625,
+        -1358.0,
+        -1435.0
+      ],
+      "location": [
+        17352.728515625,
+        -1358.0
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Group Input.023",
+      "box": [
+        17112.728515625,
+        17252.728515625,
+        -1358.0,
+        -1410.0
+      ],
+      "location": [
+        17112.728515625,
+        -1358.0
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.051",
+      "box": [
+        18886.271484375,
+        18896.271484375,
+        -193.123291015625,
+        -203.123291015625
+      ],
+      "location": [
+        18891.271484375,
+        -198.123291015625
+      ],
+      "selected": false,
+      "parent": "Frame.020",
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Frame.020",
+      "box": [
+        17064.484375,
+        19405.0,
+        22.5,
+        -1465.0
+      ],
+      "location": [
+        17064.484375,
+        22.5
+      ],
+      "selected": true,
+      "parent": null,
+      "kind": "FRAME",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Vector Math.014",
+      "box": [
+        19181.134765625,
+        19321.134765625,
+        -623.041259765625,
+        -722.041259765625
+      ],
+      "location": [
+        19181.134765625,
+        -623.041259765625
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Combine XYZ.008",
+      "box": [
+        18941.134765625,
+        19081.134765625,
+        -467.0412292480469,
+        -586.0412292480469
+      ],
+      "location": [
+        18941.134765625,
+        -467.0412292480469
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Switch.021",
+      "box": [
+        17222.728515625,
+        17362.728515625,
+        -1107.0,
+        -1226.0
+      ],
+      "location": [
+        17222.728515625,
+        -1107.0
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Math.001",
+      "box": [
+        17462.728515625,
+        17602.728515625,
+        -1060.0,
+        -1159.0
+      ],
+      "location": [
+        17462.728515625,
+        -1060.0
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Switch.007",
+      "box": [
+        18662.728515625,
+        18802.728515625,
+        -616.0000610351562,
+        -735.0000610351562
+      ],
+      "location": [
+        18662.728515625,
+        -616.0000610351562
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Math.021",
+      "box": [
+        17702.728515625,
+        17842.728515625,
+        -1060.0,
+        -1159.0
+      ],
+      "location": [
+        17702.728515625,
+        -1060.0
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Group Input.025",
+      "box": [
+        17112.728515625,
+        17252.728515625,
+        -600.0000610351562,
+        -652.0000610351562
+      ],
+      "location": [
+        17112.728515625,
+        -600.0000610351562
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Switch.024",
+      "box": [
+        16468.47265625,
+        16608.47265625,
+        -460.0000305175781,
+        -579.0000305175781
+      ],
+      "location": [
+        16468.47265625,
+        -460.0000305175781
+      ],
+      "selected": false,
+      "parent": "Frame.021",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Frame.021",
+      "box": [
+        13233.47265625,
+        16638.5,
+        -380.6365661621094,
+        -1755.0000915527344
+      ],
+      "location": [
+        13233.47265625,
+        -380.6365661621094
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "FRAME",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.081",
+      "box": [
+        17094.484375,
+        17104.484375,
+        -1077.361083984375,
+        -1087.361083984375
+      ],
+      "location": [
+        17099.484375,
+        -1082.361083984375
+      ],
+      "selected": false,
+      "parent": "Frame.020",
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Math.039",
+      "box": [
+        17942.728515625,
+        18082.728515625,
+        -1060.0,
+        -1159.0
+      ],
+      "location": [
+        17942.728515625,
+        -1060.0
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Switch.027",
+      "box": [
+        18182.728515625,
+        18322.728515625,
+        -810.0000610351562,
+        -929.0000610351562
+      ],
+      "location": [
+        18182.728515625,
+        -810.0000610351562
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Group Input.029",
+      "box": [
+        17702.728515625,
+        17842.728515625,
+        -958.0000610351562,
+        -1010.0000610351562
+      ],
+      "location": [
+        17702.728515625,
+        -958.0000610351562
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Switch.028",
+      "box": [
+        17702.728515625,
+        17842.728515625,
+        -1209.0,
+        -1328.0
+      ],
+      "location": [
+        17702.728515625,
+        -1209.0
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.091",
+      "box": [
+        17203.306640625,
+        17213.306640625,
+        -183.13571166992188,
+        -193.13571166992188
+      ],
+      "location": [
+        17208.306640625,
+        -188.13571166992188
+      ],
+      "selected": false,
+      "parent": "Frame.020",
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Evaluate on Domain.001",
+      "box": [
+        17462.728515625,
+        17602.728515625,
+        -1209.0,
+        -1308.0
+      ],
+      "location": [
+        17462.728515625,
+        -1209.0
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Switch.029",
+      "box": [
+        18948.900390625,
+        19088.900390625,
+        -13.528209686279297,
+        -132.5282096862793
+      ],
+      "location": [
+        18948.900390625,
+        -13.528209686279297
+      ],
+      "selected": false,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Group Input.030",
+      "box": [
+        18730.15234375,
+        18870.15234375,
+        -30.02386474609375,
+        -82.02386474609375
+      ],
+      "location": [
+        18730.15234375,
+        -30.02386474609375
+      ],
+      "selected": false,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.094",
+      "box": [
+        16595.0,
+        16605.0,
+        -175.0,
+        -185.0
+      ],
+      "location": [
+        16600.0,
+        -180.0
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Switch.036",
+      "box": [
+        16888.47265625,
+        17028.47265625,
+        -119.99999237060547,
+        -238.99999237060547
+      ],
+      "location": [
+        16888.47265625,
+        -119.99999237060547
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Group Input.043",
+      "box": [
+        16713.73828125,
+        16853.73828125,
+        -95.06482696533203,
+        -147.06482696533203
+      ],
+      "location": [
+        16713.73828125,
+        -95.06482696533203
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Group Input.052",
+      "box": [
+        18182.728515625,
+        18322.728515625,
+        -708.0000610351562,
+        -760.0000610351562
+      ],
+      "location": [
+        18182.728515625,
+        -708.0000610351562
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Switch.044",
+      "box": [
+        18422.728515625,
+        18562.728515625,
+        -685.0000610351562,
+        -804.0000610351562
+      ],
+      "location": [
+        18422.728515625,
+        -685.0000610351562
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.097",
+      "box": [
+        17867.728515625,
+        17877.728515625,
+        -1090.0,
+        -1100.0
+      ],
+      "location": [
+        17872.728515625,
+        -1095.0
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Compare.006",
+      "box": [
+        19854.23828125,
+        19994.23828125,
+        -167.0,
+        -286.0
+      ],
+      "location": [
+        19854.23828125,
+        -167.0
+      ],
+      "selected": false,
+      "parent": "Frame.023",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Group Input.026",
+      "box": [
+        19480.0,
+        19620.0,
+        -47.0,
+        -121.0
+      ],
+      "location": [
+        19480.0,
+        -47.0
+      ],
+      "selected": false,
+      "parent": "Frame.023",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Frame.023",
+      "box": [
+        19450.0,
+        20398.5,
+        -11.0,
+        -316.0
+      ],
+      "location": [
+        19450.0,
+        -11.0
+      ],
+      "selected": false,
+      "parent": "Frame.028",
+      "kind": "FRAME",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Switch.046",
+      "box": [
+        17942.728515625,
+        18082.728515625,
+        -810.0000610351562,
+        -929.0000610351562
+      ],
+      "location": [
+        17942.728515625,
+        -810.0000610351562
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Boolean Math.011",
+      "box": [
+        17702.728515625,
+        17842.728515625,
+        -833.0000610351562,
+        -908.0000610351562
+      ],
+      "location": [
+        17702.728515625,
+        -833.0000610351562
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Frame.028",
+      "box": [
+        19420.0,
+        21688.5,
+        72.0,
+        -346.0
+      ],
+      "location": [
+        19420.0,
+        72.0
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "FRAME",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.156",
+      "box": [
+        16547.0390625,
+        16557.0390625,
+        -1841.16943359375,
+        -1851.16943359375
+      ],
+      "location": [
+        16552.0390625,
+        -1846.16943359375
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.157",
+      "box": [
+        16293.806640625,
+        16303.806640625,
+        923.2101440429688,
+        913.2101440429688
+      ],
+      "location": [
+        16298.806640625,
+        918.2101440429688
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.169",
+      "box": [
+        16186.59765625,
+        16196.59765625,
+        -1889.01220703125,
+        -1899.01220703125
+      ],
+      "location": [
+        16191.59765625,
+        -1894.01220703125
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.058",
+      "box": [
+        18219.693359375,
+        18229.693359375,
+        145.0,
+        135.0
+      ],
+      "location": [
+        18224.693359375,
+        140.0
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.183",
+      "box": [
+        16143.4736328125,
+        16153.4736328125,
+        -695.0,
+        -705.0
+      ],
+      "location": [
+        16148.4736328125,
+        -700.0
+      ],
+      "selected": false,
+      "parent": "Frame.021",
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.188",
+      "box": [
+        16535.001953125,
+        16545.001953125,
+        -1715.0001220703125,
+        -1725.0001220703125
+      ],
+      "location": [
+        16540.001953125,
+        -1720.0001220703125
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Attribute Statistic.004",
+      "box": [
+        19667.119140625,
+        19807.119140625,
+        -167.0,
+        -266.0
+      ],
+      "location": [
+        19667.119140625,
+        -167.0
+      ],
+      "selected": false,
+      "parent": "Frame.023",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.197",
+      "box": [
+        17627.728515625,
+        17637.728515625,
+        -1090.0,
+        -1100.0
+      ],
+      "location": [
+        17632.728515625,
+        -1095.0
+      ],
+      "selected": true,
+      "parent": "Frame.020",
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    }
+  ],
+  "links": [
+    {
+      "source": "Switch.024",
+      "target": "Index Switch.001",
+      "output": 0,
+      "input": 3,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 103.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Item_2",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.094",
+      "target": "Index Switch.001",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 37.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Index",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.051",
+      "target": "Switch.020",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 82.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "False",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Store Named Attribute.003",
+      "target": "Switch.020",
+      "output": 0,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 104.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Geometry",
+      "target_socket": "True",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Switch.029",
+      "target": "Switch.020",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Switch",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Group Input.023",
+      "target": "Named Attribute.001",
+      "output": 26,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 37.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Socket_17",
+      "target_socket": "Name",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Group Input.023",
+      "target": "Store Named Attribute.003",
+      "output": 26,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 81.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Socket_17",
+      "target_socket": "Name",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Vector Math.014",
+      "target": "Store Named Attribute.003",
+      "output": 0,
+      "input": 3,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 103.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Vector",
+      "target_socket": "Value",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.051",
+      "target": "Store Named Attribute.003",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 37.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Geometry",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Named Attribute.001",
+      "target": "Vector Math.014",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Attribute",
+      "target_socket": "Vector",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Combine XYZ.008",
+      "target": "Vector Math.014",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 82.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Vector",
+      "target_socket": "Vector_001",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.169",
+      "target": "Switch.021",
+      "output": 0,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 104.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "True",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.188",
+      "target": "Switch.021",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Switch",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Switch.021",
+      "target": "Math.001",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 82.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Value_001",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Switch.044",
+      "target": "Switch.007",
+      "output": 0,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 104.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "True",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.197",
+      "target": "Math.021",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Value",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Group Input.025",
+      "target": "Switch.007",
+      "output": 29,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Socket_29",
+      "target_socket": "Switch",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.091",
+      "target": "Reroute.051",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 5.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Input",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.157",
+      "target": "Math.021",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 82.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Value_001",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Math.021",
+      "target": "Math.039",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "Value",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Switch.028",
+      "target": "Math.039",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 82.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Value_001",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Switch.036",
+      "target": "Reroute.091",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 5.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Input",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.081",
+      "target": "Switch.028",
+      "output": 0,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 104.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "True",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Math.039",
+      "target": "Switch.027",
+      "output": 0,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 104.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "True",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Evaluate on Domain.001",
+      "target": "Switch.028",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "Switch",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.183",
+      "target": "Evaluate on Domain.001",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 37.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Value",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.058",
+      "target": "Switch.029",
+      "output": 0,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 104.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "True",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Group Input.030",
+      "target": "Switch.029",
+      "output": 25,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Socket_31",
+      "target_socket": "Switch",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Index Switch.001",
+      "target": "Switch.036",
+      "output": 0,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 104.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "True",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Group Input.043",
+      "target": "Switch.036",
+      "output": 13,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Socket_39",
+      "target_socket": "Switch",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Switch.007",
+      "target": "Combine XYZ.008",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 59.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Y",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Switch.027",
+      "target": "Switch.044",
+      "output": 0,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 104.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "True",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.097",
+      "target": "Switch.044",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 82.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "False",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Math.021",
+      "target": "Reroute.097",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 5.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "Input",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Group Input.052",
+      "target": "Switch.044",
+      "output": 13,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Socket_39",
+      "target_socket": "Switch",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Group Input.029",
+      "target": "Switch.046",
+      "output": 24,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 104.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Socket_30",
+      "target_socket": "True",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.156",
+      "target": "Boolean Math.011",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 37.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Boolean",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Boolean Math.011",
+      "target": "Switch.046",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Boolean",
+      "target_socket": "Switch",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Switch.046",
+      "target": "Switch.027",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Switch",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Group Input.026",
+      "target": "Attribute Statistic.004",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 37.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Socket_0",
+      "target_socket": "Geometry",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Group Input.026",
+      "target": "Attribute Statistic.004",
+      "output": 1,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 59.0,
+      "target_offset": 59.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Socket_5",
+      "target_socket": "Attribute",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Attribute Statistic.004",
+      "target": "Compare.006",
+      "output": 4,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 37.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Max",
+      "target_socket": "A",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.197",
+      "target": "Switch.007",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 82.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "False",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Math.001",
+      "target": "Reroute.197",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 5.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "Input",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.097",
+      "target": "Switch.027",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 82.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "False",
+      "multi_input": false,
+      "reroutes": []
+    }
+  ]
+}

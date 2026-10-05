@@ -1,0 +1,352 @@
+{
+  "blender_version": "5.2.2",
+  "unit_tests_passed": 73,
+  "actual_case_comparison": {
+    "socket": {
+      "nodes": 617,
+      "selected": 17,
+      "before": {
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 20,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 34,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000
+      },
+      "after": {
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 23,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 34,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000
+      },
+      "metrics": {
+        "nodes": 617,
+        "selected": 17,
+        "links": 768,
+        "moved": 14,
+        "fixed_conflicts": 0,
+        "partial_scopes": 1,
+        "width": 1395.6220703124964,
+        "height": 422.0,
+        "solve_ms": 2188.6014999999998,
+        "socket_geometry": "estimated; logical port order is authoritative"
+      },
+      "repeat_max_delta": 0.0,
+      "warnings": [],
+      "alignment_decisions": {
+        "Combine Transform": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Invert Matrix",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Invert Matrix": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Transform Point",
+          "vertical_error": 78.0,
+          "vertical_satisfied": false
+        },
+        "Math.036": {
+          "horizontal": "left",
+          "vertical": "anchor",
+          "target": null,
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Math.038": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Switch.025",
+          "vertical_error": 98.0,
+          "vertical_satisfied": false
+        },
+        "Math.040": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Switch.022",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Math.041": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Switch.022",
+          "vertical_error": 56.0,
+          "vertical_satisfied": false
+        },
+        "Math.051": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Switch.025",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Position.004": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Transform Point",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Separate Transform": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Combine Transform",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Separate XYZ.002": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Math.051",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Separate XYZ.003": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Math.038",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Switch.022": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Math.036",
+          "vertical_error": 238.0,
+          "vertical_satisfied": false
+        },
+        "Switch.025": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Math.036",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Transform Point": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Separate XYZ.002",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        }
+      }
+    },
+    "adaptive": {
+      "nodes": 617,
+      "selected": 17,
+      "before": {
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 20,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 34,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000
+      },
+      "after": {
+        "node_overlaps": 0,
+        "node_overlap_check_complete": true,
+        "estimated_wire_node_hits": 21,
+        "wire_check_complete": true,
+        "endpoint_chord_crossings": 32,
+        "crossing_check_complete": true,
+        "diagnostic_pair_budget": 100000
+      },
+      "metrics": {
+        "nodes": 617,
+        "selected": 17,
+        "links": 768,
+        "moved": 14,
+        "fixed_conflicts": 0,
+        "partial_scopes": 1,
+        "width": 1395.6220703124964,
+        "height": 422.0,
+        "solve_ms": 2038.0579579999996,
+        "socket_geometry": "estimated; logical port order is authoritative"
+      },
+      "repeat_max_delta": 0.0,
+      "warnings": [],
+      "alignment_decisions": {
+        "Combine Transform": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Invert Matrix",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Invert Matrix": {
+          "horizontal": "right",
+          "vertical": "top",
+          "target": "Transform Point",
+          "vertical_error": 100.0,
+          "vertical_satisfied": false
+        },
+        "Math.036": {
+          "horizontal": "left",
+          "vertical": "anchor",
+          "target": null,
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Math.038": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Switch.025",
+          "vertical_error": 98.0,
+          "vertical_satisfied": false
+        },
+        "Math.040": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Switch.022",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Math.041": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Switch.022",
+          "vertical_error": 56.0,
+          "vertical_satisfied": false
+        },
+        "Math.051": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Switch.025",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Position.004": {
+          "horizontal": "right",
+          "vertical": "top",
+          "target": "Transform Point",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Separate Transform": {
+          "horizontal": "left",
+          "vertical": "top",
+          "target": "Combine Transform",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Separate XYZ.002": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Math.051",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Separate XYZ.003": {
+          "horizontal": "left",
+          "vertical": "socket",
+          "target": "Math.038",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Switch.022": {
+          "horizontal": "right",
+          "vertical": "socket",
+          "target": "Math.036",
+          "vertical_error": 238.0,
+          "vertical_satisfied": false
+        },
+        "Switch.025": {
+          "horizontal": "right",
+          "vertical": "socket",
+          "target": "Math.036",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        },
+        "Transform Point": {
+          "horizontal": "left",
+          "vertical": "top",
+          "target": "Separate XYZ.002",
+          "vertical_error": 0.0,
+          "vertical_satisfied": true
+        }
+      }
+    }
+  },
+  "gui_hybrid": [
+    {
+      "test": "hybrid_alignment_and_fixed_nodes",
+      "pass": true
+    },
+    {
+      "test": "repeat_stability",
+      "pass": true
+    },
+    {
+      "test": "undo_restores_original",
+      "pass": true
+    },
+    {
+      "test": "redo_restores_alignment",
+      "pass": true
+    }
+  ],
+  "gui_matrix": [
+    {
+      "test": "frame_only",
+      "pass": true
+    },
+    {
+      "test": "children_only",
+      "pass": true
+    },
+    {
+      "test": "partial_frame",
+      "pass": true
+    },
+    {
+      "test": "nested",
+      "pass": true
+    },
+    {
+      "test": "manual",
+      "pass": true
+    },
+    {
+      "test": "collapsed",
+      "pass": true
+    },
+    {
+      "test": "offscreen",
+      "pass": true
+    },
+    {
+      "test": "ui_scale",
+      "pass": true
+    },
+    {
+      "test": "cancel",
+      "pass": true
+    },
+    {
+      "test": "failure_rollback",
+      "pass": true
+    },
+    {
+      "test": "shortcut",
+      "pass": true
+    },
+    {
+      "test": "multi_input",
+      "pass": true
+    }
+  ],
+  "ui_scale_validation": "Columns within 1 canvas unit; socket heights aligned on freshly drawn geometry; repeat stable. Control heights change after normalization at 125% UI scale, so identical Y across scales is not required.",
+  "limitations": [
+    "Socket coordinates and wire curves are estimates.",
+    "Spacing and collision clearance can override branch alignment.",
+    "Bottom/right alignment are additionally covered with variable-size synthetic regression cases."
+  ]
+}

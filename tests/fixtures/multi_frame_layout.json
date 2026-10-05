@@ -1,0 +1,1929 @@
+{
+  "nodes": [
+    {
+      "key": "Combine XYZ",
+      "box": [
+        10276.794921875,
+        10416.794921875,
+        -772.5695190429688,
+        -849.5695190429688
+      ],
+      "location": [
+        10276.794921875,
+        -772.5695190429688
+      ],
+      "selected": false,
+      "parent": "Frame.019",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Group Input.012",
+      "box": [
+        9989.0830078125,
+        10129.0830078125,
+        -1470.9276123046875,
+        -1522.9276123046875
+      ],
+      "location": [
+        9989.0830078125,
+        -1470.9276123046875
+      ],
+      "selected": true,
+      "parent": "Frame.013",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Attribute Statistic.001",
+      "box": [
+        10179.0048828125,
+        10319.0048828125,
+        -1499.728515625,
+        -1620.728515625
+      ],
+      "location": [
+        10179.0048828125,
+        -1499.728515625
+      ],
+      "selected": true,
+      "parent": "Frame.013",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Radius.001",
+      "box": [
+        9282.1259765625,
+        9422.1259765625,
+        -1694.8233642578125,
+        -1744.8233642578125
+      ],
+      "location": [
+        9282.1259765625,
+        -1694.8233642578125
+      ],
+      "selected": true,
+      "parent": "Frame.013",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Endpoint Selection",
+      "box": [
+        9729.08203125,
+        9869.08203125,
+        -1510.927734375,
+        -1607.927734375
+      ],
+      "location": [
+        9729.08203125,
+        -1510.927734375
+      ],
+      "selected": true,
+      "parent": "Frame.013",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Math.005",
+      "box": [
+        10358.55078125,
+        10498.55078125,
+        -1490.853271484375,
+        -1589.853271484375
+      ],
+      "location": [
+        10358.55078125,
+        -1490.853271484375
+      ],
+      "selected": true,
+      "parent": "Frame.013",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Math.006",
+      "box": [
+        10546.4912109375,
+        10686.4912109375,
+        -1532.0093994140625,
+        -1631.0093994140625
+      ],
+      "location": [
+        10546.4912109375,
+        -1532.0093994140625
+      ],
+      "selected": true,
+      "parent": "Frame.013",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Group Input.018",
+      "box": [
+        10174.8046875,
+        10314.8046875,
+        -1650.7498779296875,
+        -1702.7498779296875
+      ],
+      "location": [
+        10174.8046875,
+        -1650.7498779296875
+      ],
+      "selected": true,
+      "parent": "Frame.013",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Integer Math.001",
+      "box": [
+        10360.3427734375,
+        10500.3427734375,
+        -1623.3975830078125,
+        -1722.3975830078125
+      ],
+      "location": [
+        10360.3427734375,
+        -1623.3975830078125
+      ],
+      "selected": true,
+      "parent": "Frame.013",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Frame.011",
+      "box": [
+        9222.0,
+        11467.5,
+        -1399.0,
+        -2092.0
+      ],
+      "location": [
+        9222.0,
+        -1399.0
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "FRAME",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Math.007",
+      "box": [
+        10940.0009765625,
+        11080.0009765625,
+        -1500.0,
+        -1599.0
+      ],
+      "location": [
+        10940.0009765625,
+        -1500.0
+      ],
+      "selected": true,
+      "parent": "Frame.011",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Math.004",
+      "box": [
+        9649.08203125,
+        9789.08203125,
+        -1630.927734375,
+        -1729.927734375
+      ],
+      "location": [
+        9649.08203125,
+        -1630.927734375
+      ],
+      "selected": true,
+      "parent": "Frame.013",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Group Input.019",
+      "box": [
+        9462.8974609375,
+        9602.8974609375,
+        -1764.3426513671875,
+        -1816.3426513671875
+      ],
+      "location": [
+        9462.8974609375,
+        -1764.3426513671875
+      ],
+      "selected": true,
+      "parent": "Frame.013",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.020",
+      "box": [
+        9345.46484375,
+        9355.46484375,
+        -1249.0162353515625,
+        -1259.0162353515625
+      ],
+      "location": [
+        9350.46484375,
+        -1254.0162353515625
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.023",
+      "box": [
+        9406.947265625,
+        9416.947265625,
+        -844.353515625,
+        -854.353515625
+      ],
+      "location": [
+        9411.947265625,
+        -849.353515625
+      ],
+      "selected": false,
+      "parent": "Frame.019",
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Switch.011",
+      "box": [
+        10760.0,
+        10900.0,
+        -1500.0,
+        -1619.0
+      ],
+      "location": [
+        10760.0,
+        -1500.0
+      ],
+      "selected": true,
+      "parent": "Frame.011",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.025",
+      "box": [
+        9224.2734375,
+        9234.2734375,
+        -2221.170654296875,
+        -2231.170654296875
+      ],
+      "location": [
+        9229.2734375,
+        -2226.170654296875
+      ],
+      "selected": false,
+      "parent": "Frame.010",
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Field at Index.001",
+      "box": [
+        9249.365234375,
+        9389.365234375,
+        -2145.79833984375,
+        -2266.79833984375
+      ],
+      "location": [
+        9249.365234375,
+        -2145.79833984375
+      ],
+      "selected": false,
+      "parent": "Frame.010",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Vector Math.008",
+      "box": [
+        9430.2021484375,
+        9570.2021484375,
+        -2145.79833984375,
+        -2244.79833984375
+      ],
+      "location": [
+        9430.2021484375,
+        -2145.79833984375
+      ],
+      "selected": false,
+      "parent": "Frame.010",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Interpolate Domain.002",
+      "box": [
+        9611.0390625,
+        9751.0390625,
+        -2145.79833984375,
+        -2244.79833984375
+      ],
+      "location": [
+        9611.0390625,
+        -2145.79833984375
+      ],
+      "selected": false,
+      "parent": "Frame.010",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Vector Math.007",
+      "box": [
+        9790.822265625,
+        9930.822265625,
+        -2150.420654296875,
+        -2227.420654296875
+      ],
+      "location": [
+        9790.822265625,
+        -2150.420654296875
+      ],
+      "selected": false,
+      "parent": "Frame.010",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Index.002",
+      "box": [
+        8842.052734375,
+        8982.052734375,
+        -2293.182861328125,
+        -2343.182861328125
+      ],
+      "location": [
+        8842.052734375,
+        -2293.182861328125
+      ],
+      "selected": false,
+      "parent": "Frame.010",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Switch.015",
+      "box": [
+        9022.8896484375,
+        9162.8896484375,
+        -2273.089599609375,
+        -2417.089599609375
+      ],
+      "location": [
+        9022.8896484375,
+        -2273.089599609375
+      ],
+      "selected": false,
+      "parent": "Frame.010",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Offset Point in Curve.001",
+      "box": [
+        8842.052734375,
+        8982.052734375,
+        -2353.46240234375,
+        -2472.46240234375
+      ],
+      "location": [
+        8842.052734375,
+        -2353.46240234375
+      ],
+      "selected": false,
+      "parent": "Frame.010",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Position.002",
+      "box": [
+        9018.296875,
+        9158.296875,
+        -2185.984375,
+        -2235.984375
+      ],
+      "location": [
+        9018.296875,
+        -2185.984375
+      ],
+      "selected": false,
+      "parent": "Frame.010",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Frame.010",
+      "box": [
+        8812.0,
+        9961.0,
+        -2110.0,
+        -2502.5
+      ],
+      "location": [
+        8812.0,
+        -2110.0
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "FRAME",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Attribute Statistic.002",
+      "box": [
+        10309.08203125,
+        10449.08203125,
+        -1910.927734375,
+        -2031.927734375
+      ],
+      "location": [
+        10309.08203125,
+        -1910.927734375
+      ],
+      "selected": true,
+      "parent": "Frame.012",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Math.009",
+      "box": [
+        10509.08203125,
+        10649.08203125,
+        -1890.9276123046875,
+        -1989.9276123046875
+      ],
+      "location": [
+        10509.08203125,
+        -1890.9276123046875
+      ],
+      "selected": true,
+      "parent": "Frame.012",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Frame.012",
+      "box": [
+        10279.0,
+        10679.0,
+        -1855.0,
+        -2062.0
+      ],
+      "location": [
+        10279.0,
+        -1855.0
+      ],
+      "selected": true,
+      "parent": "Frame.011",
+      "kind": "FRAME",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Frame.013",
+      "box": [
+        9252.0,
+        10716.5,
+        -1435.0,
+        -1846.5
+      ],
+      "location": [
+        9252.0,
+        -1435.0
+      ],
+      "selected": true,
+      "parent": "Frame.011",
+      "kind": "FRAME",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Switch.016",
+      "box": [
+        9780.0009765625,
+        9920.0009765625,
+        -820.0,
+        -939.0
+      ],
+      "location": [
+        9780.0009765625,
+        -820.0
+      ],
+      "selected": false,
+      "parent": "Frame.019",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.043",
+      "box": [
+        9222.8408203125,
+        9232.8408203125,
+        -1366.568115234375,
+        -1376.568115234375
+      ],
+      "location": [
+        9227.8408203125,
+        -1371.568115234375
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Frame.019",
+      "box": [
+        9376.947265625,
+        11406.0,
+        -223.0,
+        -1029.0
+      ],
+      "location": [
+        9376.947265625,
+        -223.0
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "FRAME",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.053",
+      "box": [
+        8759.1328125,
+        8769.1328125,
+        -2533.556884765625,
+        -2543.556884765625
+      ],
+      "location": [
+        8764.1328125,
+        -2538.556884765625
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.054",
+      "box": [
+        11941.6005859375,
+        11951.6005859375,
+        -2532.75634765625,
+        -2542.75634765625
+      ],
+      "location": [
+        11946.6005859375,
+        -2537.75634765625
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Math.029",
+      "box": [
+        9540.0,
+        9680.0,
+        -900.0000610351562,
+        -999.0000610351562
+      ],
+      "location": [
+        9540.0,
+        -900.0000610351562
+      ],
+      "selected": false,
+      "parent": "Frame.019",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.075",
+      "box": [
+        8712.0849609375,
+        8722.0849609375,
+        -2573.94970703125,
+        -2583.94970703125
+      ],
+      "location": [
+        8717.0849609375,
+        -2578.94970703125
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Merge by Distance.002",
+      "box": [
+        11825.2392578125,
+        11965.2392578125,
+        -399.9999694824219,
+        -513.9999694824219
+      ],
+      "location": [
+        11825.2392578125,
+        -399.9999694824219
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.114",
+      "box": [
+        10248.341796875,
+        10258.341796875,
+        -1245.4996337890625,
+        -1255.4996337890625
+      ],
+      "location": [
+        10253.341796875,
+        -1250.4996337890625
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.029",
+      "box": [
+        9095.0,
+        9105.0,
+        -957.83642578125,
+        -967.83642578125
+      ],
+      "location": [
+        9100.0,
+        -962.83642578125
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": true
+    },
+    {
+      "key": "Reroute.049",
+      "box": [
+        9229.611328125,
+        9239.611328125,
+        -1299.8184814453125,
+        -1309.8184814453125
+      ],
+      "location": [
+        9234.611328125,
+        -1304.8184814453125
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.132",
+      "box": [
+        10435.0,
+        10445.0,
+        -1310.6416015625,
+        -1320.6416015625
+      ],
+      "location": [
+        10440.0,
+        -1315.6416015625
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.133",
+      "box": [
+        11859.384765625,
+        11869.384765625,
+        -1310.6416015625,
+        -1320.6416015625
+      ],
+      "location": [
+        11864.384765625,
+        -1315.6416015625
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.151",
+      "box": [
+        9224.650390625,
+        9234.650390625,
+        -1330.6416015625,
+        -1340.6416015625
+      ],
+      "location": [
+        9229.650390625,
+        -1335.6416015625
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.154",
+      "box": [
+        11844.123046875,
+        11854.123046875,
+        -1328.380615234375,
+        -1338.380615234375
+      ],
+      "location": [
+        11849.123046875,
+        -1333.380615234375
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.161",
+      "box": [
+        11163.494140625,
+        11173.494140625,
+        -1159.6776123046875,
+        -1169.6776123046875
+      ],
+      "location": [
+        11168.494140625,
+        -1164.6776123046875
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.168",
+      "box": [
+        11823.4990234375,
+        11833.4990234375,
+        -1356.8870849609375,
+        -1366.8870849609375
+      ],
+      "location": [
+        11828.4990234375,
+        -1361.8870849609375
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.172",
+      "box": [
+        8852.2412109375,
+        8862.2412109375,
+        -1675.0,
+        -1685.0
+      ],
+      "location": [
+        8857.2412109375,
+        -1680.0
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.175",
+      "box": [
+        8858.791015625,
+        8868.791015625,
+        -1629.1619873046875,
+        -1639.1619873046875
+      ],
+      "location": [
+        8863.791015625,
+        -1634.1619873046875
+      ],
+      "selected": false,
+      "parent": null,
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Named Attribute.003",
+      "box": [
+        9282.1259765625,
+        9422.1259765625,
+        -1614.8233642578125,
+        -1689.8233642578125
+      ],
+      "location": [
+        9282.1259765625,
+        -1614.8233642578125
+      ],
+      "selected": true,
+      "parent": "Frame.013",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Switch.051",
+      "box": [
+        9462.125,
+        9602.125,
+        -1614.8233642578125,
+        -1733.8233642578125
+      ],
+      "location": [
+        9462.125,
+        -1614.8233642578125
+      ],
+      "selected": true,
+      "parent": "Frame.013",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Compare.009",
+      "box": [
+        9829.0830078125,
+        9969.0830078125,
+        -1630.927734375,
+        -1749.927734375
+      ],
+      "location": [
+        9829.0830078125,
+        -1630.927734375
+      ],
+      "selected": true,
+      "parent": "Frame.013",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Boolean Math.013",
+      "box": [
+        9989.0830078125,
+        10129.0830078125,
+        -1530.9276123046875,
+        -1627.9276123046875
+      ],
+      "location": [
+        9989.0830078125,
+        -1530.9276123046875
+      ],
+      "selected": true,
+      "parent": "Frame.013",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Compare.011",
+      "box": [
+        11120.0,
+        11260.0,
+        -1500.0,
+        -1597.0
+      ],
+      "location": [
+        11120.0,
+        -1500.0
+      ],
+      "selected": true,
+      "parent": "Frame.011",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Switch.054",
+      "box": [
+        11297.7451171875,
+        11437.7451171875,
+        -1521.75927734375,
+        -1640.75927734375
+      ],
+      "location": [
+        11297.7451171875,
+        -1521.75927734375
+      ],
+      "selected": true,
+      "parent": "Frame.011",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Compare.012",
+      "box": [
+        10093.3173828125,
+        10233.3173828125,
+        -1904.5390625,
+        -2001.5390625
+      ],
+      "location": [
+        10093.3173828125,
+        -1904.5390625
+      ],
+      "selected": true,
+      "parent": "Frame.011",
+      "kind": "NODE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    },
+    {
+      "key": "Reroute.018",
+      "box": [
+        10035.3857421875,
+        10045.3857421875,
+        -2008.8404541015625,
+        -2018.8404541015625
+      ],
+      "location": [
+        10040.3857421875,
+        -2013.8404541015625
+      ],
+      "selected": true,
+      "parent": "Frame.011",
+      "kind": "REROUTE",
+      "shrink": true,
+      "protected": false,
+      "collapsed": false
+    }
+  ],
+  "links": [
+    {
+      "source": "Reroute.023",
+      "target": "Combine XYZ",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 37.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "X",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Group Input.012",
+      "target": "Attribute Statistic.001",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 37.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Socket_0",
+      "target_socket": "Geometry",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Math.004",
+      "target": "Attribute Statistic.001",
+      "output": 0,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 81.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "Attribute",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Boolean Math.013",
+      "target": "Attribute Statistic.001",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 59.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Boolean",
+      "target_socket": "Selection",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Math.005",
+      "target": "Math.006",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "Value",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Group Input.018",
+      "target": "Integer Math.001",
+      "output": 6,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 37.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Socket_2",
+      "target_socket": "Value",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Attribute Statistic.001",
+      "target": "Math.005",
+      "output": 3,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Min",
+      "target_socket": "Value",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Group Input.019",
+      "target": "Math.004",
+      "output": 1,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 82.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Socket_5",
+      "target_socket": "Value_001",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Math.006",
+      "target": "Switch.011",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 82.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "False",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.132",
+      "target": "Switch.011",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Switch",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Interpolate Domain.002",
+      "target": "Vector Math.007",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "Vector",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Switch.015",
+      "target": "Field at Index.001",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 59.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Index",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Vector Math.008",
+      "target": "Interpolate Domain.002",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 37.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Vector",
+      "target_socket": "Value",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.025",
+      "target": "Vector Math.008",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Vector",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.025",
+      "target": "Field at Index.001",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 37.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Value",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Field at Index.001",
+      "target": "Vector Math.008",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 82.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "Vector_001",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Position.002",
+      "target": "Reroute.025",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 34.0,
+      "target_offset": 5.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Position",
+      "target_socket": "Input",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Offset Point in Curve.001",
+      "target": "Switch.015",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 85.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Is Valid Offset",
+      "target_socket": "Switch",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Offset Point in Curve.001",
+      "target": "Switch.015",
+      "output": 1,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 59.0,
+      "target_offset": 129.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Point Index",
+      "target_socket": "True",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Index.002",
+      "target": "Switch.015",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 107.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Index",
+      "target_socket": "False",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Attribute Statistic.002",
+      "target": "Math.009",
+      "output": 3,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Min",
+      "target_socket": "Value",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Switch.011",
+      "target": "Math.007",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Value",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.018",
+      "target": "Attribute Statistic.002",
+      "output": 0,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 81.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Attribute",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Math.009",
+      "target": "Switch.011",
+      "output": 0,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 104.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "True",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.175",
+      "target": "Attribute Statistic.002",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 37.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Geometry",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.029",
+      "target": "Switch.016",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Switch",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Math.029",
+      "target": "Switch.016",
+      "output": 0,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 104.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "True",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.172",
+      "target": "Reroute.043",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 5.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Input",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.053",
+      "target": "Reroute.054",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 5.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Input",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.043",
+      "target": "Math.029",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Value",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.161",
+      "target": "Merge by Distance.002",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 59.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Selection",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Switch.054",
+      "target": "Merge by Distance.002",
+      "output": 0,
+      "input": 3,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 103.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Distance",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.020",
+      "target": "Reroute.114",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 5.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Input",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.029",
+      "target": "Reroute.049",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 5.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Input",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.049",
+      "target": "Reroute.132",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 5.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Input",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.132",
+      "target": "Reroute.133",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 5.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Input",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.151",
+      "target": "Reroute.154",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 5.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Input",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.043",
+      "target": "Reroute.168",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 5.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Input",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Named Attribute.003",
+      "target": "Switch.051",
+      "output": 1,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Exists",
+      "target_socket": "Switch",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Radius.001",
+      "target": "Switch.051",
+      "output": 0,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 104.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Radius",
+      "target_socket": "True",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Switch.051",
+      "target": "Math.004",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "Value",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Math.004",
+      "target": "Compare.009",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 37.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "A",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Endpoint Selection",
+      "target": "Boolean Math.013",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 37.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Selection",
+      "target_socket": "Boolean",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Compare.009",
+      "target": "Boolean Math.013",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 59.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Result",
+      "target_socket": "Boolean_001",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Math.007",
+      "target": "Compare.011",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 37.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "A",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Compare.011",
+      "target": "Switch.054",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 60.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Result",
+      "target_socket": "Switch",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Math.007",
+      "target": "Switch.054",
+      "output": 0,
+      "input": 2,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 104.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "True",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Reroute.018",
+      "target": "Compare.012",
+      "output": 0,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 5.0,
+      "target_offset": 37.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Output",
+      "target_socket": "A",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Compare.012",
+      "target": "Attribute Statistic.002",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 59.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Result",
+      "target_socket": "Selection",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Vector Math.007",
+      "target": "Reroute.018",
+      "output": 1,
+      "input": 0,
+      "sort_id": 0,
+      "source_offset": 35.0,
+      "target_offset": 5.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "Input",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Integer Math.001",
+      "target": "Math.006",
+      "output": 0,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 82.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Value",
+      "target_socket": "Value_001",
+      "multi_input": false,
+      "reroutes": []
+    },
+    {
+      "source": "Attribute Statistic.001",
+      "target": "Math.009",
+      "output": 3,
+      "input": 1,
+      "sort_id": 0,
+      "source_offset": 37.0,
+      "target_offset": 82.0,
+      "valid": true,
+      "muted": false,
+      "hidden": false,
+      "source_socket": "Min",
+      "target_socket": "Value_001",
+      "multi_input": false,
+      "reroutes": []
+    }
+  ],
+  "settings": {
+    "horizontal_gap": 100,
+    "avoid_fixed": true
+  },
+  "frames": [
+    "Frame.012",
+    "Frame.013"
+  ]
+}

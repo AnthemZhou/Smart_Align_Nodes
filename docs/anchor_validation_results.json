@@ -1,0 +1,407 @@
+{
+  "date": "2026-10-05",
+  "blender": "5.2.2",
+  "unit_tests": 92,
+  "full_snapshot_nodes": 617,
+  "full_snapshot_links": 768,
+  "note": "Current user selection checked as a pure snapshot; GUI regressions ran in isolated factory-startup instances.",
+  "anchor": "Store Named Attribute.003",
+  "before": {
+    "deltas": {
+      "Boolean Math.011": [
+        -160.59939236111677,
+        -557.5205688476562
+      ],
+      "Combine XYZ.008": [
+        -325.5041232638905,
+        -650.4794006347656
+      ],
+      "Evaluate on Domain.001": [
+        -135.29969618056202,
+        -557.5206298828125
+      ],
+      "Frame.020": [
+        0.0,
+        0.0
+      ],
+      "Group Input.023": [
+        1288.2018229166642,
+        420.4793701171875
+      ],
+      "Group Input.025": [
+        1073.501519097219,
+        -540.5205688476562
+      ],
+      "Group Input.029": [
+        -160.59939236111677,
+        -557.5205688476562
+      ],
+      "Group Input.052": [
+        -211.19878472222626,
+        -557.5205688476562
+      ],
+      "Math.001": [
+        -135.29969618056202,
+        -557.5206298828125
+      ],
+      "Math.021": [
+        -160.59939236111677,
+        -557.5206298828125
+      ],
+      "Math.039": [
+        -185.89908854167152,
+        -557.5206298828125
+      ],
+      "Named Attribute.001": [
+        1262.9021267361095,
+        367.4793701171875
+      ],
+      "Reroute.097": [
+        -160.59939236111677,
+        -557.5206298828125
+      ],
+      "Reroute.197": [
+        -135.29969618056202,
+        -557.5206298828125
+      ],
+      "Store Named Attribute.003": [
+        0.0,
+        -625.4794006347656
+      ],
+      "Switch.007": [
+        -261.79817708333576,
+        -501.52056884765625
+      ],
+      "Switch.021": [
+        -110.00000000000728,
+        -557.5206298828125
+      ],
+      "Switch.027": [
+        -211.19878472222626,
+        -557.5205688476562
+      ],
+      "Switch.028": [
+        -160.59939236111677,
+        -557.5206298828125
+      ],
+      "Switch.044": [
+        -236.498480902781,
+        -557.5205688476562
+      ],
+      "Switch.046": [
+        -185.89908854167152,
+        -557.5205688476562
+      ],
+      "Vector Math.014": [
+        -350.80381944444525,
+        -367.4793701171875
+      ]
+    },
+    "warnings": [],
+    "partial_results": [
+      {
+        "nodes": [
+          "Boolean Math.011",
+          "Combine XYZ.008",
+          "Evaluate on Domain.001",
+          "Group Input.023",
+          "Group Input.025",
+          "Group Input.029",
+          "Group Input.052",
+          "Math.001",
+          "Math.021",
+          "Math.039",
+          "Named Attribute.001",
+          "Reroute.097",
+          "Reroute.197",
+          "Store Named Attribute.003",
+          "Switch.007",
+          "Switch.021",
+          "Switch.027",
+          "Switch.028",
+          "Switch.044",
+          "Switch.046",
+          "Vector Math.014"
+        ],
+        "method": "structured",
+        "reason": null,
+        "moved": 21
+      }
+    ],
+    "diagnostics": {
+      "node_overlaps": 0,
+      "node_overlap_check_complete": true,
+      "estimated_wire_node_hits": 8,
+      "wire_check_complete": true,
+      "endpoint_chord_crossings": 2,
+      "crossing_check_complete": true,
+      "diagnostic_pair_budget": 100000,
+      "wire_scope": "selection_internal",
+      "internal_links_checked": 31
+    },
+    "routing_search": {
+      "check_complete": true,
+      "pair_checks": 16072,
+      "pair_budget": 100000,
+      "max_routes": 24,
+      "routed_links": 2
+    },
+    "routes": 2,
+    "solve_ms": 120.94925
+  },
+  "after": {
+    "deltas": {
+      "Boolean Math.011": [
+        -160.59939236111677,
+        67.95883178710938
+      ],
+      "Combine XYZ.008": [
+        -325.5041232638905,
+        -25.0
+      ],
+      "Evaluate on Domain.001": [
+        -135.29969618056202,
+        67.95877075195312
+      ],
+      "Frame.020": [
+        0.0,
+        0.0
+      ],
+      "Group Input.023": [
+        1288.2018229166642,
+        1045.9587707519531
+      ],
+      "Group Input.025": [
+        1073.501519097219,
+        84.95883178710938
+      ],
+      "Group Input.029": [
+        -160.59939236111677,
+        67.95883178710938
+      ],
+      "Group Input.052": [
+        -211.19878472222626,
+        67.95883178710938
+      ],
+      "Math.001": [
+        -135.29969618056202,
+        67.95877075195312
+      ],
+      "Math.021": [
+        -160.59939236111677,
+        67.95877075195312
+      ],
+      "Math.039": [
+        -185.89908854167152,
+        67.95877075195312
+      ],
+      "Named Attribute.001": [
+        1262.9021267361095,
+        992.9587707519531
+      ],
+      "Reroute.097": [
+        -160.59939236111677,
+        67.95877075195312
+      ],
+      "Reroute.197": [
+        -135.29969618056202,
+        67.95877075195312
+      ],
+      "Store Named Attribute.003": [
+        0.0,
+        0.0
+      ],
+      "Switch.007": [
+        -261.79817708333576,
+        123.95883178710938
+      ],
+      "Switch.021": [
+        -110.00000000000728,
+        67.95877075195312
+      ],
+      "Switch.027": [
+        -211.19878472222626,
+        67.95883178710938
+      ],
+      "Switch.028": [
+        -160.59939236111677,
+        67.95877075195312
+      ],
+      "Switch.044": [
+        -236.498480902781,
+        67.95883178710938
+      ],
+      "Switch.046": [
+        -185.89908854167152,
+        67.95883178710938
+      ],
+      "Vector Math.014": [
+        -350.80381944444525,
+        258.0000305175781
+      ]
+    },
+    "warnings": [],
+    "partial_results": [
+      {
+        "nodes": [
+          "Boolean Math.011",
+          "Combine XYZ.008",
+          "Evaluate on Domain.001",
+          "Group Input.023",
+          "Group Input.025",
+          "Group Input.029",
+          "Group Input.052",
+          "Math.001",
+          "Math.021",
+          "Math.039",
+          "Named Attribute.001",
+          "Reroute.097",
+          "Reroute.197",
+          "Store Named Attribute.003",
+          "Switch.007",
+          "Switch.021",
+          "Switch.027",
+          "Switch.028",
+          "Switch.044",
+          "Switch.046",
+          "Vector Math.014"
+        ],
+        "method": "structured",
+        "reason": null,
+        "moved": 21
+      }
+    ],
+    "diagnostics": {
+      "node_overlaps": 0,
+      "node_overlap_check_complete": true,
+      "estimated_wire_node_hits": 8,
+      "wire_check_complete": true,
+      "endpoint_chord_crossings": 2,
+      "crossing_check_complete": true,
+      "diagnostic_pair_budget": 100000,
+      "wire_scope": "selection_internal",
+      "internal_links_checked": 31
+    },
+    "routing_search": {
+      "check_complete": true,
+      "pair_checks": 16072,
+      "pair_budget": 100000,
+      "max_routes": 24,
+      "routed_links": 2
+    },
+    "routes": 2,
+    "solve_ms": 122.52520900000002
+  },
+  "repeat_max_delta": 0.0,
+  "frame_toggle_same_child_locations": true,
+  "external_slopes_same_locations": true,
+  "fixed_locations_unchanged": true,
+  "gui": {
+    "matrix": [
+      {
+        "test": "frame_only",
+        "pass": true
+      },
+      {
+        "test": "children_only",
+        "pass": true
+      },
+      {
+        "test": "partial_frame",
+        "pass": true
+      },
+      {
+        "test": "nested",
+        "pass": true
+      },
+      {
+        "test": "manual",
+        "pass": true
+      },
+      {
+        "test": "collapsed",
+        "pass": true
+      },
+      {
+        "test": "offscreen",
+        "pass": true
+      },
+      {
+        "test": "ui_scale",
+        "pass": true
+      },
+      {
+        "test": "cancel",
+        "pass": true
+      },
+      {
+        "test": "failure_rollback",
+        "pass": true
+      },
+      {
+        "test": "shortcut",
+        "pass": true
+      },
+      {
+        "test": "multi_input",
+        "pass": true
+      }
+    ],
+    "frame_routing": [
+      {
+        "test": "verification_failure_restores_initial_routes",
+        "pass": true
+      },
+      {
+        "test": "junction_alignment_and_routing",
+        "pass": true
+      },
+      {
+        "test": "repeat_no_growth_or_drift",
+        "pass": true
+      },
+      {
+        "test": "undo_restores_nodes_and_links",
+        "pass": true
+      },
+      {
+        "test": "redo_restores_routes",
+        "pass": true
+      },
+      {
+        "test": "frame_toggle_same_card_layout",
+        "pass": true
+      },
+      {
+        "test": "injected_failure_restores_existing_routes",
+        "pass": true
+      },
+      {
+        "test": "unselected_generated_routes_preserved",
+        "pass": true
+      },
+      {
+        "test": "muted_generated_routes_preserved",
+        "pass": true
+      }
+    ],
+    "eight_node": [
+      {
+        "test": "hybrid_alignment_and_fixed_nodes",
+        "pass": true
+      },
+      {
+        "test": "repeat_stability",
+        "pass": true
+      },
+      {
+        "test": "undo_restores_original",
+        "pass": true
+      },
+      {
+        "test": "redo_restores_alignment",
+        "pass": true
+      }
+    ]
+  }
+}

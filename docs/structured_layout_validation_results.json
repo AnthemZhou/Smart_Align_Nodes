@@ -1,0 +1,109 @@
+{
+  "blender_version": "5.2.2",
+  "unit_tests_passed": 67,
+  "actual_case": {
+    "nodes": 617,
+    "selected": 17,
+    "before": {
+      "node_overlaps": 0,
+      "node_overlap_check_complete": true,
+      "estimated_wire_node_hits": 20,
+      "wire_check_complete": true,
+      "endpoint_chord_crossings": 34,
+      "crossing_check_complete": true,
+      "diagnostic_pair_budget": 100000
+    },
+    "after": {
+      "node_overlaps": 0,
+      "node_overlap_check_complete": true,
+      "estimated_wire_node_hits": 23,
+      "wire_check_complete": true,
+      "endpoint_chord_crossings": 34,
+      "crossing_check_complete": true,
+      "diagnostic_pair_budget": 100000
+    },
+    "metrics": {
+      "nodes": 617,
+      "selected": 17,
+      "links": 768,
+      "moved": 14,
+      "fixed_conflicts": 0,
+      "partial_scopes": 1,
+      "width": 1395.6220703124964,
+      "height": 422.0,
+      "solve_ms": 2203.476792,
+      "socket_geometry": "estimated; logical port order is authoritative"
+    },
+    "repeat_max_delta": 0.0,
+    "warnings": []
+  },
+  "gui_structured": [
+    {
+      "test": "structured_columns_and_fixed_nodes",
+      "pass": true
+    },
+    {
+      "test": "repeat_stability",
+      "pass": true
+    },
+    {
+      "test": "undo_restores_original",
+      "pass": true
+    },
+    {
+      "test": "redo_restores_alignment",
+      "pass": true
+    }
+  ],
+  "gui_matrix": [
+    {
+      "test": "frame_only",
+      "pass": true
+    },
+    {
+      "test": "children_only",
+      "pass": true
+    },
+    {
+      "test": "partial_frame",
+      "pass": true
+    },
+    {
+      "test": "nested",
+      "pass": true
+    },
+    {
+      "test": "manual",
+      "pass": true
+    },
+    {
+      "test": "collapsed",
+      "pass": true
+    },
+    {
+      "test": "offscreen",
+      "pass": true
+    },
+    {
+      "test": "ui_scale",
+      "pass": true
+    },
+    {
+      "test": "cancel",
+      "pass": true
+    },
+    {
+      "test": "failure_rollback",
+      "pass": true
+    },
+    {
+      "test": "shortcut",
+      "pass": true
+    },
+    {
+      "test": "multi_input",
+      "pass": true
+    }
+  ],
+  "socket_estimates_changed": true
+}

@@ -1,0 +1,175 @@
+{
+  "date": "2026-10-05",
+  "blender": "5.2.2",
+  "unit_tests": 96,
+  "case": {
+    "logical_nodes": 617,
+    "logical_links": 768,
+    "selected": 24,
+    "selected_frames": [
+      "custom",
+      "round"
+    ],
+    "geometry_scale": 2.0
+  },
+  "before": {
+    "redraw_passes": 4,
+    "solve_calls": 5,
+    "result": "rollback",
+    "predicted_round_frame_top": -2302.79833984375,
+    "observed_tops": [
+      -2302.5,
+      -2303.0
+    ]
+  },
+  "after": {
+    "runs": 10,
+    "redraw_passes_each": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "solve_calls_each": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "location_writes_each": [
+      23,
+      7,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "frame_tolerance_canvas_units": 0.5,
+    "max_frame_rounding_adjustment_after_first_run": 0.5,
+    "max_ordinary_adjustment_after_first_run": 0.38330078125,
+    "settled_by_run": 3,
+    "undo_error": 0.0,
+    "redo_error": 0.0,
+    "logical_links_parents_and_selection_preserved": true,
+    "internal_wire_node_hits_each": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "limits": [
+    "Repeat run 2 settles sub-draw-unit Frame rounding; runs 3-10 write no node positions. Ordinary redraw verification remains strict at 0.1 canvas units.",
+    "Existing overlap diagnostics count three intersections with an unrelated unselected Frame. This change does not alter overlap scoring or layout quality."
+  ],
+  "gui_matrix": [
+    {
+      "test": "frame_only",
+      "pass": true
+    },
+    {
+      "test": "children_only",
+      "pass": true
+    },
+    {
+      "test": "partial_frame",
+      "pass": true
+    },
+    {
+      "test": "nested",
+      "pass": true
+    },
+    {
+      "test": "manual",
+      "pass": true
+    },
+    {
+      "test": "collapsed",
+      "pass": true
+    },
+    {
+      "test": "offscreen",
+      "pass": true
+    },
+    {
+      "test": "ui_scale",
+      "pass": true
+    },
+    {
+      "test": "cancel",
+      "pass": true
+    },
+    {
+      "test": "failure_rollback",
+      "pass": true
+    },
+    {
+      "test": "shortcut",
+      "pass": true
+    },
+    {
+      "test": "multi_input",
+      "pass": true
+    }
+  ],
+  "gui_frame_routing": [
+    {
+      "test": "verification_failure_restores_initial_routes",
+      "pass": true
+    },
+    {
+      "test": "junction_alignment_and_routing",
+      "pass": true
+    },
+    {
+      "test": "repeat_no_growth_or_drift",
+      "pass": true
+    },
+    {
+      "test": "undo_restores_nodes_and_links",
+      "pass": true
+    },
+    {
+      "test": "redo_restores_routes",
+      "pass": true
+    },
+    {
+      "test": "frame_toggle_same_card_layout",
+      "pass": true
+    },
+    {
+      "test": "injected_failure_restores_existing_routes",
+      "pass": true
+    },
+    {
+      "test": "unselected_generated_routes_preserved",
+      "pass": true
+    },
+    {
+      "test": "muted_generated_routes_preserved",
+      "pass": true
+    }
+  ]
+}

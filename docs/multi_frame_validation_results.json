@@ -1,0 +1,267 @@
+{
+  "date": "2026-10-05",
+  "blender": "5.2.2",
+  "unit_tests": 100,
+  "case": {
+    "nodes": 617,
+    "links": 768,
+    "selected": 24,
+    "frames": [
+      "custom",
+      "round"
+    ],
+    "trimmed_regression_nodes": 57
+  },
+  "before": {
+    "max_down": 1485.0233764648438,
+    "max_horizontal": 1394.3896484375,
+    "width": 3580.134765625,
+    "height": 1087.5849609375,
+    "warnings": [
+      "Selection shifted downward to avoid fixed nodes."
+    ]
+  },
+  "after": {
+    "max_horizontal": 20.0009765625,
+    "max_down": 141.75927734375,
+    "selected_frame_deltas": {
+      "Frame.012": [
+        0.0,
+        0.0
+      ],
+      "Frame.013": [
+        0.0,
+        0.0
+      ]
+    },
+    "fixed_max_delta": 0.0,
+    "partial_results": [
+      {
+        "nodes": [
+          "Attribute Statistic.002",
+          "Math.009"
+        ],
+        "method": "structured",
+        "reason": null,
+        "moved": 2
+      },
+      {
+        "nodes": [
+          "Attribute Statistic.001",
+          "Boolean Math.013",
+          "Compare.009",
+          "Endpoint Selection",
+          "Group Input.012",
+          "Group Input.018",
+          "Group Input.019",
+          "Integer Math.001",
+          "Math.004",
+          "Math.005",
+          "Math.006",
+          "Named Attribute.003",
+          "Radius.001",
+          "Switch.051"
+        ],
+        "method": "local",
+        "reason": "frame_clearance",
+        "moved": 8
+      },
+      {
+        "nodes": [
+          "Compare.011",
+          "Math.007",
+          "Switch.011",
+          "Switch.054"
+        ],
+        "method": "structured",
+        "reason": null,
+        "moved": 4
+      },
+      {
+        "nodes": [
+          "Compare.012",
+          "Reroute.018"
+        ],
+        "method": "local",
+        "reason": "no_internal_chain",
+        "moved": 1
+      }
+    ],
+    "gui_metrics": {
+      "nodes": 617,
+      "selected": 24,
+      "links": 768,
+      "moved": 13,
+      "fixed_conflicts": 0,
+      "partial_scopes": 3,
+      "anchored_frames": [
+        "Frame.012",
+        "Frame.013"
+      ],
+      "width": 2185.7451171875,
+      "height": 638.8404541015625,
+      "solve_ms": 166.32724995724857,
+      "socket_geometry": "estimated; logical port order is authoritative",
+      "generated_reroutes": 3,
+      "reused_reroutes": 0,
+      "removed_auto_reroutes": 0,
+      "node_overlaps": 0,
+      "node_overlap_check_complete": true,
+      "estimated_wire_node_hits": 5,
+      "wire_check_complete": true,
+      "endpoint_chord_crossings": 1,
+      "crossing_check_complete": true,
+      "diagnostic_pair_budget": 100000,
+      "wire_scope": "selection_internal",
+      "internal_links_checked": 25
+    },
+    "first_total_ms": 398.2746669789776
+  },
+  "repeat": {
+    "runs": 10,
+    "max_delta_each": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "location_writes_each": [
+      13,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "solve_calls_each": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "redraw_passes_each": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "undo_error": 0.0,
+    "redo_error": 0.0,
+    "logical_connections_parents_selection_preserved": true
+  },
+  "gui_matrix": [
+    {
+      "test": "frame_only",
+      "pass": true
+    },
+    {
+      "test": "children_only",
+      "pass": true
+    },
+    {
+      "test": "partial_frame",
+      "pass": true
+    },
+    {
+      "test": "nested",
+      "pass": true
+    },
+    {
+      "test": "manual",
+      "pass": true
+    },
+    {
+      "test": "collapsed",
+      "pass": true
+    },
+    {
+      "test": "offscreen",
+      "pass": true
+    },
+    {
+      "test": "ui_scale",
+      "pass": true
+    },
+    {
+      "test": "cancel",
+      "pass": true
+    },
+    {
+      "test": "failure_rollback",
+      "pass": true
+    },
+    {
+      "test": "shortcut",
+      "pass": true
+    },
+    {
+      "test": "multi_input",
+      "pass": true
+    }
+  ],
+  "gui_routing": [
+    {
+      "test": "verification_failure_restores_initial_routes",
+      "pass": true
+    },
+    {
+      "test": "junction_alignment_and_routing",
+      "pass": true
+    },
+    {
+      "test": "repeat_no_growth_or_drift",
+      "pass": true
+    },
+    {
+      "test": "undo_restores_nodes_and_links",
+      "pass": true
+    },
+    {
+      "test": "redo_restores_routes",
+      "pass": true
+    },
+    {
+      "test": "frame_toggle_same_card_layout",
+      "pass": true
+    },
+    {
+      "test": "injected_failure_restores_existing_routes",
+      "pass": true
+    },
+    {
+      "test": "unselected_generated_routes_preserved",
+      "pass": true
+    },
+    {
+      "test": "muted_generated_routes_preserved",
+      "pass": true
+    }
+  ],
+  "limits": [
+    "The round group uses compact local fallback because its separately expanded arrangement would overlap the neighboring custom Frame.",
+    "Five estimated internal wire/node obstructions remain after routing.",
+    "Whole-block Frame-only selection retains existing rigid layout semantics."
+  ]
+}

@@ -1,4 +1,5 @@
 from dataclasses import dataclass, replace
+from itertools import product
 
 
 @dataclass(frozen=True)
@@ -9,8 +10,6 @@ class SnapCandidate:
     moving_anchor: str = ""
     target_anchor: str = ""
     references: tuple = ()
-    placement: str = ""
-    gap: float = 0.0
 
 
 @dataclass(frozen=True)
@@ -38,7 +37,7 @@ def _x_anchors(box):
 def _y_anchors(box):
     if box.is_reroute:
         return {"middle": box.center_y}
-    return {"top": box.top, "bottom": box.bottom}
+    return {"top": box.top}
 
 
 def _alignment_candidates(moving, targets, axis):
@@ -74,175 +73,67 @@ def _alignment_candidates(moving, targets, axis):
     return candidates
 
 
-def _ranges_overlap(first_min, first_max, second_min, second_max):
-    return min(first_max, second_max) > max(first_min, second_min)
+def _nearest_alignments(candidates, threshold, limit=4):
+    eligible = [
+        candidate
+        for candidate in candidates
+        if abs(candidate.correction) <= threshold
+    ]
+    eligible.sort(key=lambda candidate: abs(candidate.correction))
+    return eligible[:limit]
 
 
-def _horizontal_related(first, second):
-    return _ranges_overlap(
-        first.bottom,
-        first.top,
-        second.bottom,
-        second.top,
+def _grid_axis_candidates(moving, axis, grid_size):
+    if not grid_size or grid_size <= 0.0:
+        return []
+    if axis == "x":
+        anchor = moving.center_x if moving.is_reroute else moving.left
+        anchor_name = "center" if moving.is_reroute else "left"
+    else:
+        anchor = moving.center_y if moving.is_reroute else moving.top
+        anchor_name = "middle" if moving.is_reroute else "top"
+    nearest_index = round(anchor / grid_size)
+    candidates = []
+    for index in (nearest_index, nearest_index - 1, nearest_index + 1):
+        target = index * grid_size
+        candidates.append(
+            SnapCandidate(
+                axis=axis,
+                correction=target - anchor,
+                kind="grid",
+                moving_anchor=anchor_name,
+                target_anchor="grid",
+            )
+        )
+    candidates.sort(key=lambda candidate: abs(candidate.correction))
+    return candidates
+
+
+def boxes_overlap(first, second):
+    return (
+        min(first.right, second.right) > max(first.left, second.left)
+        and min(first.top, second.top) > max(first.bottom, second.bottom)
     )
 
 
-def _vertical_related(first, second):
-    return _ranges_overlap(
-        first.left,
-        first.right,
-        second.left,
-        second.right,
-    )
-
-
-def _common_vertical_overlap(*boxes):
-    bottom = max(box.bottom for box in boxes)
-    top = min(box.top for box in boxes)
-    return (bottom, top) if top > bottom else None
-
-
-def _common_horizontal_overlap(*boxes):
-    left = max(box.left for box in boxes)
-    right = min(box.right for box in boxes)
-    return (left, right) if right > left else None
-
-
-def _horizontal_spacing_candidates(moving, targets):
-    related = [target for target in targets if _horizontal_related(moving, target)]
-    related.sort(key=lambda box: box.left)
-    candidates = []
-    for first, second in zip(related, related[1:]):
-        if (
-            first.right > second.left
-            or not _horizontal_related(first, second)
-            or _common_vertical_overlap(first, second, moving) is None
-        ):
-            continue
-        existing_gap = second.left - first.right
-
-        desired_left = (first.right + second.left - moving.width) / 2.0
-        if desired_left >= first.right and desired_left + moving.width <= second.left:
-            candidates.append(
-                SnapCandidate(
-                    "x",
-                    desired_left - moving.left,
-                    "spacing",
-                    references=(first, second),
-                    placement="between",
-                    gap=desired_left - first.right,
-                )
-            )
-
-        candidates.append(
-            SnapCandidate(
-                "x",
-                second.right + existing_gap - moving.left,
-                "spacing",
-                references=(first, second),
-                placement="after",
-                gap=existing_gap,
-            )
-        )
-        desired_left = first.left - existing_gap - moving.width
-        candidates.append(
-            SnapCandidate(
-                "x",
-                desired_left - moving.left,
-                "spacing",
-                references=(first, second),
-                placement="before",
-                gap=existing_gap,
-            )
-        )
-    return candidates
-
-
-def _vertical_spacing_candidates(moving, targets):
-    related = [target for target in targets if _vertical_related(moving, target)]
-    related.sort(key=lambda box: box.top, reverse=True)
-    candidates = []
-    for first, second in zip(related, related[1:]):
-        if (
-            first.bottom < second.top
-            or not _vertical_related(first, second)
-            or _common_horizontal_overlap(first, second, moving) is None
-        ):
-            continue
-        existing_gap = first.bottom - second.top
-
-        desired_top = (first.bottom + second.top + moving.height) / 2.0
-        if desired_top <= first.bottom and desired_top - moving.height >= second.top:
-            candidates.append(
-                SnapCandidate(
-                    "y",
-                    desired_top - moving.top,
-                    "spacing",
-                    references=(first, second),
-                    placement="between",
-                    gap=first.bottom - desired_top,
-                )
-            )
-
-        desired_top = second.bottom - existing_gap
-        candidates.append(
-            SnapCandidate(
-                "y",
-                desired_top - moving.top,
-                "spacing",
-                references=(first, second),
-                placement="after",
-                gap=existing_gap,
-            )
-        )
-        desired_top = first.top + existing_gap + moving.height
-        candidates.append(
-            SnapCandidate(
-                "y",
-                desired_top - moving.top,
-                "spacing",
-                references=(first, second),
-                placement="before",
-                gap=existing_gap,
-            )
-        )
-    return candidates
-
-
-def _vertical_gap_candidates(moving, targets, gap):
-    candidates = []
-    for target in targets:
-        if not _vertical_related(moving, target):
-            continue
-        if moving.center_y < target.center_y:
-            desired_top = target.bottom - gap
-            placement = "below"
-        else:
-            desired_top = target.top + gap + moving.height
-            placement = "above"
-        candidates.append(
-            SnapCandidate(
-                "y",
-                desired_top - moving.top,
-                "gap",
-                references=(target,),
-                placement=placement,
-                gap=gap,
-            )
-        )
-    return candidates
-
-
-def _best_candidate(candidates, threshold):
-    eligible = [candidate for candidate in candidates if abs(candidate.correction) <= threshold]
-    if not eligible:
-        return None
-    return min(
-        eligible,
-        key=lambda candidate: (
-            abs(candidate.correction),
-            0 if candidate.kind == "alignment" else 1,
-        ),
+def _placement_is_free(
+    moving,
+    targets,
+    correction_x,
+    correction_y,
+    candidates=(),
+):
+    placed = moving.translated(correction_x, correction_y)
+    socket_target_ids = {
+        id(target)
+        for candidate in candidates
+        if candidate is not None and candidate.target_anchor.startswith("socket:")
+        for target in candidate.references
+    }
+    return not any(
+        boxes_overlap(placed, target)
+        for target in targets
+        if not target.is_frame and id(target) not in socket_target_ids
     )
 
 
@@ -252,14 +143,25 @@ def _with_collinear_references(candidate, targets):
     if candidate.target_anchor.startswith("socket:"):
         return candidate
     anchors = _x_anchors if candidate.axis == "x" else _y_anchors
-    moving_anchor_value = anchors(candidate.references[0])[candidate.target_anchor]
+    target_value = anchors(candidate.references[0])[candidate.target_anchor]
     references = tuple(
         target
         for target in targets
         if candidate.target_anchor in anchors(target)
-        and abs(anchors(target)[candidate.target_anchor] - moving_anchor_value) <= 0.001
+        and abs(anchors(target)[candidate.target_anchor] - target_value) <= 0.001
     )
     return replace(candidate, references=references)
+
+
+def _choice_rank(choice):
+    x_candidate, y_candidate = choice
+    candidates = tuple(
+        candidate for candidate in (x_candidate, y_candidate) if candidate is not None
+    )
+    alignment_count = sum(candidate.kind == "alignment" for candidate in candidates)
+    missing_count = 2 - len(candidates)
+    correction = sum(abs(candidate.correction) for candidate in candidates)
+    return (-alignment_count, missing_count, correction)
 
 
 def find_snaps(
@@ -267,38 +169,50 @@ def find_snaps(
     targets,
     threshold_x,
     threshold_y,
-    equal_spacing=True,
     axis_constraint=None,
-    vertical_gap=None,
+    grid_size=None,
 ):
-    x_candidate = None
-    y_candidate = None
-    if axis_constraint != "y":
-        x_candidates = _alignment_candidates(moving, targets, "x")
-        if equal_spacing:
-            x_candidates.extend(
-                _horizontal_spacing_candidates(moving, targets)
-            )
-        x_candidate = _best_candidate(x_candidates, threshold_x)
-        x_candidate = _with_collinear_references(x_candidate, targets)
-    if axis_constraint != "x":
-        y_candidates = _alignment_candidates(moving, targets, "y")
-        if vertical_gap is not None:
-            y_candidates.extend(
-                _vertical_gap_candidates(moving, targets, vertical_gap)
-            )
-        if equal_spacing:
-            y_candidates.extend(
-                _vertical_spacing_candidates(moving, targets)
-            )
-        y_candidate = _best_candidate(y_candidates, threshold_y)
-        y_candidate = _with_collinear_references(y_candidate, targets)
-    return SnapResult(
-        x_candidate.correction if x_candidate else 0.0,
-        y_candidate.correction if y_candidate else 0.0,
-        x_candidate,
-        y_candidate,
-    )
+    if axis_constraint == "y":
+        x_choices = [None]
+    else:
+        x_choices = _nearest_alignments(
+            _alignment_candidates(moving, targets, "x"),
+            threshold_x,
+        )
+        x_choices.extend(_grid_axis_candidates(moving, "x", grid_size))
+        x_choices.append(None)
+
+    if axis_constraint == "x":
+        y_choices = [None]
+    else:
+        y_choices = _nearest_alignments(
+            _alignment_candidates(moving, targets, "y"),
+            threshold_y,
+        )
+        y_choices.extend(_grid_axis_candidates(moving, "y", grid_size))
+        y_choices.append(None)
+
+    choices = sorted(product(x_choices, y_choices), key=_choice_rank)
+    for x_candidate, y_candidate in choices:
+        correction_x = x_candidate.correction if x_candidate else 0.0
+        correction_y = y_candidate.correction if y_candidate else 0.0
+        if x_candidate is None and y_candidate is None:
+            break
+        if not _placement_is_free(
+            moving,
+            targets,
+            correction_x,
+            correction_y,
+            (x_candidate, y_candidate),
+        ):
+            continue
+        return SnapResult(
+            correction_x,
+            correction_y,
+            _with_collinear_references(x_candidate, targets),
+            _with_collinear_references(y_candidate, targets),
+        )
+    return SnapResult()
 
 
 def _alignment_guides(candidate, moving):
@@ -327,65 +241,23 @@ def _alignment_guides(candidate, moving):
     ]
 
 
-def _spacing_sequence(candidate, moving):
-    first, second = candidate.references
-    if candidate.placement == "between":
-        return first, moving, second
-    if candidate.placement == "after":
-        return first, second, moving
-    return moving, first, second
-
-
-def _spacing_guides(candidate, moving):
-    first, second, third = _spacing_sequence(candidate, moving)
-    boxes = (first, second, third)
-    segments = []
+def _grid_guides(candidate, moving):
     if candidate.axis == "x":
-        overlap = _common_vertical_overlap(*boxes)
-        if overlap is None:
-            return segments
-        y = (overlap[0] + overlap[1]) / 2.0
-        pairs = ((first.right, second.left), (second.right, third.left))
-        for start, end in pairs:
-            segments.append(GuideSegment((start, y), (end, y), "spacing"))
-            segments.append(
-                GuideSegment((start, y - 3.0), (start, y + 3.0), "spacing", False)
+        x = _x_anchors(moving)[candidate.moving_anchor]
+        return [
+            GuideSegment(
+                (x, moving.bottom - 12.0),
+                (x, moving.top + 12.0),
+                "grid",
             )
-            segments.append(
-                GuideSegment((end, y - 3.0), (end, y + 3.0), "spacing", False)
-            )
-        return segments
-
-    overlap = _common_horizontal_overlap(*boxes)
-    if overlap is None:
-        return segments
-    x = (overlap[0] + overlap[1]) / 2.0
-    pairs = ((first.bottom, second.top), (second.bottom, third.top))
-    for start, end in pairs:
-        segments.append(GuideSegment((x, start), (x, end), "spacing"))
-        segments.append(
-            GuideSegment((x - 3.0, start), (x + 3.0, start), "spacing", False)
-        )
-        segments.append(
-            GuideSegment((x - 3.0, end), (x + 3.0, end), "spacing", False)
-        )
-    return segments
-
-
-def _gap_guides(candidate, moving):
-    target = candidate.references[0]
-    overlap = _common_horizontal_overlap(target, moving)
-    if overlap is None:
-        return []
-    x = (overlap[0] + overlap[1]) / 2.0
-    if candidate.placement == "below":
-        start, end = target.bottom, moving.top
-    else:
-        start, end = moving.bottom, target.top
+        ]
+    y = _y_anchors(moving)[candidate.moving_anchor]
     return [
-        GuideSegment((x, start), (x, end), "spacing"),
-        GuideSegment((x - 3.0, start), (x + 3.0, start), "spacing", False),
-        GuideSegment((x - 3.0, end), (x + 3.0, end), "spacing", False),
+        GuideSegment(
+            (moving.left - 12.0, y),
+            (moving.right + 12.0, y),
+            "grid",
+        )
     ]
 
 
@@ -396,8 +268,6 @@ def guide_segments(result, moving):
             continue
         if candidate.kind == "alignment":
             segments.extend(_alignment_guides(candidate, moving))
-        elif candidate.kind == "gap":
-            segments.extend(_gap_guides(candidate, moving))
-        else:
-            segments.extend(_spacing_guides(candidate, moving))
+        elif candidate.kind == "grid":
+            segments.extend(_grid_guides(candidate, moving))
     return segments
