@@ -140,3 +140,14 @@ Blender 重绘可能对自动缩放 Frame 的边界、原点按绘制单位取�
 全局 selected 不参与当前 scope 的 has_boundary 判断；representative 之外的端点就是范围外连接。若一个 scope 内至少两个同层 Frame 各自拥有选中内容，将其列入 anchored_frames，内部照常求解，外层 units 排除这些容器。选中祖先也加入其上一级的锚定集合。仍根据实测边距预测自动尺寸，原点重设只影响 Frame 自身，不增加子节点位移。
 
 这些分组及周边 scope 使用有限局部策略。候选包围盒中心相对原中心的变化不得超过 X=max(2×horizontal_gap,0.35×原宽)、Y=max(2×component_gap,0.5×原高)；宽高增长沿用局部布局的 1.35/1.5 或两个间隔上限。Frame 内容还需通过预测外框与无亲子关系节点的重叠面积检查，不得增加覆盖。拒绝结构候选后尝试紧凑局部方案，再失败则保留；原因记录 displacement_limit 或 frame_clearance。报告 metrics.anchored_frames 给出受到位置保护的框。
+
+
+## v1.0.1：锚定 Frame 分组的结构保护 / Anchored Frame alignment protection
+
+对保持原位的多个 Frame 及其选中祖先，结构候选和紧凑回退不能仅凭连线变短就打散既有节点行、同级列和连续等间距。只检查同一父级下、未折叠、互不覆盖的普通节点边界；列约束要求相同下游深度，避免把待整理的纵向串链误当成必须固定的列。边缘误差容许 1 个画布单位，左/右或顶/底之间允许自适应选择。
+
+结构候选若破坏这些关系，记录 `alignment_regression` 并采用受约束的局部回退。回退保留原左上范围，逐个候选验证对齐和等间距，并允许邻接节点使用已有行的边缘对齐候选。未受此锚定策略约束的自由布局与转接点流程保持原行为。
+
+For anchored sibling Frames and their selected ancestors, structural candidates and compact fallback must retain existing card rows, peer columns and consecutive equal gaps. Only separated, expanded ordinary cards sharing a parent participate. X constraints additionally require equal downstream depth, so serial stacks can still become left-to-right flow. The tolerance is one canvas unit; either card edge may represent the alignment.
+
+Reject structural regressions with `alignment_regression` and use constrained local fallback. Preserve its original top-left envelope, validate alignment and spacing for each candidate, and allow adjacent cards to join an existing row via adaptive edge alignment. Other free-layout and reroute paths retain their previous behavior.

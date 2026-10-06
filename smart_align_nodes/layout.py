@@ -352,6 +352,87 @@ def _within_neighborhood(keys, original, targets, settings):
             and after.height <= max(before.height*1.5, before.height+2*settings.component_gap))
 
 
+def _existing_alignment(keys, links, nodes, boxes, tolerance=1.0):
+    """Remember visible rows/columns and repeated gaps before local edits.
+
+    Only separated, expanded cards sharing a parent participate. Either edge
+    may represent an alignment, so adaptive left/right or top/bottom choices
+    remain possible. Frames and reroutes are not ordinary card boundaries.
+    """
+    cards = sorted(k for k in keys if nodes[k].kind == 'NODE' and not nodes[k].collapsed)
+    # A vertical stack of successive computation stages is not a column to
+    # preserve. Only peers at the same downstream depth share an X constraint.
+    moving = set(keys)
+    outgoing, degree = defaultdict(list), dict.fromkeys(keys, 0)
+    for edge in links:
+        if edge.valid and not edge.muted and edge.source in moving and edge.target in moving:
+            outgoing[edge.source].append(edge.target)
+            degree[edge.target] += 1
+    queue = deque(k for k in keys if not degree[k])
+    order = []
+    while queue:
+        key = queue.popleft()
+        order.append(key)
+        for target in outgoing[key]:
+            degree[target] -= 1
+            if not degree[target]:
+                queue.append(target)
+    rank = {}
+    for key in reversed(order):
+        rank[key] = max((rank[target]+(nodes[target].kind != 'REROUTE')
+                         for target in outgoing[key] if target in rank), default=0)
+    aligned, spacing = [], []
+    for axis, edges in (('x', ('left', 'right')), ('y', ('top', 'bottom'))):
+        neighbors = defaultdict(set)
+        for i, a in enumerate(cards):
+            for b in cards[i+1:]:
+                if nodes[a].parent != nodes[b].parent:
+                    continue
+                if axis == 'x' and (a not in rank or b not in rank or rank[a] != rank[b]):
+                    continue
+                first, second = boxes[a], boxes[b]
+                separated = (first.bottom >= second.top or second.bottom >= first.top
+                             if axis == 'x' else
+                             first.right <= second.left or second.right <= first.left)
+                error = min(abs(getattr(first, edge)-getattr(second, edge)) for edge in edges)
+                if separated and error <= tolerance:
+                    aligned.append((a, b, edges, error))
+                    neighbors[a].add(b)
+                    neighbors[b].add(a)
+        # Check consecutive cards on an existing row/column without enumerating
+        # every possible triple in a large partial selection.
+        for center, peers in neighbors.items():
+            ordered = sorted(peers | {center}, key=lambda k: (
+                boxes[k].left if axis == 'y' else -boxes[k].top, k))
+            index = ordered.index(center)
+            if not 0 < index < len(ordered)-1:
+                continue
+            a, b, c = ordered[index-1:index+2]
+            if c not in neighbors[a]:
+                continue
+            gaps = ((boxes[b].left-boxes[a].right, boxes[c].left-boxes[b].right)
+                    if axis == 'y' else
+                    (boxes[a].bottom-boxes[b].top, boxes[b].bottom-boxes[c].top))
+            if min(gaps) >= 8 and abs(gaps[0]-gaps[1]) <= tolerance:
+                spacing.append((a, b, c, axis, abs(gaps[0]-gaps[1])))
+    return aligned, spacing
+
+
+def _preserves_alignment(constraints, boxes):
+    aligned, spacing = constraints
+    for a, b, edges, error in aligned:
+        if min(abs(getattr(boxes[a], edge)-getattr(boxes[b], edge))
+               for edge in edges) > max(1.0, error)+.01:
+            return False
+    for a, b, c, axis, error in spacing:
+        gaps = ((boxes[b].left-boxes[a].right, boxes[c].left-boxes[b].right)
+                if axis == 'y' else
+                (boxes[a].bottom-boxes[b].top, boxes[b].bottom-boxes[c].top))
+        if min(gaps) < 8 or abs(gaps[0]-gaps[1]) > max(1.0, error)+.01:
+            return False
+    return True
+
+
 def _partial_layout(keys, links, nodes, boxes, settings, decisions=None, status=None,
                     bounded=False, accept=None):
     """Keep independent successes; try bounded local edits for a rejected block."""
@@ -368,12 +449,17 @@ def _partial_layout(keys, links, nodes, boxes, settings, decisions=None, status=
         if ok and accept is not None and not accept({**result, **target}):
             ok = False
             failure.append('frame_clearance')
+        if (ok and bounded and not _preserves_alignment(
+                _existing_alignment(component, links, nodes, result), {**result, **target})):
+            ok = False
+            failure.append('alignment_regression')
         reason = failure[-1] if failure else 'local_search_limit'
         method = 'structured'
         if not ok and reason not in {'search_budget', 'diagnostic_budget', 'reroute_budget'}:
             # A compact, monotonic local pass changes only nodes it can improve.
             # It keeps the existing extent and checks internal wires/rectangles.
-            target, ok = _conservative_partial_layout(component, links, nodes, result, settings)
+            target, ok = _conservative_partial_layout(component, links, nodes, result, settings,
+                                                      preserve_anchor=bounded)
             method = 'local' if ok else 'preserved'
             choices.clear()
         elif not ok:
@@ -686,7 +772,7 @@ def _partial_candidate(keys, links, nodes, boxes, settings, decisions=None, fail
     return {k: result[k] for k in keys}, True
 
 
-def _conservative_partial_layout(keys, links, nodes, boxes, settings):
+def _conservative_partial_layout(keys, links, nodes, boxes, settings, preserve_anchor=False):
     """Improve a readable partial selection without rebuilding its columns.
 
     Boundary reroutes remain anchors. Only internal wires are scored. Every accepted step
@@ -694,6 +780,8 @@ def _conservative_partial_layout(keys, links, nodes, boxes, settings):
     stays within the original width/height, and reduces wire length/crossing cost.
     Iterate to a fixed point so redraw verification and repeated invocation do
     not continue an unfinished optimization. On budget exhaustion keep the input.
+    Anchored Frame scopes also retain existing rows, peer columns, equal gaps
+    and their top-left envelope instead of trading them for shorter wires.
     """
     moving = set(keys)
     ordering_edges = sorted((e for e in links if e.valid and not e.muted
@@ -703,6 +791,11 @@ def _conservative_partial_layout(keys, links, nodes, boxes, settings):
     edges = [e for e in ordering_edges if not e.hidden]
     if len(ordering_edges) > 128 or len(keys)*len(ordering_edges) > 100000:
         return {k: boxes[k] for k in keys}, False
+    # Anchored groups already have a readable neighborhood to retain. Other
+    # scopes keep their existing free arrangement/repeated-reroute behavior.
+    constraints = _existing_alignment(keys, links, nodes, boxes) if preserve_anchor else ([], [])
+    row_members = {key for a, b, edges, _error in constraints[0]
+                   if edges == ('top', 'bottom') for key in (a, b)}
     boundary = {k for e in links if e.valid and not e.muted and (e.source in moving) != (e.target in moving)
                 for k in (e.source, e.target) if k in moving}
     pinned = {k for k in boundary if nodes[k].kind == "REROUTE"}
@@ -799,11 +892,15 @@ def _conservative_partial_layout(keys, links, nodes, boxes, settings):
                 if edge.source in moving:
                     xs.add(other.right + settings.horizontal_gap)
                 ys.add(other.top-edge.source_offset+edge.target_offset)
+                if edge.source in row_members:
+                    ys.add(other.top-_alignment_rule(edge, nodes, work, settings)[0])
             for edge in outgoing[key]:
                 other = work[edge.target]
                 if edge.target in moving:
                     xs.add(other.left-current.width-settings.horizontal_gap)
                 ys.add(other.top-edge.target_offset+edge.source_offset)
+                if edge.target in row_members:
+                    ys.add(other.top+_alignment_rule(edge, nodes, work, settings)[0])
             if len(ys) > 1:
                 ys.add(median(ys - {current.top}))
             # Limit high-degree nodes to the nearest useful alternatives.
@@ -819,7 +916,12 @@ def _conservative_partial_layout(keys, links, nodes, boxes, settings):
                         return {k: boxes[k] for k in keys}, False
                     candidate = current.translated(x-current.left, y-current.top)
                     work[key] = candidate
+                    if not _preserves_alignment(constraints, work):
+                        continue
                     bounds = union_boxes(work[k] for k in keys)
+                    if preserve_anchor and (abs(bounds.left-original.left) > .1
+                                            or abs(bounds.top-original.top) > .1):
+                        continue
                     if bounds.width > original.width+0.1 or bounds.height > original.height+0.1:
                         continue
                     new_cost, new_backwards = wire_cost(work)

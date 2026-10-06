@@ -1,5 +1,23 @@
 # Changelog
 
+## v1.0.1 — 2026-10-06
+
+### 中文
+
+- 修复选中包含多个子 Frame 的外层框后，结构避线和局部压缩破坏既有行列对齐、等间距的问题。
+- 锚定分组的候选布局需保留原有可见边缘对齐和连续等间距；受限回退保持原左上范围，并允许相邻节点并入已有对齐行。
+- 区分并行同级列与串联计算阶段，纵向堆叠的串联节点仍可正常排列为从左到右。
+- 当前 617 节点树的 Frame 案例：最大位移从约 141.76 降至 34.40，原对齐行保持不动，末端节点并入同一行；连续执行 10 次无累积位移，撤销/重做误差为 0。
+- 中间通道绕行及复杂图的插口/曲线估算限制仍存在，不宣称所有节点或连线都已完全对齐、无遮挡。
+
+### English
+
+- Fix structural avoidance and compact fallback disrupting existing rows, columns and equal gaps when arranging an enclosing Frame with multiple child Frames.
+- Require anchored-group candidates to retain visible edge alignments and consecutive equal spacing. Preserve the original top-left envelope during fallback and allow adjacent cards to join an existing aligned row.
+- Distinguish peer columns from serial computation stages, so vertically stacked serial nodes can still arrange from left to right.
+- In the reported 617-node tree, reduce maximum movement from about 141.76 to 34.40 units, retain the aligned row and align its terminal card. Ten invocations show no accumulated drift; undo/redo error is zero.
+- Central-corridor routing and approximate socket/curve limitations remain; this patch does not guarantee perfect alignment or obstruction-free complex graphs.
+
 ## v1.0.0 — 2026-10-06
 
 ### 中文

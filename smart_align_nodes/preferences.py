@@ -101,7 +101,7 @@ class SMART_ALIGN_NODES_Preferences(bpy.types.AddonPreferences):
         url_button(right, "Feishu: Technical Dictionary", enabled=False)
         url_button(
             right,
-            "GitHub: Smart Align Nodes v1.0.0",
+            "GitHub: Smart Align Nodes v1.0.1",
             "https://github.com/AnthemZhou/Smart_Align_Nodes",
         )
 

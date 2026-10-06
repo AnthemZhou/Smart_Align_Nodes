@@ -14,7 +14,7 @@ class TranslationCoverageTests(unittest.TestCase):
     def test_all_visible_labels_descriptions_and_reports_have_chinese(self):
         # Product/author names and Blender's built-in keymap name are stable IDs.
         names = {'smart_align_nodes', 'Smart Align Nodes', 'Smart Align', 'Node Editor',
-                 'GitHub: Smart Align Nodes v1.0.0'}
+                 'GitHub: Smart Align Nodes v1.0.1'}
         for filename in ('preferences.py', 'ui.py', 'operators.py', 'layout_operator.py'):
             for n in ast.walk(ast.parse((ROOT / filename).read_text())):
                 value = None

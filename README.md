@@ -1,19 +1,21 @@
 # Smart Align Nodes
 
 ![Blender](https://img.shields.io/badge/Blender-4.0%2B-f5792a?logo=blender&logoColor=white)
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Version](https://img.shields.io/badge/version-1.0.1-blue)
 ![Category](https://img.shields.io/badge/category-Node%20Editor-555)
 ![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-lightgrey)
 ![License](https://img.shields.io/badge/license-GPL--3.0-green)
 
 维护者：Anthem_周圣宇<br>
-版本：1.0.0 · [下载 / Download](https://github.com/AnthemZhou/Smart_Align_Nodes/releases/tag/v1.0.0)
+版本：1.0.1 · [下载 / Download](https://github.com/AnthemZhou/Smart_Align_Nodes/releases/tag/v1.0.1)
 
 ## 中文
 
 Smart Align Nodes 是一个 Blender 节点编辑器对齐插件。启用插件后，移动、创建或复制节点时会自动检测可见节点边界和大尺度画布网格，并显示类似演示文稿软件的吸附参考线。插件不依赖 Blender 的原生网格量化吸附。
 
 ### 自动布局
+
+v1.0.1 修复包含多个子 Frame 的外层框排列后破坏原有对齐的问题：保持分组位置的局部整理会保留已有的节点行、同级列和等间距，避免为缩短连线而逐点打散。
 
 选中节点或 Frame 后按 **Command + O（macOS）/ Ctrl + O（Windows、Linux）**，或点击侧栏 **排列选中节点**。选中 Frame 会递归包含框内全部节点和嵌套 Frame，无需逐个选中，部分选中时也按全部内容处理；不改变界面上的选中状态。按连接从左到右排列，参考 Socket 顺序整理分支，将孤立内容放在下方；画面外的选择也会参与。
 
@@ -59,7 +61,7 @@ Socket 坐标与曲线路径仍是估算，不保证零交叉、完全无遮挡�
 
 ### 安装
 
-1. 从 [v1.0.0 Release](https://github.com/AnthemZhou/Smart_Align_Nodes/releases/tag/v1.0.0) 下载 `Smart_Align_Nodes_v1.0.0.zip`（选择插件附件，而非 GitHub 自动生成的源代码 ZIP）。
+1. 从 [v1.0.1 Release](https://github.com/AnthemZhou/Smart_Align_Nodes/releases/tag/v1.0.1) 下载 `Smart_Align_Nodes_v1.0.1.zip`（选择插件附件，而非 GitHub 自动生成的源代码 ZIP）。
 2. 在 Blender 中打开 `编辑 > 偏好设置 > 插件`。
 3. 点击 `安装...`，选择下载的 zip 文件。
 4. 启用 `Smart Align Nodes`。
@@ -85,7 +87,7 @@ Socket 坐标与曲线路径仍是估算，不保证零交叉、完全无遮挡�
 
 ### 说明
 
-- 已知布局问题：局部压缩可能挤掉已有的中间走线通道，导致不必要的顶部绕行；结构布局回退后，也可能丢失整列边缘对齐。此问题尚未修复，详见 [1.0.0 发布说明](docs/releases/v1.0.0.md)。
+- 已知布局问题：局部压缩可能挤掉已有的中间走线通道，导致不必要的顶部绕行；结构布局回退后，也可能丢失整列边缘对齐。1.0.1 已保护锚定 Frame 分组的既有对齐；一般局部选区的中间通道绕行问题仍待修复，详见 [1.0.1 发布说明](docs/releases/v1.0.1.md)。
 - Smart Snap 会在插件启用时接管节点编辑器中的普通 `G` 移动。禁用插件后会恢复 Blender 原生行为。
 - Blender 的公开 Python API 不提供 socket 的最终画布绘制坐标。Reroute 到 socket 的吸附位置目前根据节点边界、socket 顺序和显示状态估算，不同自定义节点可能仍需继续校准。
 - 鼠标拖动会覆盖节点内部的大部分区域。为避免影响连线操作，节点左右两侧靠近 socket 的窄区域不会启动拖动。
@@ -96,6 +98,8 @@ Socket 坐标与曲线路径仍是估算，不保证零交叉、完全无遮挡�
 Smart Align Nodes is an alignment add-on for the Blender Node Editor. Once enabled, it detects visible node boundaries and a coarse canvas grid while nodes are moved, created, or duplicated, then displays presentation-style snapping guides. Blender native grid quantization is not required.
 
 ### Automatic layout
+
+Version 1.0.1 protects existing rows, peer columns and equal gaps when arranging anchored groups inside an enclosing Frame, preventing local wire-length optimization from scattering an already readable layout.
 
 Select nodes and press **Command + O (macOS) / Ctrl + O (Windows, Linux)** or use **Arrange Selected Nodes** in the sidebar. Arrange flow left to right using socket order, with disconnected content below and offscreen selections included.
 
@@ -139,7 +143,7 @@ Socket coordinates and wire paths remain estimates; zero crossings and exact cle
 
 ### Install
 
-1. Download `Smart_Align_Nodes_v1.0.0.zip` from the [v1.0.0 Release](https://github.com/AnthemZhou/Smart_Align_Nodes/releases/tag/v1.0.0). Choose the add-on asset, not GitHub's automatically generated source-code ZIP.
+1. Download `Smart_Align_Nodes_v1.0.1.zip` from the [v1.0.1 Release](https://github.com/AnthemZhou/Smart_Align_Nodes/releases/tag/v1.0.1). Choose the add-on asset, not GitHub's automatically generated source-code ZIP.
 2. In Blender, open `Edit > Preferences > Add-ons`.
 3. Click `Install...`, then choose the downloaded zip file.
 4. Enable `Smart Align Nodes`.
@@ -164,7 +168,7 @@ Press `X` or `Y` during movement to constrain an axis. Hold `Alt/Option` to bypa
 
 ### Notes
 
-- Known layout issue: compact fallback can close an existing central wire corridor, introduce an unnecessary overhead detour and lose shared column-edge alignment. This remains unresolved in 1.0.0; see the [release notes](docs/releases/v1.0.0.md).
+- Known layout issue: compact fallback can close an existing central wire corridor, introduce an unnecessary overhead detour and lose shared column-edge alignment. Version 1.0.1 protects existing alignment within anchored Frame groups; general partial-selection corridor routing remains unresolved. See the [release notes](docs/releases/v1.0.1.md).
 - Smart Snap replaces ordinary `G` movement in the Node Editor while the add-on is enabled. Disabling the add-on restores Blender native behavior.
 - Blender's public Python API does not expose final canvas coordinates for sockets. Reroute-to-socket snapping currently estimates positions from node bounds, socket order, and visibility, so custom node types may still require calibration.
 - Mouse dragging covers most of the node interior. Narrow strips near the left and right socket edges remain available for link interaction.

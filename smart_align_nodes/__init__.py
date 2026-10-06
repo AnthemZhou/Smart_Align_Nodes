@@ -5,7 +5,7 @@ import sys
 bl_info = {
     "name": "Smart Align Nodes",
     "author": "Anthem_周圣宇",
-    "version": (1, 0, 0),
+    "version": (1, 0, 1),
     "blender": (4, 0, 0),
     "location": "Node Editor > Sidebar > Smart Align",
     "description": "智能排列与吸附 / Smart node layout and snapping",

@@ -15,6 +15,65 @@ class MultiFrameTests(unittest.TestCase):
         links=[LayoutLink(**dict(e,reroutes=tuple(e.get('reroutes',())))) for e in data['links']]
         return nodes,links,LayoutSettings(**data['settings'])
 
+    def test_enclosing_frame_preserves_rows_columns_and_regular_gaps(self):
+        # Same geometry as the reported "Estimate merge distance" selection;
+        # selecting the enclosing Frame includes round, custom and outer cards.
+        nodes, links, settings = self.fixture()
+        by_key = {n.key: n for n in nodes}
+        def included(n):
+            while n is not None:
+                if n.key == 'Frame.011':
+                    return True
+                n = by_key.get(n.parent)
+            return False
+        nodes = [replace(n, selected=included(n)) for n in nodes]
+        plan = solve_layout(nodes, links, settings)
+        row = ('Switch.011', 'Math.007', 'Compare.011')
+        for key in row:
+            self.assertEqual(plan.locations[key], by_key[key].location)
+        self.assertEqual(plan.boxes['Switch.054'].top, plan.boxes['Compare.011'].top)
+        for a, b in (('Named Attribute.003', 'Switch.051'), ('Math.004', 'Compare.009')):
+            self.assertEqual(plan.boxes[a].top, plan.boxes[b].top)
+        self.assertEqual(plan.boxes['Group Input.012'].left, plan.boxes['Boolean Math.013'].left)
+        self.assertAlmostEqual(plan.boxes[row[1]].left-plan.boxes[row[0]].right,
+                               plan.boxes[row[2]].left-plan.boxes[row[1]].right, places=2)
+        for n in nodes:
+            if n.kind == 'FRAME' or not n.selected:
+                self.assertEqual(plan.locations[n.key], n.location)
+            else:
+                self.assertLess(max(abs(plan.locations[n.key][i]-n.location[i]) for i in (0, 1)), 40)
+        self.assertEqual(layout_diagnostics(nodes, links, plan.boxes)['node_overlaps'], 0)
+        for _ in range(10):
+            again = solve_layout(repeat(nodes, plan), links, settings)
+            self.assertEqual(again.locations, plan.locations)
+            plan = again
+
+    def test_aligned_serial_stack_can_still_become_left_to_right_flow(self):
+        nodes = [node('f', width=400, height=600, kind='FRAME'),
+                 node('a', 30, -80, parent='f'), node('b', 30, -300, parent='f'),
+                 node('g', 1500, width=400, height=600, kind='FRAME'),
+                 node('c', 1530, -80, parent='g'), node('d', 1530, -300, parent='g')]
+        links = [LayoutLink('a', 'b'), LayoutLink('b', 'c'), LayoutLink('c', 'd')]
+        plan = solve_layout(nodes, links)
+        for a, b in (('a', 'b'), ('c', 'd')):
+            self.assertGreater(plan.boxes[b].left, plan.boxes[a].right)
+        self.assertEqual(plan.locations, solve_layout(repeat(nodes, plan), links).locations)
+
+    def test_peer_column_retains_equal_vertical_spacing(self):
+        nodes = [node('f', width=700, height=700, kind='FRAME'),
+                 node('a', 30, -80, parent='f'), node('b', 30, -230, parent='f'),
+                 node('c', 30, -380, parent='f'), node('merge', 500, -230, parent='f'),
+                 node('g', 1500, width=300, height=400, kind='FRAME'),
+                 node('out', 1530, -80, parent='g')]
+        links = [LayoutLink(k, 'merge', input=i, target_offset=37+i*22)
+                 for i, k in enumerate(('a', 'b', 'c'))]+[LayoutLink('merge', 'out')]
+        plan = solve_layout(nodes, links)
+        self.assertEqual(plan.boxes['a'].left, plan.boxes['b'].left)
+        self.assertEqual(plan.boxes['b'].left, plan.boxes['c'].left)
+        self.assertAlmostEqual(plan.boxes['a'].bottom-plan.boxes['b'].top,
+                               plan.boxes['b'].bottom-plan.boxes['c'].top)
+        self.assertEqual(plan.locations, solve_layout(repeat(nodes, plan), links).locations)
+
     def test_reported_selection_keeps_frames_nearby_and_separate(self):
         nodes,links,settings=self.fixture()
         plan=solve_layout(nodes,links,settings)

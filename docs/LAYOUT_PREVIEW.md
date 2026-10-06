@@ -2,9 +2,13 @@
 
 ## 中文
 
-自动布局与移动吸附作为 v1.0.0 一同发布，安装包为 `Smart_Align_Nodes_v1.0.0.zip`。本文保留开发过程中各轮验证的环境、结果与限制；各轮测试数量属于当时的历史记录。当前主要验证环境为 macOS / Blender 5.2.2，发布信息见 [v1.0.0 发布说明](releases/v1.0.0.md)。
+自动布局与移动吸附作为 v1.0.0 一同发布，当前安装包为 `Smart_Align_Nodes_v1.0.1.zip`。本文保留开发过程中各轮验证的环境、结果与限制；各轮测试数量属于当时的历史记录。当前主要验证环境为 macOS / Blender 5.2.2，发布信息见 [v1.0.1 发布说明](releases/v1.0.1.md)。
 
-### v1.0.0 已知布局问题
+### v1.0.1 Frame 对齐修复
+
+修复“Estimate merge distance” 外层框中 round / custom 分组受限回退导致的对齐破坏。保留原行列与等间距、三个 Frame 的绝对位置以及未选节点位置；当前副本最大普通节点位移 34.40，连续 10 次无累积漂移，撤销/重做误差为 0。仍有 6 处内部连线遮挡估算，详见 [验证记录](releases/v1.0.1-validation.json)。
+
+### v1.0.0 已知布局问题（仍待完善）
 
 “Extrapolate Radius” 案例中，原本畅通的中间连线因接近节点边缘被 8 单位安全边距计入遮挡。局部压缩又将两排间隙从约 54 缩至 10，后续固定节点位置的路由搜索新增 3 个转接点并改为顶部绕行。结构布局因范围超限回退时，备用算法也未保留整列边缘对齐约束。此问题已分析但尚未修复；发布 1.0.0 不改变该行为。
 
@@ -170,7 +174,9 @@ Blender 脚本在独立窗口中自动运行并退出；结果 JSON 写入 `/pri
 
 ## English
 
-Automatic arrangement and live snapping ship together in v1.0.0 as `Smart_Align_Nodes_v1.0.0.zip`. This document retains the environments, results and limitations of individual development iterations; their test counts are historical. The primary validation environment is macOS / Blender 5.2.2. See the [v1.0.0 release notes](releases/v1.0.0.md).
+Automatic arrangement and live snapping shipped together in v1.0.0; the current package is `Smart_Align_Nodes_v1.0.1.zip`. This document retains the environments, results and limitations of individual development iterations; their test counts are historical. The primary validation environment is macOS / Blender 5.2.2. See the [v1.0.1 release notes](releases/v1.0.1.md).
+
+Version 1.0.1 preserves existing rows, peer columns and equal gaps in the enclosing “Estimate merge distance” Frame. Its three Frames and unselected nodes stay in place. The captured copy shows a maximum ordinary-node movement of 34.40 units, no accumulated drift over ten invocations, and zero undo/redo error. Six estimated internal wire obstructions remain. See the [validation record](releases/v1.0.1-validation.json).
 
 Known unresolved case: in “Extrapolate Radius”, an unobstructed central wire falls inside the 8-unit clearance padding. Compact fallback narrows the row gap from about 54 to 10 units, after which routing adds three points above the nodes. The fallback also loses shared column-edge alignment after rejecting a structural layout for excessive extent. Version 1.0.0 does not change this behavior.
 
